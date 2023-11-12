@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: Lato;
+}
+
+/* CTA */
+
+.CTA {
+    background-image: url(./sabimages/Sabi\ ride\ car.png);
+    background-color: #56707ea2;
+    width: 100%;
+    height: 94vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.CTA .CTAINNER h2 {
+    font-weight: 750;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    padding-top: 10rem;
+    font-family: lato;
+}
+
+.bluey {
+    color: #0088CD;
+    text-shadow: 2px 1px #000000;
+}
+
+.CTA button {
+    background-color:  #0088CD;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.CTA button:hover {
+    background-color:  #ffffff;
+    text-decoration: none;
+    color: #0088CD;
+}
+
+/* CTATWO */
+
+.CTATWO .card-title {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: Lato;
+}
+
+.CTATWO .card-body {
+    padding-bottom: 0;
+    padding-right: 3px;
+}
+
+.CTATWO .card-text {
+    max-width: 9rem;
+    padding-bottom: 0;
+}
+
+.CTATWO .card {
+    border: none;
+    background-color: #cfd9dfd7;
+}
+
+/* CTATHREE */
+
+.CTATHREE {
+    width: 100%;
+    background-image: url(./sabimages/ford.jpg);
+    background-color: #00000091;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8rem;
+    padding-bottom: 3rem;
+    background-blend-mode: multiply;
+}
+
+.CTATHREE button {
+    background-color:  #0088CD;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+.CTATHREE button:hover {
+    background-color:  #ffffff;
+    text-decoration: none;
+    color: #0088CD;
+}
+
+.CTATHREE .row p {
+    font-size: 23px;
+    font-weight: 100;
+    max-width: 18rem;
+}
+
+.Learn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* CTAFOUR */
+
+.CTAFOUR {
+    width: 100%;
+    margin-top: 102px;
+}
+
+.CTAFOUR .card {
+    border: none;
+}
+
+.CTAFOUR .card-title {
+    font-size: 27px;
+}
+
+/* CTAFIVE */
+
+.CTAFIVE {
+    background-color: rgb(207, 242, 247);
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.scan h3 {
+   margin-top: 3rem;
+   font-size: 34px;
+}
+
+
+
+/* ARTICLE PAGE */
+
+.ARTICLE {
+    width: 100%;
+}
+
+.ARTICLE img {
+    width: 100%;
+    border-radius: none;
+    background: url(./sabimages/Rectangle\ 72.png);
+}
+
+.ARTICLE h3 {
+    font-size: 36px;
+}
+
+.ARTICLE p {
+    font-size: 21px;
+    line-height: 40px;
+} 
+
+
+/* BLOG PAGE */
+
+.BLOG {
+    width: 100%;
+}
+
+.BLOG h3 {
+    font-size: 36px;
+    color: #000000;
+}
+
+
+.BLOG-TWO {
+    width: 100%;
+    margin-top: 102px;
+}
+
+.BLOG-TWO .card {
+    border: none;
+}
+
+.BLOG-TWO .card-title {
+    font-size: 27px;
+}
+
+/* SABIDRIVER PAGE */
+
+.SABIDRIVER {
+    background-image: url(./sabimages/Rectangle\ 48.png);
+    background-color: #56707ea2;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.SABIDRIVER .SABIINNER h2 {
+    font-weight: 750;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    padding-top: 10rem;
+    font-family: lato;
+}
+
+.bluey {
+    color: #0088CD;
+    text-shadow: 2px 1px #000000;
+}
+
+.blue {
+    color: #0088CD;
+}
+
+/* FEATURES */
+
+
+.FEATURES {
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.FEATURES a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* PAGE */
+
+
+.PAGE{
+    background-color: #c3e3f6d2;
+    width: 100%;
+    margin-top: 6rem;
+    border-radius: 50px;
+}
+
+.PAGE h2{
+    font-weight: 800;
+    font-size: 48px;
+    color: rgb(12, 12, 12);
+    font-family: lato;
+}
+
+.PAGEINNER {
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.PAGE img {
+    position: relative;
+    bottom: 7rem;
+}
+
+/* ACCORD */
+
+.ACCORD h2 {
+    font-size: 32px;
+    padding-top: 19px;
+}
+
+/* SABI SIGNUP PAGE*/
+
+.SIGNUPPAGE {
+    margin: auto;
+    display: block;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    padding-top: 2.2rem;
+
+}
+
+.textly {
+    font-size: 37px;
+}
+
+/* FOOTER */
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen () {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
