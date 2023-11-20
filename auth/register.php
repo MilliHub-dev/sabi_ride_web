@@ -24,7 +24,7 @@
                         $statement = $pdo->prepare($query);
                         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
                         $statement->execute([$_POST['email'], $_POST['first_name'], $_POST['last_name'], $password]);
-                        redirect('auth/login.php');
+                        redirect('login.php');
                     }
                     else{
                         $error = 'This email already exists';
