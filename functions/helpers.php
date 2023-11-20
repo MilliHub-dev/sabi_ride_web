@@ -1,7 +1,7 @@
 <?php
 
 //config
-define('BASE_URL', 'http://localhost/BitBlog/');
+define('BASE_URL', 'http://localhost/sabi_ride_web/');
 
 function redirect($url) 
 {    
