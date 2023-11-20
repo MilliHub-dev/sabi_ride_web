@@ -186,7 +186,7 @@
             <i class="bi bi-plus text-white" style="font-size: 1.8rem; color: rgb(255, 255, 255);"></i>
             <div class="d-grid">
               <h3 class="text-white pt-1">Drive according to your schedule.</h3>
-              <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-white">Pick up passengers as schedule</p>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@
             <i class="bi bi-plus text-white" style="font-size: 1.8rem; color: rgb(255, 255, 255);"></i>
             <div class="d-grid">
               <h3 class="text-white pt-1">Get paid each day.</h3>
-              <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-white">Get paid anytime anyday</p>
             </div>
           </div>
         </div>
