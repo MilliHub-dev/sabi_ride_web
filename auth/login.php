@@ -17,7 +17,7 @@ session_start();
                     if(password_verify($_POST['password'], $user->password))
                     {
                             $_SESSION['user'] =  $user->email;
-                            redirect('bitblog/index.php');
+                            redirect('index.php');
                     }
                     else{
                         $error = 'password is wrong';
@@ -40,7 +40,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bit Blog</title>
+    <title>sabi ride</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css" media="all" type="text/css">
 </head>

@@ -8,7 +8,7 @@ require_once 'functions/pdo_connection.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BitBlog Category</title>
+    <title>Sabi Ride Category</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" media="all" type="text/css">
 </head>
@@ -45,7 +45,7 @@ $query = "SELECT posts.* FROM categories JOIN posts ON categories.id = posts.cat
                <section class="mb-2 overflow-hidden" style="max-height: 15rem;"><img class="img-fluid" src="<?=asset($post->image)?>" alt=""></section>
                     <h2 class="h5 text-truncate"><?=$post->title?></h2>
                     <p><?=substr($post->body, 0, 80)?></p>
-                    <p><a class="btn btn-primary" href="<?=url('bitblog/detail.php?post_id=') . $post->id?>" role="button">View details »</a></p>
+                    <p><a class="btn btn-primary" href="<?=url('detail.php?post_id=') . $post->id?>" role="button">View details »</a></p>
                </section>
                <?php
 }?>

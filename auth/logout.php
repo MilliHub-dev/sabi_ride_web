@@ -4,4 +4,4 @@ session_start();
      require_once '../functions/pdo_connection.php';
 
      session_destroy();
-     redirect('bitblog/auth/login.php');
+     redirect('auth/login.php');

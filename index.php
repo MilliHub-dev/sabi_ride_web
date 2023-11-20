@@ -236,7 +236,7 @@
         <div class="card-body">
           <h5 class="card-title fw-bold"><?= $post->title ?></h5>
           <p class="card-text"><?= substr($post->body, 0, 0) ?></p>
-          <p><a class="btn btn-primary" href="<?= url('bitblog/detail.php?post_id=') . $post->id ?>" role="button">View details »</a></p>
+          <p><a class="btn btn-primary" href="<?= url('detail.php?post_id=') . $post->id ?>" role="button">View details »</a></p>
         </div>
       </div>
       </div>

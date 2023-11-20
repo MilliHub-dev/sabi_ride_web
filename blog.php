@@ -32,7 +32,7 @@
 
             foreach ($categories as $category) { ?>
             <li class="nav-item ">
-                <a class="nav-link " href="<?= url('bitblog/category.php?cat_id=') . $category->id ?>"><?= $category->name ?></a>
+                <a class="nav-link " href="<?= url('category.php?cat_id=') . $category->id ?>"><?= $category->name ?></a>
             </li>
 
             <?php } ?>
@@ -75,7 +75,7 @@
         <div class="col-4 mb-md-4 mb-3 float-end text-end">
             <h3 class="fw-bold"><?= $post->title ?></h3>
             <h5 class="fw-light"><?= substr($post->body, 0, 80) ?></h5>
-            <p><a class="btn btn-primary" href="<?= url('bitblog/detail.php?post_id=') . $post->id ?>" role="button">View details »</a></p>
+            <p><a class="btn btn-primary" href="<?= url('detail.php?post_id=') . $post->id ?>" role="button">View details »</a></p>
         </div>
         <?php } ?>
     </div>

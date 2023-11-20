@@ -24,7 +24,7 @@
                         $statement = $pdo->prepare($query);
                         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
                         $statement->execute([$_POST['email'], $_POST['first_name'], $_POST['last_name'], $password]);
-                        redirect('bitblog/auth/login.php');
+                        redirect('auth/login.php');
                     }
                     else{
                         $error = 'This email already exists';
@@ -52,7 +52,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bit Blog</title>
+    <title> sabi ride</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css" media="all" type="text/css">
 </head>

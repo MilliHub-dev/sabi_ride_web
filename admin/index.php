@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bit Blog Panel</title>
+    <title>sabi ride Panel</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css" media="all" type="text/css">
 </head>
@@ -27,7 +27,7 @@
 
                 <section style="min-height: 80vh;" class="d-flex justify-content-center align-items-center">
                     <section>
-                        <h1>Bit Blog</h1>  
+                        <h1> Sabi Ride Blog</h1>  
                         <h5>What Is a Blog?
                         A blog (short for “weblog”) is an online journal or informational website run by an individual, group, or corporation that offers regularly updated content (blog post) about a topic.</h5>
                         <h5>It presents information in reverse chronological order and it’s written in an informal or conversational style.</h5>
