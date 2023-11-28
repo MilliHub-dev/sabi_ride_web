@@ -76,7 +76,7 @@
     <p class="pt-2 text-white"> Sabi Ride hailing app is revolve around providing convenience, safety, and efficiency for both riders and drivers
       <br>Sabi Ride has shown novel ways in which
       technology can be employed in the carriage of
-      persons and items 
+      persons and items
       <br> thereby brought the
       efficiency of traditional taxis
     </p>
