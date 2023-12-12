@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style1.css">
    
-  </head>
+</head>
   <body>
     <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -53,13 +53,13 @@
           </li>
          
         </ul>
-        <button class="btn btn-primary" href="auth/register.php">Register</button>
+        <a class="btn btn-primary" href="./auth/register.php">Register</a>
        
         
         <?php
                 } else { ?>
 
-        <button class="btn btn-primary"" href="auth/logout.php">logout</button>
+        <a class="btn btn-primary" href="auth/logout.php">logout</a>
 
         <?php } ?>
        
@@ -220,32 +220,36 @@
       <h3 class="pt-2 fw-bold">View All &nbsp; <i class="bi bi-globe"></i></h3>
     </div>
   </div>
-  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 m-2">
-    
-    <div class="row">
-   
-    <?php
-                        $query = "SELECT * FROM posts WHERE status = 10";
-                         $statement = $pdo->prepare($query);
-                         $statement->execute();
-                         $posts = $statement->fetchAll();
-                         foreach ($posts as $post) { ?>
-       <div class="col-lg-12 col-md-4 col-sm-6">
-      <div class="card">
-        <img src="<?= asset($post->image) ?>" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold"><?= $post->title ?></h5>
-          <p class="card-text"><?= substr($post->body, 0, 0) ?></p>
-          <p><a class="btn btn-primary" href="<?= url('detail.php?post_id=') . $post->id ?>" role="button">View details »</a></p>
+  <div class="container">
+    <div class="row mt-2 p-4">
+    <style>
+    .custom-image {
+      height: 200px; 
+      object-fit: cover;
+    }
+    </style>
+      <?php
+        $query = "SELECT * FROM posts WHERE status = 10";
+        $statement = $pdo->prepare($query);
+        $statement->execute();
+        $posts = $statement->fetchAll();
+        foreach ($posts as $post) { ?>
+      <div class="col-md-4">
+          <div class="card mb-4">
+          <img src="<?= asset($post->image) ?>" class="card-img-top img-fluid custom-image" alt="...">
+            <div class="card-body">
+              <!-- Text Truncating -->
+              <h5 class="card-title"><?= substr($post->title, 0, 40) . (strlen($post->title) > 40 ? "..." : "") ?></h5>
+              <!-- <p class="card-text"><?= substr($post->body, 0, 20) . (strlen($post->body) > 20 ? "..." : "") ?></p> -->
+              <p><a class="btn btn-primary" href="<?= url('detail.php?post_id=') . $post->id ?>" role="button">Read More >></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      <?php } ?>
+        <?php } ?>
     </div>
-    
-    
    
   </div>
+</div>
 </div>
 
 <!-- CTAFIVE --> 

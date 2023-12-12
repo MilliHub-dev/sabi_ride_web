@@ -17,7 +17,7 @@ session_start();
                     if(password_verify($_POST['password'], $user->password))
                     {
                             $_SESSION['user'] =  $user->email;
-                            redirect('index.php');
+                            redirect('./admin/index.php');
                     }
                     else{
                         $error = 'password is wrong';

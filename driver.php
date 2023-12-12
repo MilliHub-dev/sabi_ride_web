@@ -49,13 +49,13 @@
           </li>
          
         </ul>
-        <button class="btn btn-primary" href="auth/register.php">Register</button>
+        <a class="btn btn-primary" href="auth/register.php">Register</a>
        
         
         <?php
                 } else { ?>
 
-        <button class="btn btn-primary"" href="auth/logout.php">logout</button>
+        <a class="btn btn-primary" href="auth/logout.php">logout</a>
 
         <?php } ?>
        
