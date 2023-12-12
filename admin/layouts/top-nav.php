@@ -4,5 +4,5 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="text-decoration-none text-white" href="auth/logout.php">logout</a>
+    <a class="text-decoration-none text-white" href="../../sabi_ride/auth/logout.php">logout</a>
 </nav>

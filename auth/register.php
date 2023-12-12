@@ -89,7 +89,7 @@
                     </section>
                     <section class="mt-4 mb-2 d-flex justify-content-between">
                         <input type="submit" class="btn btn-success btn-sm" value="register">
-                        <a class="" href="auth/login.php">Login</a>
+                        <a class="" href="login.php">Login</a>
                     </section>
                 </form>
             </section>

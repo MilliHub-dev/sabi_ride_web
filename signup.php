@@ -56,7 +56,7 @@
         <?php
                 } else { ?>
 
-        <button class="btn btn-primary"" href="auth/logout.php">logout</button>
+        <button class="btn btn-primary" href="auth/logout.php">logout</button>
 
         <?php } ?>
        

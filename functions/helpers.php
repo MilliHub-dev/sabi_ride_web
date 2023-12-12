@@ -1,7 +1,8 @@
 <?php
 
 //config
-define('BASE_URL', 'http://localhost/sabi_ride_web/');
+// define('BASE_URL', 'http://localhost/sabi_ride_web/'); //General BASE URL
+define('BASE_URL', 'http://localhost/sabi_ride/'); //When Destiny is Working
 
 function redirect($url) 
 {    
