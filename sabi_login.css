@@ -1,0 +1,245 @@
+span{
+    font-family: Mulish;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4DA1FF;
+}
+.bbox{
+    position: relative;
+    height: 63px;
+    top: 70px;
+    left: 40%;
+}
+span span{
+    
+    font-family: Mulish;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000
+}
+.wrap{
+position: relative;
+top: 80px;
+margin: 0 20%;
+}
+.wrap .bf{
+position: relative;
+top: 30px;
+margin: 0 15%;
+color: black;
+border: 1px solid black;
+}
+.wrap .af{
+position: relative;
+top: -34px;
+right: -50%;
+border: 1px solid black;
+}
+#log{
+    font-size: 18px;
+    margin: 0 40%;
+    color: #000000;
+}
+#driver-info{
+position: relative;
+width: 30%;
+height: 42px;
+top: 90px;
+left: 33%;
+border-radius: 5px;
+background: #DAE3EAB2;
+}
+#username{
+position: relative;
+font-family: Lato;
+font-size: 18px;
+font-weight: 500;
+line-height: 27.6px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000B2;
+padding-left: 15px;
+margin: 5px 0 5px 10px;
+width: 40%;
+border-radius: 5px;
+outline: 0;
+border: 0;
+top: 0px;
+}
+#username:focus{
+border: 3px solid#4DA1FF;
+border-radius: 0%;
+width: 45%;
+}
+
+#phone-number{
+position: relative;
+top: 1px;
+font-family: Lato;
+font-size: 18px;
+font-weight: 500;
+line-height: 27.6px;
+letter-spacing: 0em;
+text-align: left;
+background: #dae3ea1c;
+padding-left: 15px;
+margin: 5px 0 5px 10px;
+width: 40%;
+outline: none;
+border: none;
+}
+#phone-number:focus{
+border: 3px solid#4DA1FF;
+border-radius: 0%;
+width: 45%;
+}
+#username2{
+    position: relative;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27.6px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000B2;
+    padding-left: 15px;
+    margin: 5px 0 5px 10px;
+    width: 40%;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    top: 0px;
+    }
+    #username2:focus{
+    border: 3px solid#4DA1FF;
+    border-radius: 0%;
+    width: 45%;
+    }
+    
+    #phone-number2{
+    position: relative;
+    top: 1px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27.6px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #dae3ea1c;
+    padding-left: 15px;
+    margin: 5px 0 5px 10px;
+    width: 40%;
+    outline: none;
+    border: none;
+    }
+    #phone-number2:focus{
+    border: 3px solid#4DA1FF;
+    border-radius: 0%;
+    width: 45%;
+    }
+    #form2{
+        display: none;
+    }
+    #error{
+        margin-left: 11%;
+        margin-top: -10px;
+        color: #ff3860;
+        font-size: 13px;
+        display: none;
+    }
+    #label{
+        height: 30px;
+        margin-left: 3%;
+        font-family: Lato;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000CC;
+        width: 100%;
+    }
+    #user{
+        position: relative;
+        width: 80%;
+        height: 42px;
+        top: -10px;
+        margin-left: 10%;
+        border-radius: 5px;
+        background-color: #DAE3EA80;
+        border: 0;
+        outline: 0;
+        padding: 5px 0 5px 20px;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6D7D8BB2;
+    }
+    #user:focus{
+        border: 3px solid #4DA1FF;
+        border-radius: 0;
+    }
+
+    button{
+        position: relative;
+        width: 70%;
+        height: 30px;
+        top: 10px;
+        margin-left: 15%;
+        border-radius: 10px;
+        background: #4DA1FF;
+        border: 0;
+    }
+    button span{
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        top: -15px;
+    }
+    a{
+        text-decoration: none;
+        color: #4DA1FF;
+    }
+    i{
+        font-size: 35px;
+        position: relative;
+        top: -5px;
+        color: #ffffff;
+    }
+    #forget-password{
+        position: relative;
+        height: 30px;
+        top: 145px;
+        margin-left: 43%;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #4DA1FF;
+    }
+    #create-account{
+        position: relative;
+        height: 30px;
+        top: 150px;
+        margin-left: 35%;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000B2;
+    }
