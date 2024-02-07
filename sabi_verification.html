@@ -20,7 +20,6 @@
                     position: relative;
                     height: 63px;
                     top: 80px;
-                    margin-left: 40%;
                 }
                 span span{
                     
@@ -35,14 +34,12 @@
             hr{
                 position: relative;
                 top: 70px;
-                width: 45%;
-                margin-left: 27%;
                 border: 1px solid black;
+                margin-left: 30%;
             }
             h2{
                 position: relative;
                 top: 55px;
-                margin-left: 45%;
                 font-family: Lato;
                 font-size: 25px;
                 font-weight: 700;
@@ -53,7 +50,6 @@
             #txt{
                 position: relative;
                 top: 60px;
-                margin-left: 35%;
                 font-family: Lato;
                 font-size: 20px;
                 font-weight: 500;
@@ -75,8 +71,7 @@
                 position: relative;
                 width: 110px;
                 height: 36px;
-                top: 60px;
-                margin-left: 612px;
+                top: 62px;
                 border-radius: 5px;
                 border: 0;
                 outline: 0;
@@ -91,14 +86,11 @@
             line-height: 32px;
             position: relative;
             top: 70px;
-            margin-left: 45%;
         }
         button{
             position: relative;
             top: 80px;
-            width: 25%;
             height: 30px;
-            margin-left: 36%;
             border-radius: 10px;
             background: #4DA1FF;
             border: 0;
@@ -135,20 +127,26 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="col-4 bbox">
+            <div class="col-sm-12 col-md-4 col-lg-12 bbox text-center">
                 <span>Sabi <span>Driver</span></span>
             </div>
-            <div class="col-12">
+            <div class="col-xl-10 col-sm-10 col-md-10 col-lg-9 col-9 ">
                 <hr>
             </div>
-            <h2>Enter Code</h2> 
-            <span id="txt">A verification codewas sent to<span id="num"> +234 805. ... .755</span></span>
-                <div col-3>
+            <h2 class="text-center">Enter Code</h2> 
+            <div class="text-center">
+                <span id="txt">A verification codewas sent to<span id="num"> +234 805. ... .755</span></span>
+            </div>
+            
+                <div class="d-flex justify-content-center">
                         <input type="tel" id="text">
                         <p id="error">Please enter the code</p>
                 </div>
-                <p id="code">Resend Code</p>
-                 <button type="button" id="button2"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
+                <p id="code" class="text-center">Resend Code</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+                 
             </form>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
