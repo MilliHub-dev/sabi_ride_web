@@ -1,0 +1,161 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h1 span{
+    color: blue;
+}
+hr{
+    width: 35%;
+    background-color: whitesmoke;
+    border: 2px light whitesmoke;
+    margin-top: 30px;
+}
+.first-hr{
+    margin-top: 0;
+}
+.progress{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 4%;
+    height: 5px;
+    background-color: blue;
+    /* border-radius: 10px; */
+}
+#bar1{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#last-bar{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.num{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doc{
+    font-weight: bolder;
+    font-size: 25px;
+}
+button{
+    width: 23%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+aside{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    width: 20%;
+    height: 20vh;
+    border: 1px solid black;
+    left: 75%;
+    top: 15%;
+    text-align: center;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > input{
+    width: 20vw;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+@media(min-width: 400px) and (max-width: 800px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    main > .box{
+        width: 80%;
+        margin: auto;
+        margin-left: 16vw;
+    }
+    .first-hr{
+        margin-top: 0;
+    }
+    hr{
+        width: 80%;
+        margin-top: 30px;
+    }
+    button{
+        width: 30%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .doc{
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    footer{
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer > input{
+        width: 45vw;
+        height: 35px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 15px;
+    }
+    .bar{
+        width: 9.5%;
+        height: 5px;
+        background-color: blue;
+    }
+    #bar1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #last-bar{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
