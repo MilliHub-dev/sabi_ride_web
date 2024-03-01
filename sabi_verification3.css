@@ -14,6 +14,201 @@ main{
     position: relative;
 }
 h1 span{
+    color: rgba(77, 161, 255, 1);
+}
+hr{
+    width: 35%;
+    /* background-color: lightgray; */
+    border: 1px solid lightgray;
+    margin-top: 30px;
+}
+.first-hr{
+    margin-top: 0;
+}
+.progress{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 4%;
+    height: 5px;
+    background-color: rgba(77, 161, 255, 1);
+    /* border-radius: 10px; */
+}
+#bar1{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#last-bar{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.num{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(160, 156, 156);
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgba(77, 161, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#num4{
+    background-color: rgba(77, 161, 255, 1);
+}
+.doc{
+    font-weight: bolder;
+    font-size: 25px;
+}
+label{
+    padding: 8px 15px;
+    width: 43%;
+    height: 90px;
+    border-radius: 18px;
+    background-color: white;
+    border: 2px solid lightgray;
+}
+input{
+    display: none;
+}
+#stl p{
+    margin-bottom: -20px;
+}
+aside{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    width: 20%;
+    height: 20vh;
+    border: 1px solid black;
+    left: 75%;
+    top: 15%;
+    text-align: center;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > button{
+    width: 20vw;
+    height: 35px;
+    background-color: rgba(77, 161, 255, 1);
+    ;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer .arrow{
+    /* font-stretch: expanded; */
+    font-size: 30px;
+    /* font-family: strecth, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.text{
+    font-size: 15px;
+}
+.box{
+    width: 35%;
+}
+@media(min-width: 200px) and (max-width: 900px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    main > .box{
+        width: 80%;
+        margin: auto;
+        margin-left: 12vw;
+    }
+    .first-hr{
+        margin-top: 0;
+    }
+    hr{
+        width: 80%;
+        margin-top: 30px;
+    }
+    button{
+        width: 30%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .doc{
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    footer{
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer > button{
+        width: 45vw;
+        height: 35px;
+        background-color: rgba(77, 161, 255, 1);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow{
+        margin-top: -12px;
+        
+    }
+    .bar{
+        width: 9.5%;
+        height: 5px;
+        background-color: rgba(77, 161, 255, 1);
+    }
+    #bar1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #last-bar{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h1 span{
     color: blue;
 }
 hr{
@@ -64,11 +259,19 @@ hr{
     font-weight: bolder;
     font-size: 25px;
 }
-button{
-    width: 23%;
-    height: 40px;
-    border-radius: 20px;
+label{
+    padding: 8px 15px;
+    width: 43%;
+    height: 90px;
+    border-radius: 18px;
     background-color: white;
+    border: 2px solid lightgray;
+}
+input{
+    display: none;
+}
+#stl p{
+    margin-bottom: -20px;
 }
 aside{
     display: none;
