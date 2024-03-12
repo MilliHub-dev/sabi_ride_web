@@ -72,8 +72,9 @@
 
 <div class="container-fluid CTA">
   <div class="container CTAINNER">
-    <h2>Anywhere wey you dey go,<br>we <span class="bluey">sabi</span> am.</h2>
-    <p class="pt-2 text-white"> Sabi Ride hailing app is revolve around providing convenience, safety, and efficiency for both riders and drivers
+    <h2>where you dey go,<br>we <span class="bluey">sabi</span> am.</h2>
+    <p class="pt-3 text-white"> Sabi Ride is a social ride hailing/sharing platform revolve around providing convenience, safety, and efficiency for both riders and drivers <br>
+    what sets it apart from traditional ride hailing services is the social aspect which include features like ride sharing ,splitting fares and so on.
       <br>Sabi Ride has shown novel ways in which
       technology can be employed in the carriage of
       persons and items
