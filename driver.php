@@ -72,7 +72,7 @@
     <div class="row">
         <div class="col-6">
             <h2>Make money driving<br>  with <span class="blue">sabi</span> ride.</h2>
-            <p class="pt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, facere accusantium, totam velit<br>laudantium placeat iste quis error reprehenderit corporis culpa<br>aspernatur ut qui consectetur. Nihil optio excepturi ullam!</p>
+            <p class="pt-2 text-white">Join our innovative ride-hailing platform and start earning today. <br> With flexible schedules, competitive rates, and a supportive community, driving with us is not just a job, it's a rewarding experience. <br> Sign up now and turn your wheels into wealth!</p>
         </div>
         <div class="col-6">
             <img src="./sabimages/Rectangle 56.png" alt="" class="mx-auto d-block pt-3">
@@ -84,24 +84,24 @@
     <h3 class="fw-bold">Get Started</h3>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5 m-2">
         <div class="col">
-            <img src="./sabimages/twitter.png" alt="" width="70">
+            <img src="./sabimages/Rectangle 64.png" alt="" width="70">
             <div class="pt-4">
                 <h5 class="fw-bold pb-2">1. Sign up online</h5>
-                <p>Lorem ipsum dolor sit amet.accusantium recusandae nostrum sed culpa assumenda sequi mollitia, ad iure non.</p>
+                <p>Signing up online is quick and easy. just provide a few details and gain access.</p>
             </div>
         </div>
         <div class="col">
-            <img src="./sabimages/twitter.png" alt="" width="70">
+            <img src="./sabimages/Rectangle 65.png" alt="" width="70">
             <div class="pt-4">
-                <h5 class="fw-bold pb-2">2. Sign up online</h5>
-                <p>Lorem ipsum dolor sit amet.accusantium recusandae nostrum sed culpa assumenda sequi mollitia, ad iure non.</p>
+                <h5 class="fw-bold pb-2">2. Upload your documents </h5>
+                <p>Speed up the verification process by uploading your document securely. our platform ensures a seamless experience allowing  you to submit your documents hassle-free.</p>
             </div>
         </div>
         <div class="col">
-            <img src="./sabimages/twitter.png" alt="" width="70">
+            <img src="./sabimages/Rectangle 66.png" alt="" width="70">
             <div class="pt-4">
-                <h5 class="fw-bold pb-2">3. Sign up online</h5>
-                <p>Lorem ipsum dolor sit amet.accusantium recusandae nostrum sed culpa assumenda sequi mollitia, ad iure non.</p>
+                <h5 class="fw-bold pb-2">3. Get approved</h5>
+                <p>start riding and making money on your own. submit your application today and experience the ease of approval. Get started now!.</p>
             </div>
         </div>
         <a href="#" class="">Apply to drive</a>
@@ -111,7 +111,7 @@
     <div class="row">
         <div class="col-6 PAGEINNER">
             <h2 class="border">Be your own boss.<br>As you sabi drive,<br>you go sabi earn.</h2>
-            <p class="pt-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, facere accusantium, totam velit<br>laudantium placeat iste quis error reprehenderit corporis culpa<br>aspernatur ut qui consectetur. Nihil optio excepturi ullam!</p>
+            <p class="pt-2 text-secondary">Join our unique ride-hailing platform and take control of your earnings. <br> With flexible hours and competitive rates, driving with us means maximizing your income while enjoying the freedom of being your own boss. <br> Sign up now and start earning!</p>
             <button class="btn btn-link p-4" type="button">Drive with Sabi Ride</button>
           </div>
         <div class="col-6">
@@ -125,31 +125,33 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
+            How do I sign up to become a driver
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion-body">Signing up is easy! Simply visit our website or download our app, fill out the required information, submit your documents for verification, and you'll be on your way to becoming a driver.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
+            What are the requirements to become a driver?
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body">Requirements may vary depending on your location, but generally, you need to have a valid driver's license, a clean driving record, and meet the minimum age requirement. Additional requirements may include vehicle specifications and insurance coverage.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
+              How much can I earn as a driver?
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div class="accordion-body">Earnings vary depending on factors such as location, time of day, and demand. We offer competitive rates and incentives to help you maximize your earnings. The more you drive, the more you can earn!
+
+</div>
           </div>
         </div>
       </div>
@@ -171,16 +173,16 @@
         <h5 class="fw-bold">Sabi Ride</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Rides</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Food Delivery</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Dispatch </a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!">Vip </a>
           </li>
         </ul>
       </div>
@@ -189,10 +191,10 @@
         <h5 class="fw-bold">Partner with Sabi Ride</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">sign up as driver</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Sign ypur car as vip</a>
           </li>
           <li>
             <a href="#!">Link 3</a>
@@ -206,13 +208,13 @@
         <h5 class="fw-bold">Company</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">About us</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">News and Update</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Brand guidelines</a>
           </li>
           <li>
             <a href="#!">Link 4</a>
@@ -221,21 +223,13 @@
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <div class="footer-copyright text-center py-3">© 2023 Copyright:
     <a href="/"><img src="./sabimages/instagram.png" alt="" class="px-2" width="60"></a>
     <a href="/"><img src="./sabimages/facebook.png" alt="" class="px-2" width="60"></a>
     <a href="/"><img src="./sabimages/twitter.png" alt="" class="px-2" width="60"></a>
   </div>
 </footer>
-
-
-
-
-
-
-
-
-    
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
