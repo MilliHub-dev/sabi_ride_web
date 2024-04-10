@@ -92,15 +92,11 @@ p{
     font-size: 25px;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
 }
-.txt{
-    position: relative;
-    margin-left: 8%;
-}
+
 .txt p{
     font-size: 22px;
-    line-height: 15px;
+    line-height: 25px;
     font-weight: 500;
 }
