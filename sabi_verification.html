@@ -118,8 +118,8 @@
         color: #ffffff;
         }
         #error{
-        margin-left: 45%;
-        margin-top: 60px;
+        margin-left: -47%;
+        margin-top: 100px;
         color: #ff3860;
         font-size: 13px;
         display: none;
@@ -136,7 +136,7 @@
             </div>
             <h2 class="text-center">Enter Code</h2> 
             <div class="text-center">
-                <span id="txt">A verification codewas sent to<span id="num"> +234 805. ... .755</span></span>
+                <span id="txt">A verification code was sent to<span id="num"> +234 805. ... .755</span></span>
             </div>
             
                 <div class="d-flex justify-content-center">
@@ -159,12 +159,17 @@
         btn.addEventListener("click", function(){
             if(text.value === ""){
                 error.style.display= "block";
+                code.style.top = "10px";
+                    btn.style.top = "10px"
                 setTimeout(function(){
+                    
                     error.style.display = "none";
+                    code.style.top = "70px";
+                    btn.style.top = "80px"
                 }, 3000);
             }
             else{
-                window.location.href = "";
+                window.location.href = "sabi_verification1.html";
             }
         })
     </script>

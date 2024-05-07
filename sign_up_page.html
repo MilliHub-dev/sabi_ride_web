@@ -5,56 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./sabimages/Sabi ride 3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+   
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="./img/Logo 3 (1).png" alt="Sabi Logo">
-            <div class="lang">
-                <img src="./img/Rectangle 47.png" alt="lang">
-                <p>en</p>
-            </div>
-            <ul>
-                <li><a href="">Help</a></li>
-                <li><a href="">Log in</a></li>
-                <button type="button">Sign up</button>
-            </ul>
-        </nav>
-        <div class="bimg"></div>
-    </header>
-    
+    <div class="container-fluid">
+     <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" i href="#"> <img src="./sabimages/Sabi ride 2.png" width="80px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="driver.php">Drive or deliver</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ride</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.php">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+        <div class="d-flex me-4 mb-1">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-globe me-1" style="font-size: 1.3rem; color: rgb(0, 0, 0);"></i>EN</a>
+        </div>
+        <div class="d-flex">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="signup.html">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="auth/login.php">Login</a>
+            </li>
+           
+          </ul>
+          <a class="btn btn-primary" href="./auth/register.php">Register</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+   
     <section>
+        <img src="sabimages/Rectangle 48.png" class="img-thumbnail" alt="..." style="height: 350px; width: 100vw; object-fit: cover;">
         <div class="tx_fm">
             <h1>Make money driving with <span>Sabi</span> Ride</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer 
-                adipiscing elit. Aenean commodo ligula eget 
-            </p>
-
-            <form action="" method="post">
+        </div>
+        <div>
+            <form action="" method="">
                 <h1>Become a driver</h1>
-                <label for="email" class="email">Email</label><br>
-                <input type="email" title="email" id="email" placeholder="Enter Email Address"><br><br>
-                <label for="num" class="pnum">Phone Number</label><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter Email Address"><br><br>
+                <label for="num">Phone Number</label><br>
                 <div class="select">
                     <select title="code" name="country-selector" class="country-selector">
-                      <option value="NG" class="ng"><img src="./img/Ellipse 4.png" alt="">+234</option>
-                      <option value="IT">+123</option>
-                      <option value="PT">+321</option>
-                      <option value="ES">+111</option>
+                      <option value="NG" class="ng">+234</option>
                     </select>
-                    <input title="num" type="tel" class="mnum" placeholder="Mobile Number">
+                    <input type="tel" id="p-num" placeholder="Mobile Number">
                 </div><br><br>
                 <label for="city" class="city">City</label><br>
                 <select title="city" name="location" class="cities">
                     <option value="0">City where you drive</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    
                 </select><br><br>
                 <div class="chk">
-                    <input title="checkbox" type="checkbox" class="check">
+                    <input type="checkbox" id="check">
                     <p>
                         By signing up, you agree to our <a href="">Terms and Conditions</a> 
                         and confirm that you have read and understood the 
@@ -62,17 +86,19 @@
                          applicable for your country 
                         of operation.
                     </p>
-                </div><br><br>
-                <button type="button">Sign up as a driver</button><br><br>
+                </div>
+                <button id="btn" type="button">Sign up as a driver</button>
                 <div class="hv">
                     <span>Already have an account?</span><a href="">Log in</a>
                 </div>
             </form>
         </div>
-
+    </section>
+        
+    <section id="sec-2">
         <h1 class="gs">Get Started</h1>
-        <div class="grid">
-            <div class="grid-box">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-10">
                 <img src="./img/Rectangle 64.png" alt="">
                 <h2>1. Sign up online</h2>
                 <p>
@@ -81,7 +107,7 @@
                     Aenean commodo ligula eget 
                 </p>
             </div>
-            <div class="grid-box">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-10">
                 <img src="./img/Rectangle 65.png" alt="">
                 <h2>2. Upload your documents</h2>
                 <p>
@@ -90,7 +116,7 @@
                     Aenean commodo ligula eget 
                 </p>
             </div>
-            <div class="grid-box">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-10">
                 <img src="./img/Rectangle 66.png" alt="">
                 <h2>3. Get approved</h2>
                 <p>
@@ -100,10 +126,10 @@
                 </p>
             </div>
         </div>
-        <h3 class="apply">Apply to drive</h3>
+        <h3 style="font-size: 15px; color: #4DA1ff">Apply to drive</h3>
 
-        <div class="last">
-            <div class="hpb">
+        <div id="last">
+            <div id="hpb">
                 <h1>
                     Be your own boss. As you sabi drive, 
                     you go sabi earn!
@@ -112,15 +138,16 @@
                     Lorem ipsum dolor sit amet, 
                     consectetuer adipiscing elit. Aenean
                 </p>
-                <button>Apply online <img src="./img/chevron_right_24px.png" alt=""></button>
+                <button>Apply online</button>
             </div>
-            <div class="rimg"></div>
+            <div id="img">
+                <img src="sabimages/Rectangle 58.png" class="img-thumbnail" alt="..." style="height: 250px;">
+            </div>
         </div>
-
         <h1 class="fq">Frequently asked questions from Drivers</h1>
     </section>
 
-    <section class="sec2">
+    <section class="sec3">
         <div class="question">
             <p>Can i drive Sabi Ride in my state?</p>
             <img src="./img/expand_more_24px.png" alt="">
@@ -140,8 +167,11 @@
     </section>
 
     <footer>
-        <div class="logo"></div>
-        <div class="pages">
+        <div id="footer">
+            <div class="logo">
+                <img src="./sabimages/Sabi ride 3.png"  class="img-thumbnail" alt="" style="height: 80px; object-fit: cover;">
+            </div>
+            <div class="pages">
             <ul>
                 <h2>Sabi Ride</h2>
                 <li><a href="#">Rides</a></li>
@@ -150,7 +180,7 @@
                 <li><a href="#">Lorem ipsum</a></li>
             </ul>
         
-            <ul class="back">
+            <ul>
                 <h2>Partner with Sabi Ride</h2>
                 <li><a href="#">Sign up as a driver</a></li>
                 <li><a href="#">Sign up as a courier</a></li>
@@ -167,11 +197,22 @@
             </ul>
            
         </div>
+        </div>
         <div class="socials">
             <img src="../img/Rectangle 42.png" alt="">
             <img src="../img/Rectangle 43.png" alt="">
             <img src="../img/Rectangle 44.png" alt="">
         </div>
     </footer>
+</div>
 </body>
+<script>
+    let email = document.getElementById("email").value;
+    let pnum = document.getElementById("p-num").value;
+    let check = document.getElementById("check").value
+
+    if(email === ""){
+        
+    }
+</script>
 </html>
