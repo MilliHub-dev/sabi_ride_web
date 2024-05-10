@@ -1,7 +1,4 @@
-<?php
-     require_once 'functions/helpers.php';
-     require_once 'functions/pdo_connection.php';
- ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -49,11 +46,11 @@
                 if (!isset($_SESSION['user'])) {
                     ?>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="auth/login.php">Login</a>
+            <a class="nav-link active" aria-current="page" href="">Login</a>
           </li>
          
         </ul>
-        <a class="btn btn-primary" href="./auth/register.php">Register</a>
+        <a class="btn btn-primary" href="sign_up_page.html">Register</a>
        
         
         <?php
@@ -229,24 +226,28 @@
       object-fit: cover;
     }
     </style>
-      <?php
-        $query = "SELECT * FROM posts WHERE status = 10";
-        $statement = $pdo->prepare($query);
-        $statement->execute();
-        $posts = $statement->fetchAll();
-        foreach ($posts as $post) { ?>
-      <div class="col-md-4">
-          <div class="card mb-4">
-          <img src="<?= asset($post->image) ?>" class="card-img-top img-fluid custom-image" alt="...">
-            <div class="card-body">
-              <!-- Text Truncating -->
-              <h5 class="card-title"><?= substr($post->title, 0, 40) . (strlen($post->title) > 40 ? "..." : "") ?></h5>
-              <!-- <p class="card-text"><?= substr($post->body, 0, 20) . (strlen($post->body) > 20 ? "..." : "") ?></p> -->
-              <p><a class="btn btn-primary" href="<?= url('detail.php?post_id=') . $post->id ?>" role="button">Read More >></a></p>
-            </div>
-          </div>
+    
+    </style>
+
+    <div class="card-group">
+      <div class="card m-3">
+        <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b class="card-text">The 2020 Guide For White Men in Tech</b>
         </div>
-        <?php } ?>
+      </div>
+      <div class="card m-3">
+        <img src="sabimages/Rectangle 33.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b class="card-text">Dear Designer: How to Explain to Your Kids That You Work at Facebook</b>
+        </div>
+      </div><div class="card m-3">
+        <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b class="card-text">Data-Driven Design is Killing Our Instinct</b>
+        </div>
+      </div>
+      
     </div>
    
   </div>
