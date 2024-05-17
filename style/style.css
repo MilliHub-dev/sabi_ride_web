@@ -10,11 +10,11 @@
     background-size: cover;
     background-position: center;
     height: 60vh;
-    width: 98.6vw;
+    width: 98vw;
     object-fit: cover;
 }
 #tx_fm{
-    width: 390px;
+    width: 400px;
     font-size: 35px;
     color: #FFFFFF;
     padding-top: 80px;
@@ -107,7 +107,7 @@ select{
     margin: 5% 0;
     background-color: #DAE3EA;
     display: flex;
-    width: 85%; 
+    width: 90%; 
     padding: 30px;
     border-radius: 10px;
 }
@@ -128,8 +128,8 @@ select{
 }
 #last img{
     position: relative;
-    margin-left: 5%;
-    margin-top: -35%;
+    margin-left: 45%;
+    margin-top: -28%;
     height: 350px;
     object-fit: cover;
 }
@@ -1074,546 +1074,18 @@ footer a{
         
 }
 
-@media screen and (min-width:951px) and (max-width:1214px) {
+@media screen and (min-width: 951px) and (max-width: 1210px) {
     #sec-1{
         background: url(../sabimages/Rectangle\ 48.png);
         background-size: cover;
         background-position: center;
         height: 50vh;
-        width: 100vw;
+        width: 98vw;
         object-fit: cover;
     }
     #tx_fm{
-        width: 380px;
-        font-size: 28px;
-        color: #FFFFFF;
-        padding-top: 80px;
-        margin-left: 5%;
-    }
-    #tx_fm span{
-        color: #4DA1FF;    ;
-    }
-    #txt{
-        width: 540px;
-        font-size: 18px;
-        color: #FFFFFF;
-        margin-left: 5%;
-    }
-    #form{
-        background-color: #FFFFFF;
-        width: 360px;
-        position: relative;
-        margin-left: 60%;
-        margin-top: -25%; 
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    form h1{
-        font-weight: bold;
-        font-size: 35px;
-    }
-    label{
-        font-weight: 600;
-        font-size: 23px;
-    }
-    input{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 10px 15px;
-    }
-    input:focus{
-        border: 2px solid #4DA1FF;
-    }
-    #email{
-        width: 100%;
-    }
-    select{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 7px 10px;
-    }
-    .cities{
-        width: 100%;
-    }
-    
-    .chk{
-        margin-top: 2%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .chk p{
-        width: 92%;
-        font-size: 10px;
-    }
-    
-    #btn{
-        background-color: #4DA1FF;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        margin: 2%;
-        width: 100%;
-    }
-    
-    .hv{
-        font-size: 15px;
-        margin: 5% 2%;
-    }
-    .hv a{
-        text-decoration: none;
-    }
-    
-    #sec-2{
-        margin-left: 5%;
-    }
-    #last{
-        margin: 5% 0;
-        background-color: #DAE3EA;
-        display: flex;
-        width: 90%; 
-        padding: 30px;
-        border-radius: 10px;
-    }
-    #hpb h2{
-        width: 280px;
-    }
-    #hpb p{
-        color: #000000;
-        font-size: 15px;
-    }
-    #hpb button{
-        border: none;
-        background-color: #4DA1FF;
-        border-radius: 50px;
-        padding: 2px;
-        color: #FFFFFF;
-        font-size: 13px;
-    }
-    #last img{
-        position: relative;
-        margin-left: 45%;
-        margin-top: -28%;
-        height: 350px;
-        object-fit: cover;
-    }
-    #hpb button span{
-        font-size: 15px;
-    }
-    .sec2{
-        margin-left: 10%;
-    }
-    .sec2 i{
-        font-size: 45px;
-        position: relative;
-        left: 100%;
-        top: 10%;
-    }
-    .fq{
-        text-align: center;
-    }
-    .question{
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid #BBC8D4;
-        width: 70%;
-        padding: 0 10px;
-        margin-bottom: 15px;
-    }
-    #ft{
-        display: flex;
-    }
-    img{
-        margin: 5% 0 0 6%;
-    }
-    #pages{
-        display: flex;
-        padding-right: 15%;
-        margin-top: 6%;
-    }
-    #pages h2{
-        font-size: 20px;
-    }
-    footer ul li{
-        list-style: none;
-    }
-    footer a{
-        text-decoration: none;
-        color: #000;
-        font-size: 13px;
-    }
-        
-}
-@media screen and (max-width:1115px) {
-    #sec-1{
-        background: url(../sabimages/Rectangle\ 48.png);
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: 100vw;
-        object-fit: cover;
-    }
-    #tx_fm{
-        width: 380px;
-        font-size: 28px;
-        color: #FFFFFF;
-        padding-top: 80px;
-        margin-left: 5%;
-    }
-    #tx_fm span{
-        color: #4DA1FF;    ;
-    }
-    #txt{
-        width: 540px;
-        font-size: 19px;
-        color: #FFFFFF;
-        margin-left: 5%;
-    }
-    #form{
-        background-color: #FFFFFF;
-        width: 360px;
-        position: relative;
-        margin-left: 60%;
-        margin-top: -36%; 
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    form h1{
-        font-weight: bold;
-        font-size: 35px;
-    }
-    label{
-        font-weight: 600;
-        font-size: 23px;
-    }
-    input{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 10px 15px;
-    }
-    input:focus{
-        border: 2px solid #4DA1FF;
-    }
-    #email{
-        width: 100%;
-    }
-    select{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 7px 10px;
-    }
-    .cities{
-        width: 100%;
-    }
-    
-    .chk{
-        margin-top: 2%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .chk p{
-        width: 92%;
-        font-size: 10px;
-    }
-    
-    #btn{
-        background-color: #4DA1FF;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        margin: 2%;
-        width: 100%;
-    }
-    
-    .hv{
-        font-size: 15px;
-        margin: 5% 2%;
-    }
-    .hv a{
-        text-decoration: none;
-    }
-    
-    #sec-2{
-        margin-left: 5%;
-    }
-    #last{
-        margin: 5% 0;
-        background-color: #DAE3EA;
-        display: flex;
-        width: 90%; 
-        padding: 30px;
-        border-radius: 10px;
-    }
-    #hpb h2{
-        width: 280px;
-    }
-    #hpb p{
-        color: #000000;
-        font-size: 15px;
-    }
-    #hpb button{
-        border: none;
-        background-color: #4DA1FF;
-        border-radius: 50px;
-        padding: 2px;
-        color: #FFFFFF;
-        font-size: 13px;
-    }
-    #last img{
-        position: relative;
-        margin-left: 45%;
-        margin-top: -28%;
-        height: 350px;
-        object-fit: cover;
-    }
-    #hpb button span{
-        font-size: 15px;
-    }
-    .sec2{
-        margin-left: 10%;
-    }
-    .sec2 i{
-        font-size: 45px;
-        position: relative;
-        left: 100%;
-        top: 10%;
-    }
-    .fq{
-        text-align: center;
-    }
-    .question{
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid #BBC8D4;
-        width: 70%;
-        padding: 0 10px;
-        margin-bottom: 15px;
-    }
-    #ft{
-        display: flex;
-    }
-    img{
-        margin: 5% 0 0 6%;
-    }
-    #pages{
-        display: flex;
-        padding-right: 15%;
-        margin-top: 6%;
-    }
-    #pages h2{
-        font-size: 20px;
-    }
-    footer ul li{
-        list-style: none;
-    }
-    footer a{
-        text-decoration: none;
-        color: #000;
-        font-size: 13px;
-    }
-        
-}
-@media screen and (min-width:1116px) and (max-width:1215px) {
-    #sec-1{
-        background: url(../sabimages/Rectangle\ 48.png);
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: 100vw;
-        object-fit: cover;
-    }
-    #tx_fm{
-        width: 380px;
-        font-size: 28px;
-        color: #FFFFFF;
-        padding-top: 80px;
-        margin-left: 5%;
-    }
-    #tx_fm span{
-        color: #4DA1FF;    ;
-    }
-    #txt{
-        width: 540px;
-        font-size: 19px;
-        color: #FFFFFF;
-        margin-left: 5%;
-    }
-    #form{
-        background-color: #FFFFFF;
-        width: 360px;
-        position: relative;
-        margin-left: 60%;
-        margin-top: -28%; 
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    form h1{
-        font-weight: bold;
-        font-size: 35px;
-    }
-    label{
-        font-weight: 600;
-        font-size: 23px;
-    }
-    input{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 10px 15px;
-    }
-    input:focus{
-        border: 2px solid #4DA1FF;
-    }
-    #email{
-        width: 100%;
-    }
-    select{
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #DAE3EA80;
-        height: 35px;
-        padding: 7px 10px;
-    }
-    .cities{
-        width: 100%;
-    }
-    
-    .chk{
-        margin-top: 2%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .chk p{
-        width: 92%;
-        font-size: 10px;
-    }
-    
-    #btn{
-        background-color: #4DA1FF;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        margin: 2%;
-        width: 100%;
-    }
-    
-    .hv{
-        font-size: 15px;
-        margin: 5% 2%;
-    }
-    .hv a{
-        text-decoration: none;
-    }
-    
-    #sec-2{
-        margin-left: 5%;
-    }
-    #last{
-        margin: 5% 0;
-        background-color: #DAE3EA;
-        display: flex;
-        width: 90%; 
-        padding: 30px;
-        border-radius: 10px;
-    }
-    #hpb h2{
-        width: 280px;
-    }
-    #hpb p{
-        color: #000000;
-        font-size: 15px;
-    }
-    #hpb button{
-        border: none;
-        background-color: #4DA1FF;
-        border-radius: 50px;
-        padding: 2px;
-        color: #FFFFFF;
-        font-size: 13px;
-    }
-    #last img{
-        position: relative;
-        margin-left: 45%;
-        margin-top: -28%;
-        height: 350px;
-        object-fit: cover;
-    }
-    #hpb button span{
-        font-size: 15px;
-    }
-    .sec2{
-        margin-left: 10%;
-    }
-    .sec2 i{
-        font-size: 45px;
-        position: relative;
-        left: 100%;
-        top: 10%;
-    }
-    .fq{
-        text-align: center;
-    }
-    .question{
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid #BBC8D4;
-        width: 70%;
-        padding: 0 10px;
-        margin-bottom: 15px;
-    }
-    #ft{
-        display: flex;
-    }
-    img{
-        margin: 5% 0 0 6%;
-    }
-    #pages{
-        display: flex;
-        padding-right: 15%;
-        margin-top: 6%;
-    }
-    #pages h2{
-        font-size: 20px;
-    }
-    footer ul li{
-        list-style: none;
-    }
-    footer a{
-        text-decoration: none;
-        color: #000;
-        font-size: 13px;
-    }
-        
-}
-@media screen and (min-width:1216px) and (max-width:1365px) {
-    #sec-1{
-        background: url(../sabimages/Rectangle\ 48.png);
-        background-size: cover;
-        background-position: center;
-        height: 40vh;
-        width: 98.6vw;
-        object-fit: cover;
-    }
-    #tx_fm{
-        width: 400px;
-        font-size: 38px;
+        width: 390px;
+        font-size: 30px;
         color: #FFFFFF;
         padding-top: 80px;
         margin-left: 5%;
@@ -1623,16 +1095,16 @@ footer a{
     }
     #txt{
         width: 500px;
-        font-size: 22px;
+        font-size: 20px;
         color: #FFFFFF;
         margin-left: 5%;
     }
     #form{
         background-color: #FFFFFF;
-        width: 360px;
+        width: 350px;
         position: relative;
-        margin-left: 60%;
-        margin-top: -24%; 
+        margin-left: 55%;
+        margin-top: -30%; 
         padding: 20px;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
