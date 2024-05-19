@@ -9,13 +9,13 @@
     background: url(../sabimages/Rectangle\ 48.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 60vh;
+    width: 98vw;
     object-fit: cover;
 }
 #tx_fm{
-    width: 350px;
-    font-size: 25px;
+    width: 400px;
+    font-size: 34px;
     color: #FFFFFF;
     padding-top: 80px;
     margin-left: 5%;
@@ -25,7 +25,7 @@
 }
 #txt{
     width: 500px;
-    font-size: 15px;
+    font-size: 20px;
     color: #FFFFFF;
     margin-left: 5%;
 }
@@ -142,7 +142,7 @@ select{
 .sec2 i{
     font-size: 45px;
     position: relative;
-    left: 90%;
+    left: 80vh;
     top: 10%;
 }
 .fq{
@@ -1079,13 +1079,13 @@ footer a{
         background: url(../sabimages/Rectangle\ 48.png);
         background-size: cover;
         background-position: center;
-        height: 60vh;
-        width: 100vw;
+        height: 50vh;
+        width: 98vw;
         object-fit: cover;
     }
     #tx_fm{
-        width: 350px;
-        font-size: 25px;
+        width: 390px;
+        font-size: 30px;
         color: #FFFFFF;
         padding-top: 80px;
         margin-left: 5%;
@@ -1095,16 +1095,16 @@ footer a{
     }
     #txt{
         width: 500px;
-        font-size: 15px;
+        font-size: 20px;
         color: #FFFFFF;
         margin-left: 5%;
     }
     #form{
         background-color: #FFFFFF;
-        width: 360px;
+        width: 350px;
         position: relative;
-        margin-left: 60%;
-        margin-top: -25%; 
+        margin-left: 54%;
+        margin-top: -30%; 
         padding: 20px;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
