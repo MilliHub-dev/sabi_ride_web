@@ -51,7 +51,7 @@ echo "Welcome, " . htmlspecialchars($_SESSION['email']) . "!";
           </li>
          
         </ul>
-       <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="" style="text-decoration: none; color: #fff;">Sign up</a></button>
+       <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="logout.php" style="text-decoration: none; color: #fff;">Logout</a></button>
       </div>
     </div>
   </div>

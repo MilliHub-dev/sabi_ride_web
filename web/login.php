@@ -61,7 +61,7 @@ try {
 
            
                 // Redirect to a protected page
-                header('Location: protected_page.php');
+                header('Location: profile.php');
                 exit();
             } else {
                 echo "Invalid email/phone or password!";
