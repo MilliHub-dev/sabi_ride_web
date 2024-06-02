@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabi Driver</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../style/sabi_verification1.css">
 </head>
@@ -28,92 +28,76 @@
     </main>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-xs-8 col-sm-8 col-md-7 col-lg-5 col-cl-5">
-            <P>Personal Information and vehicle details</P>
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="col-10 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                    <input type="text"  class="form-control" id="">
-                  </div>
-                  <div class="col-10 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Middle Name</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                  <div class="col-10 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Gender</label>
-                    <select class="form-select col-2" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                      </select>
-                  </div>
-                  <div class="col-10 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Referal code</label>
-                    <input type="text" class="form-control" id="">
-                    <p id="p">If someone referred you, enter their code</p>
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Driver type</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Driver</option>
-                        <option value="2">Dispatch Rider</option>
-                      </select>
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Vehicle manufacturer</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">one</option>
-                        <option value="2">two</option>
-                      </select>
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Vehicle model</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">one</option>
-                        <option value="2">two</option>
-                      </select>
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Vehicle year</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">one</option>
-                        <option value="2">two</option>
-                      </select>
-                  </div>
-                  <div class="mb-3 col-10">
-                <label for="date">Select Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-                  <div class="col-10 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">License plates</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                  <div class="mb-3 col-10">
-                    <label for="exampleFormControlInput1" class="form-label">Vehicle color</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">blue</option>
-                        <option value="2">black</option>
-                        <option value="2">white</option>
-                      </select>
-                  </div>
-            </form>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-                <button type="button" id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
+          <P>Personal Information and vehicle details</P>
+            <div class="col-2"></div>
+            <div class="col-xs-6 col-sm-8 col-md-7 col-lg-8 col-xl-8">
+            <form>
+                <div class="mb-3">
+                  <input type="text" id="f-name" class="form-control" placeholder="First name">
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="" class="form-control" placeholder="Middle name">
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="" class="form-control" placeholder="Last name">
+                </div>
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select id="gender" class="form-select">
+                    <option selected disabled>Choose a gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Referal code">
+                  <label style="font-size: 18px; color: #6D7D8B; font-weight: 500;">If someone refered you, enter their code</label>
+                </div>
+                <div class="mb-3">
+                  <select id="driver-type" class="form-select">
+                    <option selected disabled>Driver type</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <select id="v-manufacturer" class="form-select">
+                    <option selected disabled>Choose your vehicle manufacturer</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <select id="vehicle-model" class="form-select">
+                    <option selected disabled>Choose your vehicle model</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="" class="form-control" placeholder="Enter your vehicle year">
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="" class="form-control" placeholder="License plate">
+                </div>
+                <div class="mb-3">
+                  <select id="vehicle-color" class="form-select">
+                    <option selected disabled>Choose your vehicle color</option>
+                    <option value="1">Blue</option>
+                    <option value="2">Black</option>
+                  </select>
+                </div>
+              </form>
+              <div class="col-2"></div>
             </div>
         </div>
     </div>
+    <div class="col-10 bg-white">
+      <form action="">
+        <button><p>Submit</p><i class='bx bx-chevron-right'></i></button>
+      </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
