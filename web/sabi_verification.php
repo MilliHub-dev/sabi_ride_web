@@ -138,14 +138,14 @@
             <div class="text-center">
                 <span id="txt">A verification code was sent to<span id="num"> +234 805. ... .755</span></span>
             </div>
-            
+            <form action="" method="post">
                 <div class="d-flex justify-content-center">
                         <input type="tel" id="text">
                         <p id="error">Please enter the code</p>
                 </div>
                 <p id="code" class="text-center">Resend Code</p>
                 <div class="d-flex justify-content-center">
-                    <button type="button" id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
+                    <button type="button"  id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
                 </div>
                  
             </form>

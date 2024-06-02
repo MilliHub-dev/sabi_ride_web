@@ -52,22 +52,26 @@
         <p id="txt" class="pt-2 text-white">Join our innovative ride-hailing platform and start earning today. <br> With flexible schedules, competitive rates, and a supportive community, driving with us is not just a job, it's a rewarding experience. <br> Sign up now and turn your wheels into wealth!</p>
         </div>
         <div>
-            <form action="" method="" id="form">
+            <form action="action.php" method="post" id="form" enctype="multipart/form-data" >
                 <h1>Become a driver</h1>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="Enter Email Address"><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address"><br><br>
                 <label for="num">Phone Number</label><br>
+                
                 <div class="select">
                     <select title="code" name="country-selector" class="country-selector">
                       <option value="NG" class="ng">+234</option>
                     </select>
-                    <input type="tel" id="p-num" placeholder="Mobile Number">
+                    <input type="tel" name="phone_number" id="p-num" placeholder="Mobile Number">
                 </div><br><br>
                 <label for="city" class="city">City</label><br>
-                <select title="city" name="location" class="cities">
+                <select title="city" name="location_city" class="cities">
                     <option value="0">City where you drive</option>
+                    <option value="UYO">UYO</option>
                     
                 </select><br><br>
+                <label for="password" class="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="password"><br><br>
                 <div class="chk">
                     <input type="checkbox" id="check">
                     <p>
@@ -78,9 +82,9 @@
                         of operation.
                     </p>
                 </div>
-                <button id="btn" type="button">Sign up as a driver</button>
+                <button id="btn" type="submit">Sign up as a driver</button>
                 <div class="hv">
-                    <span>Already have an account?</span><a href="">Log in</a>
+                    <span>Already have an account?</span><a href="sabi_login.php">Log in</a>
                 </div>
             </form>
 

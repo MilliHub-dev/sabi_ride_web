@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="driver.php">Drive or deliver</a>
+          <a class="nav-link active" aria-current="page" href="web/driver.php">Drive or deliver</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Ride</a>
@@ -25,15 +25,15 @@
       <div class="d-flex">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="signup.html">Help</a>
+            <a class="nav-link active" aria-current="page" href="">Help</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Login</a>
+            <a class="nav-link active" aria-current="page" href="web/sabi_login.php">Login</a>
           </li>
          
         </ul>
-        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="web/driver.html" style="text-decoration: none; color: #fff;">Sign up</a></button>
+        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="web/driver.php" style="text-decoration: none; color: #fff;">Sign up</a></button>
        
         
       

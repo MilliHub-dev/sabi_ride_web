@@ -31,8 +31,8 @@
             <div class="col-1"></div>
             <div class="col-xs-8 col-sm-8 col-md-7 col-lg-5 col-cl-5">
             <P>Personal Information and vehicle details</P>
-            <form action="">
-                <div class="col-12 mb-3">
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="col-10 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">First Name</label>
                     <input type="text"  class="form-control" id="">
                   </div>
@@ -61,8 +61,8 @@
                     <label for="exampleFormControlInput1" class="form-label">Driver type</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">one</option>
-                        <option value="2">two</option>
+                        <option value="1">Driver</option>
+                        <option value="2">Dispatch Rider</option>
                       </select>
                   </div>
                   <div class="mb-3 col-10">
@@ -89,6 +89,10 @@
                         <option value="2">two</option>
                       </select>
                   </div>
+                  <div class="mb-3 col-10">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
                   <div class="col-10 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">License plates</label>
                     <input type="text" class="form-control" id="">

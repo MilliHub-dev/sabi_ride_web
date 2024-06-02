@@ -30,6 +30,7 @@
                 adipisicing elit. Assumenda, nulla!
             </p>
         </aside>
+        <form action="" method="post" enctype="multipart/form-data">
         <div class="box">
             <h2>Driver's License</h2>
             <p>Please provide a clear driver's license showing the license number, your name, and date of birth.</p>
@@ -115,6 +116,7 @@
                 <p id="fileName8"></p>
             </div>
         </div>
+        </form>
         <hr>
         <!-- <div class="box">
             <h2>Driver's License</h2>

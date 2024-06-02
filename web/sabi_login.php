@@ -20,7 +20,7 @@
                 <hr class="col-4 af">
             </div>
             
-            <form action="" id="form1">
+            <form action="login.php" method="post" id="form1">
                 <div class="grid p-xs-3 p-sm-3 p-md-2 p-lg-1 position-relative" >
                     <div class="row">
                         <div id="driver-info" class="col-sm-5 col-md-5 col-lg-6 col-xl-5 position-absolute top-35 start-50 translate-middle">
@@ -40,18 +40,18 @@
                      <div class="row">
                         <div class="col input-control">
                             <div>
-                                <input type="text" id="user" placeholder="Email or Username" required>
+                                <input type="text" id="user" name="identifier" placeholder="Email or Username" required>
                                 <div id="error">Please enter an input</div>
                             </div>
                             <br>
                             <div>
-                                <input type="text" id="user" placeholder="Password" required>
+                                <input type="password" id="user" name="password" placeholder="Password" required>
                                 <div id="error">Please enter an input</div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <button type="button" id="button"><span>SIGNIN</span><i class='bx bx-right-arrow-alt'></i></button>
+                        <button type="submit" id="btn"><span>SIGNIN</span><i class='bx bx-right-arrow-alt'></i></button>
                     </div>
                     </div>
                     
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </form>
-        <form action="" id="form2">
+        <form action="login.php" method="post" id="form2">
             <div class="grid p-xs-3 p-sm-3 p-md-2 p-lg-1 position-relative" >
                 <div class="row">
                     <div id="driver-info" class="col-sm-5 col-md-5 col-lg-6 col-xl-5 position-absolute top-35 start-50 translate-middle">
@@ -79,18 +79,18 @@
                     <div class="row">
                     <div class="col input-control">
                         <div>
-                            <input type="tel" id="user" placeholder="Phone number" required>
+                            <input type="tel" id="user" name="identifier" placeholder="Phone number" required>
                             <div id="error">Please enter an input</div>
                         </div>
                         <br>
                         <div>
-                            <input type="text" id="user" placeholder="Password" required>
+                            <input type="password" id="user" name="password" placeholder="Password" required>
                             <div id="error">Please enter an input</div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <button type="button" id="button2"><span>SIGNIN</span><i class='bx bx-right-arrow-alt'></i></button>
+                    <button type="submit" id="btn"><span>SIGNIN</span><i class='bx bx-right-arrow-alt'></i></button>
                 </div>
                 </div>
                

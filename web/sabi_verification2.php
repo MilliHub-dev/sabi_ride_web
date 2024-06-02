@@ -27,12 +27,14 @@
         </div>
         <p>Private and licenseing details</p>
         <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-xl-3 mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Referal code</label>
+            <form action="" method="post" enctype="multipart/form-data">
+            <label for="exampleFormControlInput1" class="form-label">Driver's License number</label>
             <input type="text" class="form-control" id="">
-            <p id="p">If someone referred you, enter their code</p>
+            <p id="p">Enter Driver's License number</p>
           </div>
             <button type="button" id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
-    </main>
+</form>
+        </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
