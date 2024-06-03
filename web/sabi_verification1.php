@@ -36,7 +36,7 @@
                   <input type="text" id="f-name" class="form-control" placeholder="First name">
                 </div>
                 <div class="mb-3">
-                  <input type="text" id="" class="form-control" placeholder="Middle name" >
+                  <input type="text" id="" class="form-control" placeholder="Middle name">
                 </div>
                 <div class="mb-3">
                   <input type="text" id="" class="form-control" placeholder="Last name">
