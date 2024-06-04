@@ -29,8 +29,12 @@
         <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-xl-3 mb-3">
             <form action="" method="post" enctype="multipart/form-data">
             <label for="exampleFormControlInput1" class="form-label">Driver's License number</label>
-            <input type="text" class="form-control" id="">
+            <input type="text" name="driver_license_number" class="form-control" id="">
             <p id="p">Enter Driver's License number</p>
+            <div>
+            <label  class="form-label" for="driver_license_expiry">Driver License Expiry:</label>
+            <input type="date" id="driver_license_expiry" class="form-control" name="driver_license_expiry">
+            </div>
           </div>
             <button type="button" id="button2" class="col-xs-10 col-sm-10 col-md-7 col-lg-3 col-xl-3"><span>Continue</span><i class='bx bx-right-arrow-alt'></i></button>
 </form>

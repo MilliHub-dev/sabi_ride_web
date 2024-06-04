@@ -31,59 +31,91 @@
           <P>Personal Information and vehicle details</P>
             <div class="col-2"></div>
             <div class="col-xs-6 col-sm-8 col-md-7 col-lg-8 col-xl-8">
-            <form>
+
+            <form action="" method="post" enctype="multipart/form-data" >
                 <div class="mb-3">
-                  <input type="text" id="f-name" class="form-control" placeholder="First name">
+                  <input type="text" name="first_name" id="f-name" class="form-control" placeholder="First name">
                 </div>
                 <div class="mb-3">
-                  <input type="text" id="" class="form-control" placeholder="Middle name">
+                  <input type="text" id="" name="middle_name" class="form-control" placeholder="Middle name">
                 </div>
                 <div class="mb-3">
-                  <input type="text" id="" class="form-control" placeholder="Last name">
+                  <input type="text" id="" name="last_name" class="form-control" placeholder="Last name">
                 </div>
                 <div class="mb-3">
-                  <select id="gender" class="form-select">
+                  <select id="gender" name="gender" class="form-select">
                     <option selected disabled>Choose a gender</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Referal code">
+                  <input type="text" id="disabledTextInput" class="form-control" name="referral_code" placeholder="Referral code">
                   <label style="font-size: 18px; color: #6D7D8B; font-weight: 500;">If someone refered you, enter their code</label>
                 </div>
                 <div class="mb-3">
-                  <select id="driver-type" class="form-select">
+                  <select id="driver_type" name="driver_type" class="form-select">
                     <option selected disabled>Driver type</option>
-                    <option value="1"></option>
-                    <option value="2"></option>
+                    <option value="Car_driver">Car Driver</option>
+                    <option value="Dispatch">Dispatch</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <select id="v-manufacturer" class="form-select">
+                  <select id="v-manufacturer" name="vehicle_manufacturer" class="form-select">
                     <option selected disabled>Choose your vehicle manufacturer</option>
-                    <option value="1"></option>
-                    <option value="2"></option>
+                    <option value="toyota">Toyota</option>
+                    <option value="ford">Ford</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="honda">Honda</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes-benz">Mercedes-Benz</option>
+                    <option value="audi">Audi</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="kia">Kia</option>
+                    <option value="subaru">Subaru</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="acura">Acura</option>
+                    <option value="infiniti">Infiniti</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="tesla">Tesla</option>
+                    <option value="mitsubishi">Mitsubishi</option>
+                    <option value="cadillac">Cadillac</option>
+                    <option value="chrysler">Chrysler</option>
+                    <option value="gmc">GMC</option>
+                    <option value="lincoln">Lincoln</option>
+                    <option value="alfa-romeo">Alfa Romeo</option>
                   </select>
                 </div>
+
                 <div class="mb-3">
-                  <select id="vehicle-model" class="form-select">
-                    <option selected disabled>Choose your vehicle model</option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                  </select>
+                <input type="text" id="" name="vehicle_model" class="form-control" placeholder="Enter your vehicle model">
                 </div>
+
                 <div class="mb-3">
-                  <input type="text" id="" class="form-control" placeholder="Enter your vehicle year">
+                  <input type="text" id="" name="vehicle_year" class="form-control" placeholder="Enter your vehicle year">
                 </div>
+
                 <div class="mb-3">
-                  <input type="text" id="" class="form-control" placeholder="License plate">
+                  <input type="text" id="" name="license_plate" class="form-control" placeholder="License plate">
                 </div>
+
                 <div class="mb-3">
-                  <select id="vehicle-color" class="form-select">
+                  <select id="vehicle-color" name="vehicle_color" class="form-select">
                     <option selected disabled>Choose your vehicle color</option>
-                    <option value="1">Blue</option>
-                    <option value="2">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="silver">Silver</option>
+                    <option value="gray">Gray</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="brown">Brown</option>
+                     <option value="purple">Purple</option>
                   </select>
                 </div>
               </form>

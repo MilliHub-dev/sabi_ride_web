@@ -36,7 +36,7 @@
             <p>Please provide a clear driver's license showing the license number, your name, and date of birth.</p>
             <div id="stl">
                 <label for="inputType" ><b>+</b> Upload</label>
-                <input type="file" id="inputType" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType" name="driver_license_document" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName"></p>
             </div>
         </div>
@@ -48,7 +48,7 @@
             </p>
             <div id="stl">
                 <label for="inputType2" ><b>+</b> Upload</label>
-                <input type="file" id="inputType2" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType2" name="profile_photo" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName2"></p>
             </div>
         </div>
@@ -60,7 +60,7 @@
             </p>
             <div id="stl">
                 <label for="inputType3" ><b>+</b> Upload</label>
-                <input type="file" id="inputType3" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType3" name="car_photo_outter" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName3"></p>
             </div>
         </div>
@@ -70,7 +70,7 @@
             <p>Provide a clear interior photo of your car. Visit Sample Exterior Photo.</p>
             <div id="stl">
                 <label for="inputType4" ><b>+</b> Upload</label>
-                <input type="file" id="inputType4" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType4" name="car_photo_inner" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName4"></p>
             </div>
         </div>
@@ -80,7 +80,7 @@
             <p>Upload the vehicle License document of the car</p>
             <div id="stl">
                 <label for="inputType5" ><b>+</b> Upload</label>
-                <input type="file" id="inputType5" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType5" name="vehicle_license_certification" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName5"></p>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <p>Picture of Roadworthiness Certificate</p>
             <div id="stl">
                 <label for="inputType6" ><b>+</b> Upload</label>
-                <input type="file" id="inputType6" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType6" name="certification_of_roadworthiness" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName6"></p>
             </div>
         </div>
@@ -102,7 +102,7 @@
             </p>
             <div id="stl">
                 <label for="inputType7" ><b>+</b> Upload</label>
-                <input type="file" id="inputType7" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType7" name="issued_id" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName7"></p>
             </div>
         </div>
@@ -112,7 +112,7 @@
             <p>Please upload proof of ownership</p>
             <div id="stl">
                 <label for="inputType8" ><b>+</b> Upload</label>
-                <input type="file" id="inputType8" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType8" name="proof_of_ownership" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                 <p id="fileName8"></p>
             </div>
         </div>
