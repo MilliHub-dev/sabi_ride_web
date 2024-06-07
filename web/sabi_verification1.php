@@ -32,7 +32,7 @@
             <div class="col-2"></div>
             <div class="col-xs-6 col-sm-8 col-md-7 col-lg-8 col-xl-8">
 
-            <form action="" method="post" enctype="multipart/form-data" >
+            <form action="sabi_verification2.php" method="post" enctype="multipart/form-data" >
                 <div class="mb-3">
                   <input type="text" name="first_name" id="f-name" class="form-control" placeholder="First name">
                 </div>

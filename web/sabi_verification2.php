@@ -27,7 +27,7 @@
         </div>
         <p>Private and licenseing details</p>
         <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-xl-3 mb-3">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="sabi_verification3.php" method="post" enctype="multipart/form-data">
             <label for="exampleFormControlInput1" class="form-label">Driver's License number</label>
             <input type="text" name="driver_license_number" class="form-control" id="">
             <p id="p">Enter Driver's License number</p>
