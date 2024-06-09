@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Sabi Driver</title>
     <link rel="stylesheet" href="../style/sabi_verification3.css">
 </head>
@@ -26,17 +27,31 @@
         <aside>
             <h2>Logged In</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipisicing elit. Assumenda, nulla!
+               
             </p>
         </aside>
-        <form action="sabi_verification4.php" method="post" enctype="multipart/form-data">
+        <form action="verification.php" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="first_name" value="<?php echo htmlspecialchars($_POST['first_name']); ?>">
+            <input type="hidden" name="middle_name" value="<?php echo htmlspecialchars($_POST['middle_name']); ?>">
+            <input type="hidden" name="last_name" value="<?php echo htmlspecialchars($_POST['last_name']); ?>">
+            <input type="hidden" name="gender" value="<?php echo htmlspecialchars($_POST['gender']); ?>">
+            <input type="hidden" name="referral_code" value="<?php echo htmlspecialchars($_POST['referral_code']); ?>">
+            <input type="hidden" name="driver_type" value="<?php echo htmlspecialchars($_POST['driver_type']); ?>">
+            <input type="hidden" name="vehicle_manufacturer" value="<?php echo htmlspecialchars($_POST['vehicle_manufacturer']); ?>">
+            <input type="hidden" name="vehicle_model" value="<?php echo htmlspecialchars($_POST['vehicle_model']); ?>">
+            <input type="hidden" name="vehicle_year" value="<?php echo htmlspecialchars($_POST['vehicle_year']); ?>">
+            <input type="hidden" name="license_plate" value="<?php echo htmlspecialchars($_POST['license_plate']); ?>">
+            <input type="hidden" name="vehicle_color" value="<?php echo htmlspecialchars($_POST['vehicle_color']); ?>">
+            <input type="hidden" name="driver_license_number" value="<?php echo htmlspecialchars($_POST['driver_license_number']); ?>">
+            <input type="hidden" name="driver_license_expiry" value="<?php echo htmlspecialchars($_POST['driver_license_expiry']); ?>">            
+
         <div class="box">
             <h2>Driver's License</h2>
             <p>Please provide a clear driver's license showing the license number, your name, and date of birth.</p>
             <div id="stl">
                 <label for="inputType" ><b>+</b> Upload</label>
-                <input type="file" id="inputType" name="driver_license_document" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType" name="driver_license_document" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName"></p>
             </div>
         </div>
@@ -48,7 +63,7 @@
             </p>
             <div id="stl">
                 <label for="inputType2" ><b>+</b> Upload</label>
-                <input type="file" id="inputType2" name="profile_photo" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType2" name="profile_photo" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName2"></p>
             </div>
         </div>
@@ -60,7 +75,7 @@
             </p>
             <div id="stl">
                 <label for="inputType3" ><b>+</b> Upload</label>
-                <input type="file" id="inputType3" name="car_photo_outter" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType3" name="car_photo_outter" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName3"></p>
             </div>
         </div>
@@ -70,7 +85,7 @@
             <p>Provide a clear interior photo of your car. Visit Sample Exterior Photo.</p>
             <div id="stl">
                 <label for="inputType4" ><b>+</b> Upload</label>
-                <input type="file" id="inputType4" name="car_photo_inner" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType4" name="car_photo_inner" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName4"></p>
             </div>
         </div>
@@ -80,7 +95,7 @@
             <p>Upload the vehicle License document of the car</p>
             <div id="stl">
                 <label for="inputType5" ><b>+</b> Upload</label>
-                <input type="file" id="inputType5" name="vehicle_license_certification" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType5" name="vehicle_license_certification" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName5"></p>
             </div>
         </div>
@@ -90,7 +105,7 @@
             <p>Picture of Roadworthiness Certificate</p>
             <div id="stl">
                 <label for="inputType6" ><b>+</b> Upload</label>
-                <input type="file" id="inputType6" name="certification_of_roadworthiness" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType6" name="certification_of_roadworthiness" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName6"></p>
             </div>
         </div>
@@ -102,7 +117,7 @@
             </p>
             <div id="stl">
                 <label for="inputType7" ><b>+</b> Upload</label>
-                <input type="file" id="inputType7" name="issued_id" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType7" name="issued_id" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName7"></p>
             </div>
         </div>
@@ -112,10 +127,14 @@
             <p>Please upload proof of ownership</p>
             <div id="stl">
                 <label for="inputType8" ><b>+</b> Upload</label>
-                <input type="file" id="inputType8" name="proof_of_ownership" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                <input type="file" id="inputType8" name="proof_of_ownership" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
                 <p id="fileName8"></p>
             </div>
         </div>
+        <hr>
+        <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" id="btn" class="btn btn-primary mb-3"> Submit </button>
+    </div>
         </form>
         <hr>
         <!-- <div class="box">
@@ -127,7 +146,7 @@
         <!-- <hr>  -->
     </main>
     <footer>
-        <button type="submit"><span class="text">Continue</span> <span class="arrow">&#8594</span></button>
+        
     </footer>
     <script>
         const fileInput = document.getElementById('inputType');

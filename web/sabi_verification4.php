@@ -1,3 +1,4 @@
+<?php require_once("../db/config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +26,24 @@
             <span class="num" style="background-color: #617A97">4</span>
             <span class="bar" id="last-bar"></span>
         </div>
+                        <?php
+                session_start();
+
+                if (!isset($_SESSION['email'])) {
+                    header("Location: sabi_login.php");
+                    exit();
+                }
+
+                $verification_status = $_SESSION['verification_status'] ?? 'pending';
+                ?>
         <p>Your Documents are under review...</p>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-7 col-xl-7 txt">
             <p> Thanks for your Registration! Your submission has been received.</p>
             <p style="padding-left: 20px;"> Once your documents has been verified, you’ll receive an</p> 
             <p>invitation by email for the location of your vehicle inspection.</p>
+           <center> <h2>Your verification status is: <?php echo htmlspecialchars($verification_status); ?></h2></center>
         </div>
+
         <div>
             <img src="../img/sabiDrive_imagepng.png" class="img-fluid">
         </div>
