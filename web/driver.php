@@ -15,7 +15,7 @@
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" i href="#"> <img src="../sabimages/Sabi ride 2.png" width="80px" alt=""></a>
+    <a class="navbar-brand" i href="./index.php"> <img src="../sabimages/Sabi ride 2.png" width="150px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,9 +34,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="">Login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Back</a>
-          </li>
+          
         </ul>
        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="" style="text-decoration: none; color: #fff;">Sign up</a></button>
       </div>

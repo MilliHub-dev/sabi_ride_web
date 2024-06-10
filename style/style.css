@@ -1,10 +1,12 @@
 #nav{
     position: relative;
-    margin-left: 58%;
+    margin-left: 5%;
     display: flex;
     justify-content: end;
     justify-items: end;
 }
+
+
 #sec-1{
     background: url(../sabimages/Rectangle\ 48.png);
     background-size: cover;
@@ -184,7 +186,7 @@ footer a{
     
     #nav{
         position: relative;
-        margin-left: 8%;
+        margin-left: 2%;
         display: flex;
         justify-content: end;
         justify-items: end;
