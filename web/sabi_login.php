@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container-fluid">
-           <center><img src="../sabimages/Sabi ride 3.png" alt="" width="200px" height="200px" ></center> 
+           <center><img src="../sabimages/Sabiride3.png" alt="" width="200px" height="200px" ></center> 
             <div class="col-sm-12 col-md-4 col-lg-12 bbox text-center">
                 <span>Sabi <span>Ride</span></span>
             </div>

@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 
 
 try {
-    // Create a new PDO instance
+     //Create a new PDO instance
     $pdo = new PDO($pg_connect, $user, $password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
@@ -49,9 +49,9 @@ try {
             $signup = $stmt->fetch();
 
             // Debugging: Output the user data
-            echo "<pre>";
-            print_r($signup);
-            echo "</pre>";
+            //echo "<pre>";
+            //print_r($signup);
+            //echo "</pre>";
 
             // Verify the password and check if user exists
             if ($signup && password_verify($password, $signup['password'])) {
@@ -61,7 +61,7 @@ try {
 
            
                 // Redirect to a protected page
-                header('Location: profile.php');
+                header('Location: sabi_verification1.php');
                 exit();
             } else {
                 echo "Invalid email/phone or password!";
