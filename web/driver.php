@@ -9,19 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="../style/animations.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR -->
-    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" i href="./index.php"> <img src="../sabimages/Sabi ride 2.png" width="150px" alt=""></a>
+    <a class="navbar-brand" i href="./index.php"> <img id="nav-logo" src="../sabimages/Sabi ride 2.png" width="150px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
-        
+
       <div class="d-flex me-4 mb-1">
         <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-globe me-1" style="font-size: 1.3rem; color: rgb(0, 0, 0);"></i>EN</a>
       </div>
@@ -30,11 +31,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="signup.html">Help</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="">Login</a>
           </li>
-          
+
         </ul>
        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="" style="text-decoration: none; color: #fff;">Sign up</a></button>
       </div>
@@ -55,7 +56,7 @@
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter Email Address"><br><br>
                 <label for="num">Phone Number</label><br>
-                
+
                 <div class="select">
                     <select title="code" name="country-selector" class="country-selector">
                       <option value="NG" class="ng">+234</option>
@@ -66,17 +67,17 @@
                 <select title="city" name="location_city" class="cities">
                     <option value="0">City where you drive</option>
                     <option value="UYO">UYO</option>
-                    
+
                 </select><br><br>
                 <label for="password" class="password">Password</label><br>
                 <input type="password" id="password" name="password" placeholder="password"><br><br>
                 <div class="chk">
                     <input type="checkbox" id="check">
                     <p>
-                        By signing up, you agree to our <a href="">Terms and Conditions</a> 
-                        and confirm that you have read and understood the 
+                        By signing up, you agree to our <a href="">Terms and Conditions</a>
+                        and confirm that you have read and understood the
                         <a href="">Privacy Policy for Drivers</a>
-                        applicable for your country 
+                        applicable for your country
                         of operation.
                     </p>
                 </div>
@@ -126,7 +127,7 @@
             <img src="../sabimages/sabiImage_rec_58.jpg" alt=""  alt="...">
           </div>
         </div>
-        
+
 </div>
 <div class="">
     <h2 class="text-center fw-bold">Frequently Asked Questions </h2>
@@ -150,7 +151,7 @@
 
 
 
-<!-- FOOTER --> 
+<!-- FOOTER -->
 
 <footer>
   <div id="ft">
@@ -163,7 +164,7 @@
           <li><a href="#">Grocery Delivery</a></li>
           <li><a href="#">Lorem ipsum</a></li>
       </ul>
-  
+
       <ul class="back">
           <h2>Partner with Sabi Ride</h2>
           <li><a href="#">Sign up as a driver</a></li>
@@ -171,7 +172,7 @@
           <li><a href="#">Lorem ipsum</a></li>
           <li><a href="#">Lorem ipsum</a></li>
       </ul>
-  
+
       <ul>
           <h2>Company</h2>
           <li><a href="#">About Us</a></li>
@@ -188,7 +189,7 @@
     <a href="/"><img src="../sabimages/twitter.png" alt="" class="px-2" width="60"></a>
   </div>
 </footer>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
