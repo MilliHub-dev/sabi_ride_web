@@ -89,7 +89,7 @@
                 <p id="fileName4"></p>
             </div>
         </div>
-        <hr>
+        <hr style="color: lightgray;">
         <div class="box">
             <h2>Vehicle License Certificate</h2>
             <p>Upload the vehicle License document of the car</p>
@@ -99,7 +99,7 @@
                 <p id="fileName5"></p>
             </div>
         </div>
-        <hr style="color: lightgray;">
+        <hr >
         <div class="box">
             <h2>Certificate of Roadworthiness</h2>
             <p>Picture of Roadworthiness Certificate</p>
@@ -132,6 +132,7 @@
             </div>
         </div>
         <hr>
+        
         <div class="d-grid gap-2 col-6 mx-auto">
         <button type="submit" id="btn" class="btn btn-primary mb-3"> Submit </button>
     </div>
@@ -184,7 +185,7 @@
         });
 
         fileInput5.addEventListener('change', function() {
-          fileN5.textContent = fileInput5.files[0].name;
+          fileName5.textContent = fileInput5.files[0].name;
         });
 
         fileInput6.addEventListener('change', function() {

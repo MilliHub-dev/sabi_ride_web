@@ -1,4 +1,35 @@
 <?php require_once("../db/config.php"); ?>
+<?php
+// Start the session
+session_start();
+
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Check if the user is logged in
+if (!isset($_SESSION['id'])) {
+    // If not, redirect to the login page
+    header('Location: sabi_login.php');
+    exit();
+}
+
+// Get user_id from session
+$user_id = $_SESSION['id'];
+
+// Include the rest of your script
+$id = $_SESSION['id']; // Get user ID from session
+
+                // Fetch the verification status
+                $query = "SELECT verification_status FROM driver WHERE id = :id";
+                $stmt = $pdo->prepare($query);
+                $stmt->execute([':id' => $id]);
+                $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                $verification_status = $result ? $result['verification_status'] : 'Not Submitted';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +58,6 @@
             <span class="bar" id="last-bar"></span>
         </div>
                         <?php
-                session_start();
 
                 if (!isset($_SESSION['email'])) {
                     header("Location: sabi_login.php");
@@ -41,12 +71,15 @@
             <p> Thanks for your Registration! Your submission has been received.</p>
             <p style="padding-left: 20px;"> Once your documents has been verified, you’ll receive an</p> 
             <p>invitation by email for the location of your vehicle inspection.</p>
-           <center> <h2>Your verification status is: <?php echo htmlspecialchars($verification_status); ?></h2></center>
+           <center> <h2>Your verification status is:<?php echo htmlspecialchars($verification_status); ?></h2></center>
         </div>
 
         <div>
             <img src="../img/sabiDrive_imagepng.png" class="img-fluid">
+            
         </div>
+        <a href="../index.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Done</a>
+
     </main>
     
     

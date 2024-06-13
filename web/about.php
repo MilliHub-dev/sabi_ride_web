@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sabi Ride</title>
-    <link rel="icon" type="image/x-icon" href="./sabimages/Sabiride3.png">
+    <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="../style/style1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
@@ -14,7 +14,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" i href="index.php"> <img src="../sabimages/Sabi ride 2.png" width="150px" alt=""></a>
+    <a class="navbar-brand" i href="../index.php"> <img src="../sabimages/Sabi ride 2.png" width="100px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,6 +31,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="web/about.php">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web/services.php">Services</a>
         </li>
       </ul>
       <div class="d-flex me-4 mb-1">
@@ -122,7 +125,7 @@
 
     <div class="row">
       <div class="col-md-3 mt-md-0 mt-3">
-        <img src="./sabimages/Sabi ride 2.png" width="150" alt="">
+        <img src="../sabimages/Sabi ride 2.png" width="150" alt="">
       </div>
       <hr class="clearfix w-100 d-md-none pb-3">
       <div class="col-md-3 mb-md-0 mb-3">
@@ -179,10 +182,10 @@
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-center py-3">© 2024 Copyright:
-    <a href="/"><img src="./sabimages/instagram.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="./sabimages/facebook.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="./sabimages/twitter.png" alt="" class="px-2" width="60"></a>
+  <div class="footer-copyright text-center py-3">© 2024 Copyright: Powered By MILLIHUB 
+    <a href="/"><img src="../sabimages/instagram.png" alt="" class="px-2" width="60"></a>
+    <a href="/"><img src="../sabimages/facebook.png" alt="" class="px-2" width="60"></a>
+    <a href="/"><img src="../sabimages/twitter.png" alt="" class="px-2" width="60"></a>
   </div>
 </footer>
 

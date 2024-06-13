@@ -7,16 +7,22 @@
     <title>Sabi Ride</title>
     <link rel="icon" type="image/x-icon" href="./sabimages/Sabiride3.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="./style/loader.css">
+    <link rel="stylesheet" href="./style/style1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
   <body>
-    <!-- NAVBAR -->
-
+    
+    <!-- loader -->
+    <div id="loader">
+    <img src="./sabimages/Sabiride3.png" alt="Loading...">
+    <div class="loader-circle"></div>
+  </div>
+<!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" i href="index.php"> <img src="./sabimages/Sabi ride 2.png" width="150px" alt=""></a>
+    <a class="navbar-brand" i href="index.php"> <img src="./sabimages/Sabi ride 2.png" width="100px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,6 +39,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="web/about.php">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web/services.php">Services</a>
         </li>
       </ul>
       <div class="d-flex me-4 mb-1">
@@ -87,7 +96,7 @@
 
 <div class="container CTATWO mb-5">
   
-  <img src="./sabimages/sabinus photo.png" alt="" class="mx-auto d-flex" width="100%">
+  <img src="./sabimages/Rectangle 48.png" alt="" class="mx-auto d-flex" height="100px" width="1000px">
 
   <div class="pt-4">
     <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1 g-4">
@@ -200,7 +209,7 @@
         <a href="#" class="Learn">Learn More</a>
       </div>
       <div class="col-6 mx-auto d-block">
-        <img src="./sabimages/Rectangle 56.png" alt="" class="img-fluid">
+        <img src="./sabimages/Home.png" height="100px" alt="" class="img-fluid">
       </div>
     </div>
   </div>
@@ -258,7 +267,8 @@
 
 <div class="container-fluid CTAFIVE my-3">
   <div class="container scan">
-    <h3 class="py-5">It's easier in the apps</h3>
+   <center><h3 class="py-5">Download our apps</h3></center> 
+    <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
       <div class="col-6 mx-auto d-block">
         <div class="card mb-3 p-3" style="max-width: 540px;">
@@ -295,19 +305,19 @@
 </div>
 
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6668c5229a809f19fb3c91b3/1i04k44il';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+          <!--Start of Tawk.to Script-->
+          <script type="text/javascript">
+          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/6668c5229a809f19fb3c91b3/1i04k44il';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+          })();
+          </script>
+          <!--End of Tawk.to Script-->
 <!-- FOOTER --> 
 
 
@@ -373,21 +383,15 @@ s0.parentNode.insertBefore(s1,s0);
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+  <div class="footer-copyright text-center py-3">© 2024 Copyright: Powered By MILLIHUB 
     <a href="/"><img src="./sabimages/instagram.png" alt="" class="px-2" width="60"></a>
     <a href="/"><img src="./sabimages/facebook.png" alt="" class="px-2" width="60"></a>
     <a href="/"><img src="./sabimages/twitter.png" alt="" class="px-2" width="60"></a>
   </div>
 </footer>
-
-
-
-
-
-
-
-    
+    <script src="./js/loader.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
   </body>
 </html>

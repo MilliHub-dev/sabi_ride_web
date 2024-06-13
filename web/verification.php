@@ -9,7 +9,21 @@ session_start();
 function getSessionOrPost($key) {
     return $_POST[$key] ?? $_SESSION[$key] ?? null;
 }
+ 
+$user_id = $_SESSION['id']; // Assuming user_id is stored in session after login
 
+// Check if the user has already submitted for verification
+$query = "SELECT verification_status FROM driver WHERE id = :user_id";
+$stmt = $pdo->prepare($query);
+$stmt->execute([':user_id' => $user_id]);
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($result) {
+    // Redirect to verification status page if already submitted
+    header("Location: sabi_verification.php");
+    exit();
+}
+  
 // Collect data from previous forms
 $first_name = $_SESSION['first_name'] = getSessionOrPost('first_name');
 $middle_name = $_SESSION['middle_name'] = getSessionOrPost('middle_name');
@@ -88,11 +102,11 @@ foreach ($files as $key => $file) {
 
 // Insert the form data into the PostgreSQL database
 $query = "INSERT INTO driver (
-    first_name, middle_name, last_name, gender, referral_code, driver_type, driver_license_number, driver_license_expiry,
+    first_name, user_id, middle_name, last_name, gender, referral_code, driver_type, driver_license_number, driver_license_expiry,
     vehicle_manufacturer, vehicle_model, vehicle_year, vehicle_color, profile_photo, car_photo_inner, car_photo_outter,
     driver_license_document, vehicle_license_certification, certification_of_roadworthiness, issued_id, proof_of_ownership
 ) VALUES (
-    :first_name, :middle_name, :last_name, :gender, :referral_code, :driver_type, :driver_license_number, :driver_license_expiry,
+    :first_name, :user_id, :middle_name, :last_name, :gender, :referral_code, :driver_type, :driver_license_number, :driver_license_expiry,
     :vehicle_manufacturer, :vehicle_model, :vehicle_year, :vehicle_color, :profile_photo, :car_photo_inner, :car_photo_outter,
     :driver_license_document, :vehicle_license_certification, :certification_of_roadworthiness, :issued_id, :proof_of_ownership
 )";
@@ -101,6 +115,7 @@ $stmt = $pdo->prepare($query);
 
 $params = [
     ':first_name' => $first_name, 
+    ':user_id' => $user_id,
     ':middle_name' => $middle_name, 
     ':last_name' => $last_name, 
     ':gender' => $gender, 
