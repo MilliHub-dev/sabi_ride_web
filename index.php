@@ -94,8 +94,10 @@
 <!-- CTATWO -->
 
 <div class="container CTATWO mb-5">
-  
+  <div class="row row-cols-lg-1 row-cols-md-1 row-cols-sm-1 g-4">
   <img src="./sabimages/Rectangle 48.png" alt="" class="mx-auto d-flex" height="250px" width="1000px">
+  </div>
+  
 
   <div class="pt-4">
     <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1 g-4">
