@@ -31,7 +31,7 @@
             <a href="#!">sign up as driver</a>
           </li>
           <li>
-            <a href="#!">Sign ypur car as vip</a>
+            <a href="#!">Sign your car as vip</a>
           </li>
           <li>
             <a href="#!">Link 3</a>
