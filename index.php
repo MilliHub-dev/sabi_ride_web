@@ -77,12 +77,8 @@
   <div class="container CTAINNER">
     <h2>Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</h2>
     <div >
-      <h4 class="pt-5 text-white"> Sabi Ride is a social ride hailing/sharing platform revolve around providing convenience, safety, and efficiency for both riders and drivers <br>
-        what sets it apart from traditional ride hailing services is the social aspect which include features like ride sharing ,splitting fares and so on.
-          <br>Sabi Ride has shown novel ways in which
-          technology can be employed in the carriage of
-          persons and items
-          <br> thereby brought the efficiency of traditional taxis
+      <h4 class="pt-5 text-white"> Sabi Ride is a social ride hailing/sharing platform revolve around providing convenience, safety, and efficiency for both riders and drivers. Sabi ride driven by safety, fueled by convenience.  <br>
+        
       </h4>
     </div>
     
@@ -97,7 +93,7 @@
 
 <div class="container CTATWO mb-5">
   
-  <img src="./sabimages/Rectangle 48.png" alt="" class="mx-auto d-flex" height="100px" width="1000px">
+  <img src="./sabimages/Rectangle 48.png" alt="" class="mx-auto d-flex" height="250px" width="1000px">
 
   <div class="pt-4">
     <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1 g-4">
