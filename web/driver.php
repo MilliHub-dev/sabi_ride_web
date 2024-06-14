@@ -17,11 +17,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-<<<<<<< HEAD
     <a class="navbar-brand" i href="./index.php"> <img src="../sabimages/Sabi ride 2.png" width="100px" alt=""></a>
-=======
-    <a class="navbar-brand" i href="./index.php"> <img id="nav-logo" src="../sabimages/Sabi ride 2.png" width="150px" alt=""></a>
->>>>>>> 46153e622ebade4aac34728a59db770c6a7762d7
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -158,48 +154,8 @@
 
 <!-- FOOTER -->
 
-<<<<<<< HEAD
 <?php require_once("../include/footer.php"); ?>
   
-=======
-<footer>
-  <div id="ft">
-    <img src="../sabimages/Sabi ride 2.png"  style="height: 100px;">
-    <div id="pages">
-      <ul>
-          <h2>Sabi Ride</h2>
-          <li><a href="#">Rides</a></li>
-          <li><a href="#">Food Delivery</a></li>
-          <li><a href="#">Grocery Delivery</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-
-      <ul class="back">
-          <h2>Partner with Sabi Ride</h2>
-          <li><a href="#">Sign up as a driver</a></li>
-          <li><a href="#">Sign up as a courier</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-
-      <ul>
-          <h2>Company</h2>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">News and updates</a></li>
-          <li><a href="#">Brand guidelines</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="socials" style="margin-bottom: 8%;">
-    <a href="/"><img src="../sabimages/instagram.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="../sabimages/facebook.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="../sabimages/twitter.png" alt="" class="px-2" width="60"></a>
-  </div>
-</footer>
-
->>>>>>> 46153e622ebade4aac34728a59db770c6a7762d7
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>

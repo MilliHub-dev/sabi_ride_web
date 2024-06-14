@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/loader.css">
     <link rel="stylesheet" href="./style/style1.css">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
@@ -165,6 +166,50 @@
   </div>
 </div>
 
+<section class="section section-md bg-default">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-6 col-md-3 wow fadeIn">
+              <!-- Counter Modern-->
+              <article class="counter-modern">
+                <div class="icon counter-modern-icon mdi mdi-car"></div>
+                <div class="counter-modern-main"><span>250</span><span></span></div>
+                <h4 class="font-weight-regular counter-modern-title">Fleet Vehicles</h4>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 wow fadeIn" data-wow-delay=".2s">
+              <!-- Counter Modern-->
+              <article class="counter-modern">
+                <div class="icon counter-modern-icon mdi mdi-account"></div>
+                <div class="counter-modern-main">
+                  <div class="counter">17</div>
+                </div>
+                <h4 class="font-weight-regular counter-modern-title">Drivers</h4>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 wow fadeIn" data-wow-delay=".2s">
+              <!-- Counter Modern-->
+              <article class="counter-modern">
+                <div class="icon counter-modern-icon mdi mdi-coin"></div>
+                <div class="counter-modern-main">
+                  <div class="counter">231</div>
+                </div>
+                <h4 class="font-weight-regular counter-modern-title">Great Offers</h4>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 wow fadeIn" data-wow-delay=".2s">
+              <!-- Counter Modern-->
+              <article class="counter-modern">
+                <div class="icon counter-modern-icon mdi mdi-flag-variant"></div>
+                <div class="counter-modern-main">
+                  <div class="counter">24</div><span>K</span>
+                </div>
+                <h4 class="font-weight-regular counter-modern-title">Annual Customers</h4>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 <!-- CTATHREE -->
 
 <div class="container-fluid CTATHREE pt-4 mt-5">
@@ -216,7 +261,37 @@
 </div>
 
 <!-- CTAFOUR -->
-
+<section class="section section-lg text-center bg-gray-950">
+        <div class="container">
+          <h2 class="wow fadeIn">Our Advantages</h2>
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay=".2s">
+              <!-- Box Classic-->
+              <article class="box-classic"><a class="icon box-classic-icon fl-bigmug-line-map87" href="#"></a><a class="box-classic-main" href="#">
+                  <h4 class="box-classic-title">Local Routes</h4>
+                  <p>We guarantee full taxi availability on any route in the city.</p></a></article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay=".3s">
+              <!-- Box Classic-->
+              <article class="box-classic"><a class="icon box-classic-icon fl-bigmug-line-planetary2" href="#"></a><a class="box-classic-main" href="#">
+                  <h4 class="box-classic-title">Abroad Travels</h4>
+                  <p>When traveling abroad, you can also benefit from using our taxi.</p></a></article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay=".4s">
+              <!-- Box Classic-->
+              <article class="box-classic"><a class="icon box-classic-icon fl-bigmug-line-portfolio23" href="#"></a><a class="box-classic-main" href="#">
+                  <h4 class="box-classic-title">Business Travels</h4>
+                  <p>Express offers the best taxi services to traveling businessmen.</p></a></article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay=".5s">
+              <!-- Box Classic-->
+              <article class="box-classic"><a class="icon box-classic-icon fl-bigmug-line-headphones32" href="#"></a><a class="box-classic-main" href="#">
+                  <h4 class="box-classic-title">24/7 Online Support</h4>
+                  <p>Our qualified staff offers professional 24/7 support to all clients.</p></a></article>
+            </div>
+          </div>
+        </div>
+      </section>
            
 <div class="container CTAFOUR my-3">
   <div class="row News border">
