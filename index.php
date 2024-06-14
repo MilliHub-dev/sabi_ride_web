@@ -17,8 +17,10 @@
     
     <!-- loader -->
     <div id="loader">
-    <img src="./sabimages/Sabiride3.png" alt="Loading...">
-    <div class="loader-circle"></div>
+    <div class="loader-content">
+      <img src="./sabimages/Sabiride3.png" alt="Loading..." class="spinning-image">
+    
+    </div>
   </div>
 <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
