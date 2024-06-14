@@ -77,9 +77,9 @@
   <div class="container CTAINNER">
     <h2>Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</h2>
     <div >
-      <h4 class="pt-5 text-white"> Sabi Ride is a social ride hailing/sharing platform revolve around providing convenience, safety, and efficiency for both riders and drivers. Sabi ride driven by safety, fueled by convenience.  <br>
+      <h3 class="pt-5 text-white"> Sabi Ride is a social ride hailing/sharing platform revolve around providing convenience, safety, and efficiency for both riders and drivers. Sabi ride driven by safety, fueled by convenience.  <br>
         
-      </h4>
+      </h3>
     </div>
     
     <div id="btn">
@@ -338,12 +338,14 @@
 
 <div class="container-fluid CTAFIVE my-3">
   <div class="container scan">
-   <center><h3 class="py-5">Download our apps</h3></center> 
-    <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
+   <center><h1 class="py-5">Download our apps</h1></center>
+  
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+    <center><h1 class="py-5"  >Download our mobile app to make your Ride experience better than ever before!</h1></center>
       <div class="col-6 mx-auto d-block">
         <div class="card mb-3 p-3" style="max-width: 540px;">
           <div class="row g-0">
+          <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
             <div class="col-md-4">
               <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -351,6 +353,7 @@
               <div class="card-body">
                <img src="./sabimages/store-apple-logo-apple.png" width="100px" alt="">
                 <p class="card-text">Scan to download</p>
+                <button class="btn btn-primary" type="button" >Download Now</button>
               </div>
             </div>
           </div>
@@ -359,6 +362,7 @@
       <div class="col-6 mx-auto d-block">
         <div class="card mb-3 p-3" style="max-width: 540px;">
           <div class="row g-0">
+          <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
             <div class="col-md-4">
               <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -366,6 +370,7 @@
               <div class="card-body">
                 <img src="./sabimages/google-play-store-logo.png" width="100px" alt="">
                 <p class="card-text">Scan to download</p>
+                <button class="btn btn-primary" type="button" >Download Now</button>
               </div>
             </div>
           </div>
@@ -455,9 +460,9 @@
     </div>
   </div>
   <div class="footer-copyright text-center py-3">© 2024 Copyright: Powered By MILLIHUB 
-    <a href="/"><img src="./sabimages/instagram.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="./sabimages/facebook.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="./sabimages/twitter.png" alt="" class="px-2" width="60"></a>
+    <a href="/"><img src="./sabimages/instagram.png" alt="" class="px-2" width="40"></a>
+    <a href="/"><img src="./sabimages/facebook.png" alt="" class="px-2" width="40"></a>
+    <a href="/"><img src="./sabimages/twitter.png" alt="" class="px-2" width="40"></a>
   </div>
 </footer>
     <script src="./js/loader.js"></script>   
