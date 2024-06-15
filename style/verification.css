@@ -1,0 +1,152 @@
+/* --------------- General ---------------------- */
+* {
+        font-family: sans-serif, Lucida Sans, Helvetica, sans-serif, lato;
+        box-sizing: border-box;
+}
+
+/* --------------- !General ---------------------- */
+
+
+/* --------------- Misc ---------------------- */
+.center-block-elem {
+        display: block;
+        margin: auto;
+}
+
+.center-flex-elem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* --------------- !Misc ---------------------- */
+
+
+/* --------------- Form Elements ---------------------- */
+label {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+}
+
+select {
+        width: 60%;
+}
+
+input {
+        border-radius: 7px;
+        background-color: #3860ad2b;
+}
+
+input[type="text"] {
+        border-radius: 7px;
+        background-color: #3860ad2b;
+        width: 60%;
+}
+
+input[type="tel"] {
+        height: 50px;
+        width: 13%;
+}
+
+input:focus,
+input:active {
+        border: hsl(212, 100%, 65%);
+}
+
+/* --------------- !Form Elements ---------------------- */
+
+
+/* --------------- Buttons ---------------------- */
+.icon-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 50%;
+        border: none;
+        background-color: hsl(212, 100%, 65%);
+        border-radius: 20px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+}
+
+.icon-button:hover {
+        background-color: #6d8dc7;
+}
+
+/* --------------- !Buttons ---------------------- */
+
+
+/* --------------- Brand ---------------------- */
+.brand-name {
+        font-family: Mulish;
+        font-size: 50px;
+        letter-spacing: 0em;
+}
+
+#sabi {
+        color: #4DA1FF;
+        letter-spacing: 0em;
+}
+
+.sabi-color {
+        color: #4DA1FF;
+}
+
+hr {
+        position: relative;
+        margin: 0px 0px;
+        width: 80%;
+}
+
+/* --------------- !Brand ---------------------- */
+
+
+/* ------------ form progress bar ------------------ */
+.progressbar {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: inherit;
+}
+
+.bar {
+        width: 7%;
+        height: 6px;
+        background-color: #4DA1FF;
+}
+
+#bar1 {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+}
+
+#last-bar {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+}
+
+.num {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #4DA1FF;
+        color: black;
+        font-weight: bold;
+        border: 5px solid #4DA1FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+}
+
+#num-active {
+        background-color: #617A97;
+}
+
+/* ------------ !form progress bar ------------------ */

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Sabi Driver</title>
-    <link rel="stylesheet" href="../style/sabi_verification3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/verification.css">
 </head>
+
 <body>
-    <main>
         <h1><span>Sabi</span> Driver</h1>
         <hr class="first-hr">
         <div class="progress">
             <span class="bar" id="bar1"></span>
-            <span class="num">1</span>
+            <span class="num" id="num-active">1</span>
             <span class="bar"></span>
-            <span class="num">2</span>
+            <span class="num" id="num-active">2</span>
             <span class="bar"></span>
-            <span class="num">3</span>
+            <span class="num" id="num-active">3</span>
             <span class="bar"></span>
             <span class="num" id="num4">4</span>
             <span class="bar" id="last-bar"></span>
@@ -27,11 +29,11 @@
         <aside>
             <h2>Logged In</h2>
             <p>
-               
+
             </p>
         </aside>
         <form action="verification.php" method="POST" enctype="multipart/form-data">
-
+<!--
             <input type="hidden" name="first_name" value="<?php echo htmlspecialchars($_POST['first_name']); ?>">
             <input type="hidden" name="middle_name" value="<?php echo htmlspecialchars($_POST['middle_name']); ?>">
             <input type="hidden" name="last_name" value="<?php echo htmlspecialchars($_POST['last_name']); ?>">
@@ -44,110 +46,110 @@
             <input type="hidden" name="license_plate" value="<?php echo htmlspecialchars($_POST['license_plate']); ?>">
             <input type="hidden" name="vehicle_color" value="<?php echo htmlspecialchars($_POST['vehicle_color']); ?>">
             <input type="hidden" name="driver_license_number" value="<?php echo htmlspecialchars($_POST['driver_license_number']); ?>">
-            <input type="hidden" name="driver_license_expiry" value="<?php echo htmlspecialchars($_POST['driver_license_expiry']); ?>">            
+            <input type="hidden" name="driver_license_expiry" value="<?php echo htmlspecialchars($_POST['driver_license_expiry']); ?>"> -->
 
-        <div class="box">
-            <h2>Driver's License</h2>
-            <p>Please provide a clear driver's license showing the license number, your name, and date of birth.</p>
-            <div id="stl">
-                <label for="inputType" ><b>+</b> Upload</label>
-                <input type="file" id="inputType" name="driver_license_document" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName"></p>
+            <div class="box">
+                <h2>Driver's License</h2>
+                <p>Please provide a clear driver's license showing the license number, your name, and date of birth.</p>
+                <div id="stl">
+                    <label for="inputType"><b>+</b> Upload</label>
+                    <input type="file" id="inputType" name="driver_license_document" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="box">
-            <h2>Driver's profile photo</h2>
-            <p>Please provide a clear portriat picture (Just your head) of yourself.
-                it should show your full face, front view, with eyes open on a white background.
-            </p>
-            <div id="stl">
-                <label for="inputType2" ><b>+</b> Upload</label>
-                <input type="file" id="inputType2" name="profile_photo" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName2"></p>
+            <hr>
+            <div class="box">
+                <h2>Driver's profile photo</h2>
+                <p>Please provide a clear portriat picture (Just your head) of yourself.
+                    it should show your full face, front view, with eyes open on a white background.
+                </p>
+                <div id="stl">
+                    <label for="inputType2"><b>+</b> Upload</label>
+                    <input type="file" id="inputType2" name="profile_photo" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName2"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="box">
-            <h2>Exterior Photo of the Car</h2>
-            <p>Upload a clear exeterior photo that captures the plate number. Visit
-                Sample Exterior Photo.
-            </p>
-            <div id="stl">
-                <label for="inputType3" ><b>+</b> Upload</label>
-                <input type="file" id="inputType3" name="car_photo_outter" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName3"></p>
+            <hr>
+            <div class="box">
+                <h2>Exterior Photo of the Car</h2>
+                <p>Upload a clear exeterior photo that captures the plate number. Visit
+                    Sample Exterior Photo.
+                </p>
+                <div id="stl">
+                    <label for="inputType3"><b>+</b> Upload</label>
+                    <input type="file" id="inputType3" name="car_photo_outter" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName3"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="box">
-            <h2>Interior Photo of the Car</h2>
-            <p>Provide a clear interior photo of your car. Visit Sample Exterior Photo.</p>
-            <div id="stl">
-                <label for="inputType4" ><b>+</b> Upload</label>
-                <input type="file" id="inputType4" name="car_photo_inner" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName4"></p>
+            <hr>
+            <div class="box">
+                <h2>Interior Photo of the Car</h2>
+                <p>Provide a clear interior photo of your car. Visit Sample Exterior Photo.</p>
+                <div id="stl">
+                    <label for="inputType4"><b>+</b> Upload</label>
+                    <input type="file" id="inputType4" name="car_photo_inner" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName4"></p>
+                </div>
             </div>
-        </div>
-        <hr style="color: lightgray;">
-        <div class="box">
-            <h2>Vehicle License Certificate</h2>
-            <p>Upload the vehicle License document of the car</p>
-            <div id="stl">
-                <label for="inputType5" ><b>+</b> Upload</label>
-                <input type="file" id="inputType5" name="vehicle_license_certification" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName5"></p>
+            <hr style="color: lightgray;">
+            <div class="box">
+                <h2>Vehicle License Certificate</h2>
+                <p>Upload the vehicle License document of the car</p>
+                <div id="stl">
+                    <label for="inputType5"><b>+</b> Upload</label>
+                    <input type="file" id="inputType5" name="vehicle_license_certification" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName5"></p>
+                </div>
             </div>
-        </div>
-        <hr >
-        <div class="box">
-            <h2>Certificate of Roadworthiness</h2>
-            <p>Picture of Roadworthiness Certificate</p>
-            <div id="stl">
-                <label for="inputType6" ><b>+</b> Upload</label>
-                <input type="file" id="inputType6" name="certification_of_roadworthiness" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName6"></p>
+            <hr>
+            <div class="box">
+                <h2>Certificate of Roadworthiness</h2>
+                <p>Picture of Roadworthiness Certificate</p>
+                <div id="stl">
+                    <label for="inputType6"><b>+</b> Upload</label>
+                    <input type="file" id="inputType6" name="certification_of_roadworthiness" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName6"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="box">
-            <h2>Government issued ID</h2>
-            <p>Upload any government-issued ID here e.g. NIN slip, National ID card, International 
-                Passport, Permanent Voter's Card. Driver's License.
-            </p>
-            <div id="stl">
-                <label for="inputType7" ><b>+</b> Upload</label>
-                <input type="file" id="inputType7" name="issued_id" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName7"></p>
+            <hr>
+            <div class="box">
+                <h2>Government issued ID</h2>
+                <p>Upload any government-issued ID here e.g. NIN slip, National ID card, International
+                    Passport, Permanent Voter's Card. Driver's License.
+                </p>
+                <div id="stl">
+                    <label for="inputType7"><b>+</b> Upload</label>
+                    <input type="file" id="inputType7" name="issued_id" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName7"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="box">
-            <h2>Proof of Car Ownership Certificate</h2>
-            <p>Please upload proof of ownership</p>
-            <div id="stl">
-                <label for="inputType8" ><b>+</b> Upload</label>
-                <input type="file" id="inputType8" name="proof_of_ownership" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
-                <p id="fileName8"></p>
+            <hr>
+            <div class="box">
+                <h2>Proof of Car Ownership Certificate</h2>
+                <p>Please upload proof of ownership</p>
+                <div id="stl">
+                    <label for="inputType8"><b>+</b> Upload</label>
+                    <input type="file" id="inputType8" name="proof_of_ownership" accept=".jpg, .jpeg, .png" placeholder="* Upload File" required>
+                    <p id="fileName8"></p>
+                </div>
             </div>
-        </div>
-        <hr>
-        
-        <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" id="btn" class="btn btn-primary mb-3"> Submit </button>
-    </div>
+            <hr>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" id="btn" class="btn btn-primary mb-3"> Submit </button>
+            </div>
         </form>
         <hr>
         <!-- <div class="box">
             <h2>Driver's License</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsam!</p>
             <button type="button">* Upload</button>
-            
+
         </div>-->
         <!-- <hr>  -->
-    </main>
+    </>
     <footer>
-        
+
     </footer>
     <script>
         const fileInput = document.getElementById('inputType');
@@ -167,38 +169,39 @@
         const fileName6 = document.getElementById('fileName6');
         const fileName7 = document.getElementById('fileName7');
         const fileName8 = document.getElementById('fileName8');
-      
+
         fileInput.addEventListener('change', function() {
-          fileName.textContent = fileInput.files[0].name;
+            fileName.textContent = fileInput.files[0].name;
         });
 
         fileInput2.addEventListener('change', function() {
-          fileName2.textContent = fileInput2.files[0].name;
+            fileName2.textContent = fileInput2.files[0].name;
         });
 
         fileInput3.addEventListener('change', function() {
-          fileName3.textContent = fileInput3.files[0].name;
+            fileName3.textContent = fileInput3.files[0].name;
         });
 
         fileInput4.addEventListener('change', function() {
-          fileName4.textContent = fileInput4.files[0].name;
+            fileName4.textContent = fileInput4.files[0].name;
         });
 
         fileInput5.addEventListener('change', function() {
-          fileName5.textContent = fileInput5.files[0].name;
+            fileName5.textContent = fileInput5.files[0].name;
         });
 
         fileInput6.addEventListener('change', function() {
-          fileName6.textContent = fileInput6.files[0].name;
+            fileName6.textContent = fileInput6.files[0].name;
         });
 
         fileInput7.addEventListener('change', function() {
-          fileName7.textContent = fileInput7.files[0].name;
+            fileName7.textContent = fileInput7.files[0].name;
         });
 
         fileInput8.addEventListener('change', function() {
-          fileName8.textContent = fileInput8.files[0].name;
+            fileName8.textContent = fileInput8.files[0].name;
         });
-      </script>
+    </script>
 </body>
+
 </html>
