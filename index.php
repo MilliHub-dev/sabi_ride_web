@@ -92,7 +92,7 @@
 </div>
 
 <!-- CTATWO -->
-
+ 
 <div class="container CTATWO mb-5">
   <div class="row row-cols-lg-1 row-cols-md-1 row-cols-sm-1 g-4">
   <img src="./sabimages/Rectangle 48.png" alt="" class="mx-auto d-flex" height="250px" width="1000px">
@@ -254,7 +254,7 @@
         <a href="#" class="Learn">Learn More</a>
       </div>
       <div class="col-6 mx-auto d-block">
-        <img src="./sabimages/Home.png" height="100px" alt="" class="img-fluid">
+        <img src="./sabimages/sabi-ride1.png" height="100px" alt="" class="img-fluid">
       </div>
     </div>
   </div>
