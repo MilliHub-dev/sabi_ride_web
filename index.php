@@ -254,7 +254,7 @@
         <a href="#" class="Learn">Learn More</a>
       </div>
       <div class="col-6 mx-auto d-block">
-        <img src="./sabimages/sabi-ride1.png" height="100px" alt="" class="img-fluid">
+        <img src="./sabimages/555.png" height="70px" alt="" class="img-fluid">
       </div>
     </div>
   </div>
@@ -349,7 +349,7 @@
       <div class="col-6 mx-auto d-block">
         <div class="card mb-3 p-3" style="max-width: 540px;">
           <div class="row g-0">
-          <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
+          <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
             <div class="col-md-4">
               <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -366,7 +366,7 @@
       <div class="col-6 mx-auto d-block">
         <div class="card mb-3 p-3" style="max-width: 540px;">
           <div class="row g-0">
-          <center><img src="./sabimages/on the street.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
+          <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
             <div class="col-md-4">
               <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
             </div>
