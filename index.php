@@ -437,10 +437,10 @@
             <a href="#!">Sign your car as vip</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!"></a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!"></a>
           </li>
         </ul>
       </div>
@@ -457,7 +457,7 @@
             <a href="#!">Brand guidelines</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!"></a>
           </li>
         </ul>
       </div>
