@@ -32,7 +32,7 @@
 
 
             <div col-12 class="text-center">
-                <p class="text-center text-black-50 " id="txt">A verification code was sent to<span class="fw-bold text-decoration-line-through text-danger text-truncate" id="num"> @backend</span></p>
+                <p class="text-center text-black-50 " id="txt">A verification code was sent to<span class="fw-bold text-decoration-line-through text-danger text-truncate" id="num"> number from @backend</span></p>
             </div>
 
 
@@ -50,8 +50,8 @@
 
 
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 center-flex-elem mt-4">
-                        <button type="button" class=" icon-button" id="submit"><span>Continue</span><i class='bx bx-right-arrow-alt mt-1'></i></button>
+                    <div class="col-12 center-flex-elem mt-4">
+                        <button type="button" class=" icon-button" id="submit"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
                     </div>
                 </div>
 

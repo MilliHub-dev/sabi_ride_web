@@ -1,7 +1,18 @@
 /* --------------- General ---------------------- */
-* {
-        font-family: sans-serif, Lucida Sans, Helvetica, sans-serif, lato;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Roboto:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+
+        font-family: Lato;
         box-sizing: border-box;
+}
+
+.display-7 {
+        font-size: larger;
 }
 
 /* --------------- !General ---------------------- */
@@ -24,7 +35,7 @@
 
 /* --------------- Form Elements ---------------------- */
 label {
-        font-family: sans-serif;
+
         font-weight: bold;
         font-size: 1rem;
 }
@@ -39,9 +50,9 @@ input {
 }
 
 input[type="text"] {
-        border-radius: 7px;
+        border-radius: 10px;
         background-color: #3860ad2b;
-        width: 60%;
+        width: 50%;
 }
 
 input[type="tel"] {
@@ -52,6 +63,32 @@ input[type="tel"] {
 input:focus,
 input:active {
         border: hsl(212, 100%, 65%);
+}
+
+input[type="file"] {
+        display: none;
+}
+
+.file-upload {
+        border: solid 1px;
+        height: 60px;
+        width: 170px;
+        /* width: 100%; */
+        border-radius: 30px;
+        background-color: white;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and(max-width:600px) {
+                width: 70px
+        }
+
+        :hover {
+                color: hsl(212, 100%, 65%);
+                ;
+        }
 }
 
 /* --------------- !Form Elements ---------------------- */
@@ -84,6 +121,7 @@ input:active {
         font-family: Mulish;
         font-size: 50px;
         letter-spacing: 0em;
+        line-height: 62.75px;
 }
 
 #sabi {

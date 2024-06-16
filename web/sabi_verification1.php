@@ -13,17 +13,18 @@
  <body>
    <div class="container-fluid text-body">
      <div class="row justify-content-center">
-       <div class="mt-3 brand-name  align-self-center text-center">
+       <div class="mt-5 brand-name  align-self-center text-center">
          <span id="sabi">Sabi </span><span>Driver</span>
        </div>
        <div class="  text-center align-self-center">
          <hr class="text-center center-block-elem">
        </div>
+       <div class="mt-1"></div>
        <div class=" progressbar">
          <span class="bar" id="bar1"></span>
-         <span class="num">1</span>
+         <span class="num" id="num-active">1</span>
          <span class="bar"></span>
-         <span class="num" id="num-active">2</span>
+         <span class="num">2</span>
          <span class="bar"></span>
          <span class="num">3</span>
          <span class="bar"></span>
@@ -34,7 +35,7 @@
        <div class="row g-3 ms-5 justify-content-start">
          <p class="fw-nowrap col-6 fw-bold text-start">Personal Information and vehicle details</p>
 
-         <form action="" class="needs-validation" no-validate method="POST" enctype="multipart/form-data">
+         <form action="sabi_verification2.php" class="needs-validation" no-validate method="POST" enctype="multipart/form-data">
            <div class="mb-3 ">
              <label for="f-name">First Name</label>
              <input type="text" name="first_name" id="f-name" class="form-control" autofocus required>
@@ -135,7 +136,7 @@
            </div>
            <div class="row justify-content-center mb-5">
              <div class="col-sm-12 center-flex-elem mt-4">
-               <button type="button" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow-alt mt-1'></i></button>
+               <button type="button" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
              </div>
            </div>
          </form>
