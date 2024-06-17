@@ -84,15 +84,17 @@ $verification_status = $result ? $result['verification_status'] : 'Not Submitted
             </div>
 
             <div class="text-center">
-                <img src="../img/sabiDrive_imagepng.png" class="img-fluid w-50"><img>
+                <img src="../img/sabiDrive_imagepng.png" class="img-fluid w-50 d-block mx-auto"><img>
             </div>
             <div class="row justify-content-center mb-5">
                 <div class="col-sm-12 center-flex-elem mt-4">
-                    <button type="button" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx    bx-fade-right mt-1'></i></button>
+                    <a href="../index.php" tabindex="-1" role="button" aria-disabled="true" class="btn">
+                        <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx    bx-fade-right mt-1'></i> <a href="../index.php" tabindex="-1" role="button" aria-disabled="true"></button>
+                    </a>
                 </div>
             </div>
 
-            
+
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

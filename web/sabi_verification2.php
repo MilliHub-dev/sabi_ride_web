@@ -40,17 +40,17 @@
 
                 <form action="sabi_verification3.php" method="POST" enctype="multipart/form-data">
 
-                    <!-- <input type="hidden" name="first_name" value="<?php echo htmlspecialchars($_POST['first_name']); ?>">
-                <input type="hidden" name="middle_name" value="<?php echo htmlspecialchars($_POST['middle_name']); ?>">
-                <input type="hidden" name="last_name" value="<?php echo htmlspecialchars($_POST['last_name']); ?>">
-                <input type="hidden" name="gender" value="<?php echo htmlspecialchars($_POST['gender']); ?>">
-                <input type="hidden" name="referral_code" value="<?php echo htmlspecialchars($_POST['referral_code']); ?>">
-                <input type="hidden" name="driver_type" value="<?php echo htmlspecialchars($_POST['driver_type']); ?>">
-                <input type="hidden" name="vehicle_manufacturer" value="<?php echo htmlspecialchars($_POST['vehicle_manufacturer']); ?>">
-                <input type="hidden" name="vehicle_model" value="<?php echo htmlspecialchars($_POST['vehicle_model']); ?>">
-                <input type="hidden" name="vehicle_year" value="<?php echo htmlspecialchars($_POST['vehicle_year']); ?>">
-                <input type="hidden" name="license_plate" value="<?php echo htmlspecialchars($_POST['license_plate']); ?>">
-                <input type="hidden" name="vehicle_color" value="<?php echo htmlspecialchars($_POST['vehicle_color']); ?>"> -->
+                    <input type="hidden" name="first_name" value="<?php echo htmlspecialchars($_POST['first_name']); ?>">
+                    <input type="hidden" name="middle_name" value="<?php echo htmlspecialchars($_POST['middle_name']); ?>">
+                    <input type="hidden" name="last_name" value="<?php echo htmlspecialchars($_POST['last_name']); ?>">
+                    <input type="hidden" name="gender" value="<?php echo htmlspecialchars($_POST['gender']); ?>">
+                    <input type="hidden" name="referral_code" value="<?php echo htmlspecialchars($_POST['referral_code']); ?>">
+                    <input type="hidden" name="driver_type" value="<?php echo htmlspecialchars($_POST['driver_type']); ?>">
+                    <input type="hidden" name="vehicle_manufacturer" value="<?php echo htmlspecialchars($_POST['vehicle_manufacturer']); ?>">
+                    <input type="hidden" name="vehicle_model" value="<?php echo htmlspecialchars($_POST['vehicle_model']); ?>">
+                    <input type="hidden" name="vehicle_year" value="<?php echo htmlspecialchars($_POST['vehicle_year']); ?>">
+                    <input type="hidden" name="license_plate" value="<?php echo htmlspecialchars($_POST['license_plate']); ?>">
+                    <input type="hidden" name="vehicle_color" value="<?php echo htmlspecialchars($_POST['vehicle_color']); ?>">
                     <div class="row justify-content-center">
 
                         <label for="driver_license_number" class="form-label text-center d-block">Driver's License number</label>
@@ -65,16 +65,16 @@
 
             <div class="row justify-content-center mb-5">
                 <div class="col-sm-12 center-flex-elem mt-4">
-                    <button type="button" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx bx-fade-right-hover mt-1'></i></button>
+                    <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx bx-fade-right-hover mt-1'></i></button>
                 </div>
             </div>
             </form>
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         document.getElementById("num-active").ClassList.add("num-active");
-    </script>
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
