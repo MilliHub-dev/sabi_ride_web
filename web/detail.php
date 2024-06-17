@@ -88,7 +88,7 @@
             <a href="#!">Brand guidelines</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!"></a>
           </li>
         </ul>
       </div>
