@@ -1,14 +1,3 @@
-<?php 
-
-require_once("../db/config.php");
-
-
-$query = 'SELECT title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC';
-$stmt = $pdo->query($query);
-$posts = $stmt->fetchAll();
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -82,23 +71,14 @@ $posts = $stmt->fetchAll();
     <h6 class="mb-0 fw-bold">LATEST</h6>
     <hr>
     <div class="row">
+
       <div class="col-4 mb-md-4 mb-3">
-    <?php foreach ($posts as $post): ?>
-        <div class="post">
-            <h2><?php echo htmlspecialchars($post['title']); ?></h2>
-            <?php if (!empty($post['image_url'])): ?>
-                <img src="<?php echo htmlspecialchars($post['image_url']); ?>" width ="300" alt="<?php echo htmlspecialchars($post['title']); ?>">
-            <?php endif; ?>
-            <p><?php echo nl2br(htmlspecialchars($post['content'])); ?></p>
-          
-            <small><?php echo htmlspecialchars($post['created_at']); ?></small>
-        </div>
-    <?php endforeach; ?>
+        <img src="" alt="" width="700">
       </div>
       <div class="col-4 mb-md-4 mb-3 float-end text-end">
         <h3 class="fw-bold"></h3>
         <h5 class="fw-light"></h5>
-        
+        <p><a class="btn btn-primary" href="" role="button">View details »</a></p>
       </div>
 
     </div>
