@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body,
+html {
+        min-width: auto;
+        height: 100%;
+        margin: 0;
+        font: "Lato", sans-serif;
+
+}
+
+
+.parallax {
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* Sabi Car */
+.bgimg-1 {
+        background-image: url(../sabimages/Sabiridecarcropped2.png);
+        min-height: 100%;
+        width: 100%;
+        background-color: #56707ea2;
+        background-blend-mode: multiply;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+/*  Service cards bg */
+.bgimg-3 {
+        background-image: url(../sabimages/Rectangle_48.png);
+        min-height: 100%;
+        background-blend-mode: lighten;
+        background-color: none;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* Earn bg */
+.bgimg-4 {
+        background-image: url(../sabimages/Rectangle_11.png);
+        min-height: 100%;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* phone mock-up -> Unused */
+/* .bgimg-5 {
+        background-image: url(../sabimages/555.png);
+        min-height: 100%;
+        width: 100%;
+        top: 30%;
+        background-color: #56707ea2;
+        background-blend-mode: multiply;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 999;
+} */
+
+.brandcaption {
+        padding: 7%;
+        margin: auto;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3rem;
+}
+
+.caption0 {
+        padding: 7%;
+        text-align: justify;
+        margin: auto;
+}
+
+
+.caption1 {
+        padding: 7%;
+        text-align: justify;
+        margin: auto;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+}
+
+
+/* Earn money */
+.caption2 {
+
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: justify;
+}
+
+
+.sp {
+        /* position: absolute; */
+        font-size: 1.8rem;
+        margin: auto;
+}
+
+.numpill {
+        display: block;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+}
+
+.rel {
+        position: relative;
+}
+
+.blue_hr {
+        display: block;
+        margin: auto;
+        height: 10px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        background-color: #0088CD;
+        color: #0088CD;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+        width: 80%;
+}
+
+.gray_border {
+        border: 0px #a5a9acd7 solid;
+        border-radius: 6px;
+        background-color: #cfd9dfd7;
+        background-blend-mode: darken;
+        box-shadow: 7rem -5rem 4rem -5rem rgba(0, 0, 0, 0.75);
+        margin: 10px;
+
+}
+
+
+
+.gray_hr {
+        display: block;
+        margin: auto;
+        height: 10px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        background-color: #cfd9dfd7;
+        color: #cfd9dfd7;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+        width: 80%;
+}
+
+.bluey {
+        color: #0088CD;
+        text-shadow: 2px 1px #000000;
+}
+
+.btn {
+        background-color: #0088CD;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+}
+
+.btn:hover {
+        background-color: #ffffff;
+        text-decoration: none;
+        color: #0088CD;
+}
+
+.card-body {
+        padding-bottom: 0;
+        padding-right: 3px;
+}
+
+.card-text {
+        max-width: 9rem;
+        padding-bottom: 0;
+}
+
+.card {
+        background-color: #cfd9dfd7;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+}
+
+/* .card-dark {} */
+
+.card:hover,
+card:focus {
+        box-shadow: 0px 3px 5px rgb(0, 0, 0.6);
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1000px) {
+
+        .parallax {
+                background-attachment: scroll;
+        }
+
+        .bgimg-1 {
+                padding-top: 90px;
+        }
+
+}
+
+@media only screen and (min-width: 600px) {
+        .bgimg-1 {
+                min-height: 200%;
+        }
+
+        .bgimg-3 {
+                min-height: 150%;
+        }
+
+        .bgimg-4 {
+                min-height: 300%;
+        }
+
+        .brandcaption {
+                position: absolute;
+                top: 15%;
+        }
+
+        .caption0 {
+                position: absolute;
+                top: 40%;
+        }
+
+        .caption1 {
+                position: absolute;
+                top: 46%;
+        }
+
+        .caption2 {
+                position: absolute;
+                top: 15%;
+                display: block;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+        /* #phonemockup {
+                margin-left: 15%;
+        } */
+
+        .caption3 {
+                position: absolute;
+                top: 40%;
+                display: block;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+}

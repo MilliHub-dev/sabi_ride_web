@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Roboto:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
-    font-family: Plus Jarkarta Sans;
+    font-family: lato, Plus Jarkarta Sans;
 }
 
 /* CTA */
 
-.CTA {
+/* .CTA {
     background-image: url(../sabimages/Sabiridecar.png);
     background-color: #56707ea2;
     width: 100%;
-    
+
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
-}
+} */
 
-.CTA .CTAINNER h2 {
+/* .CTA .CTAINNER h2 {
     font-weight: 750;
     font-size: 45px;
     color: rgb(255, 255, 255);
     padding-top: 7rem;
     font-family: lato;
-}
+} */
 
 .bluey {
     color: #0088CD;
@@ -30,7 +32,7 @@
 }
 
 .CTA button {
-    background-color:  #0088CD;
+    background-color: #0088CD;
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
@@ -38,7 +40,7 @@
 }
 
 .CTA button:hover {
-    background-color:  #ffffff;
+    background-color: #ffffff;
     text-decoration: none;
     color: #0088CD;
 }
@@ -52,12 +54,13 @@
     font-family: Lato;
 }
 
-.service{
+.service {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .CTATWO .card-body {
     padding-bottom: 0;
     padding-right: 3px;
@@ -87,7 +90,7 @@
 }
 
 .CTATHREE button {
-    background-color:  #0088CD;
+    background-color: #0088CD;
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
@@ -96,7 +99,7 @@
 }
 
 .CTATHREE button:hover {
-    background-color:  #ffffff;
+    background-color: #ffffff;
     text-decoration: none;
     color: #0088CD;
 }
@@ -138,8 +141,8 @@
 }
 
 .scan h3 {
-   margin-top: 3rem;
-   font-size: 34px;
+    margin-top: 3rem;
+    font-size: 34px;
 }
 
 
@@ -163,7 +166,7 @@
 .ARTICLE p {
     font-size: 21px;
     line-height: 40px;
-} 
+}
 
 
 /* BLOG PAGE */
@@ -237,14 +240,14 @@
 /* PAGE */
 
 
-.PAGE{
+.PAGE {
     background-color: #c3e3f6d2;
     width: 100%;
     margin-top: 6rem;
     border-radius: 50px;
 }
 
-.PAGE h2{
+.PAGE h2 {
     font-weight: 800;
     font-size: 48px;
     color: rgb(12, 12, 12);
@@ -289,19 +292,3 @@
     text-decoration: none;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
