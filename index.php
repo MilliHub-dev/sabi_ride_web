@@ -341,7 +341,7 @@
   </section>
 
   <!-- News and update -->
-  <!-- <div class="container CTAFOUR my-3">
+  <div class="container CTAFOUR my-3">
     <div class="row News border">
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h1 class="fw-bolder text-black">News and Updates</h1>
@@ -352,6 +352,36 @@
     </div>
     <div class="container">
       <div class="row mt-2 p-4">
+        <?php
+        // index.php
+        require_once("db/config.php");
+
+        // Function to limit content length
+        function excerpt($text, $max_length = 100)
+        {
+          if (strlen($text) > $max_length) {
+            $text = substr($text, 0, $max_length) . '...';
+          }
+          return $text;
+        }
+
+        $query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
+        $stmt = $pdo->query($query);
+
+        // Debugging: Check for query execution errors
+        if (!$stmt) {
+          $errorInfo = $pdo->errorInfo();
+          echo "SQL Error: " . $errorInfo[2];
+          exit;
+        }
+
+        $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Debugging output
+        //echo '<pre>';
+        // print_r($latestPosts);
+        // echo '</pre>';
+        ?>
         <style>
           .custom-image {
             height: 200px;
@@ -362,6 +392,24 @@
         </style>
 
         <div class="card-group">
+          <div class="card m-3">
+            <?php foreach ($latestPosts as $post) : ?>
+              <div class="post">
+                <h2><?php echo htmlspecialchars($post['title']); ?></h2>
+                <?php if (!empty($post['image_url'])) : ?>
+                  <img src="<?php echo htmlspecialchars($post['image_url']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                <?php endif; ?>
+                <p><?php echo nl2br(htmlspecialchars(excerpt($post['content']))); ?></p>
+                <?php
+                // Debugging line to check if 'id' is set
+                //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
+                ?>
+                <a href="web/post.php?id=<?php echo htmlspecialchars($post['id']); ?>">Read more</a>
+
+                <small><?php echo htmlspecialchars($post['created_at']); ?></small>
+              </div>
+            <?php endforeach; ?>
+          </div>
           <div class="card m-3">
             <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -385,7 +433,7 @@
 
       </div>
     </div>
-  </div> -->
+  </div>
 
 
 
