@@ -167,7 +167,7 @@
                 <p class="card-text float-start">This is a service of delivering
                   items directly to a customer's
                   specified location.</p>
-                <img src="./sabimages/Rectangle 17.png" class="float-end pb-0" alt="">
+                <img src="./sabimages/Rectangle 28.png" class="float-end pb-0" alt="">
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@
                 <h5 class="card-title">Dispatch</h5>
                 <p class="card-text float-start">This is a service of assigning and
                   coordinating the pickup and delivery of small goods. </p>
-                <img src="./sabimages/Rectangle 28.png" class="float-end pb-0" alt="">
+                <img src="./sabimages/dispatch.png" width="120" class="float-end pb-0" alt="">
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@
           <span class="counter-modern-main icon counter-modern-icon mdi mdi-flag-variant badge rounded-pill bg-info ">
             24K
           </span>
-          <p class="pt-0 mb-0 counter-modern-title">Annual Customers</p>
+          <p class="pt-0 mb-0 counter-modern-title">Customers</p>
 
         </article>
       </div>
@@ -203,7 +203,7 @@
         <article class="border  w-50  d-block center-block-elem text-center btn ">
           <span class="icon mdi mdi-car badge rounded-pill bg-info">250
           </span>
-          <p class="pt-1 mb-0">Fleet Vehicles</p>
+          <p class="pt-1 mb-0">Total Rides</p>
         </article>
       </div>
 
@@ -212,7 +212,7 @@
           <span class="counter-modern-main icon counter-modern-icon mdi mdi-coin  badge rounded-pill bg-info">
             231k
           </span>
-          <p class="pt-0 mb-0">Great Offers</p>
+          <p class="pt-0 mb-0">Active Ride</p>
         </article>
       </div>
       <div class="col-md-6 text-center  col-xl-3 col-xxl-4 col-sm-6 ">
@@ -299,8 +299,8 @@
           <div class="btn">
             <!-- Box Classic-->
             <article class="box-classic "><span class="icon box-classic-icon fl-bigmug-line-map87 text-decoration-none"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Local Routes</h4>
-                <p>We guarantee full taxi availability on any route in the city.</p>
+                <h4 class="box-classic-title">Ride Sharing</h4>
+                <p>Ride sharing offers cost savings, convenience through sabi ride mobile apps,<br> flexible ride options, and enhanced safety with background checks and driver ratings.</p>
               </span></article>
           </div>
         </div>
@@ -308,8 +308,8 @@
           <div class="btn">
             <!-- Box Classic-->
             <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-portfolio23"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Business Travels</h4>
-                <p>Express offers the best taxi services to traveling businessmen.</p>
+                <h4 class="box-classic-title">Price Transparency</h4>
+                <p>Price transparency in Sabi Ride ensures clear, <br> upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
               </span></article>
           </div>
         </div>
@@ -317,8 +317,8 @@
           <div class="btn">
             <!-- Box Classic-->
             <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-planetary2"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Abroad Travels</h4>
-                <p>When traveling abroad, you can also benefit from using our taxi.</p>
+                <h4 class="box-classic-title">Social Feature</h4>
+                <p>Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
               </span></article>
           </div>
         </div>
@@ -328,7 +328,7 @@
             <!-- Box Classic-->
             <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-headphones32"></span><span class="box-classic-main">
                 <h4 class="box-classic-title">24/7 Online Support</h4>
-                <p>Our qualified staff offers professional 24/7 support to all clients.</p>
+                <p>Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
               </span></article>
           </div>
         </div>
@@ -354,28 +354,28 @@
       <div class="row mt-2 p-4">
         <?php
         // index.php
-        require_once("db/config.php");
+       // require_once("db/config.php");
 
         // Function to limit content length
-        function excerpt($text, $max_length = 100)
-        {
-          if (strlen($text) > $max_length) {
-            $text = substr($text, 0, $max_length) . '...';
-          }
-          return $text;
-        }
+        //function excerpt($text, $max_length = 100)
+       // {
+          //if (strlen($text) > $max_length) {
+            //$text = substr($text, 0, $max_length) . '...';
+         // }
+          //return $text;
+        //}
 
-        $query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
-        $stmt = $pdo->query($query);
+         //$query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
+          //$stmt = $pdo->query($query);
 
         // Debugging: Check for query execution errors
-        if (!$stmt) {
-          $errorInfo = $pdo->errorInfo();
-          echo "SQL Error: " . $errorInfo[2];
-          exit;
-        }
+        //if (!$stmt) {
+          //$errorInfo = $pdo->errorInfo();
+          //echo "SQL Error: " . $errorInfo[2];
+          //exit;
+       // }
 
-        $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+       // $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // Debugging output
         //echo '<pre>';
@@ -393,22 +393,22 @@
 
         <div class="card-group">
           <div class="card m-3">
-            <?php foreach ($latestPosts as $post) : ?>
+            <?php //foreach ($latestPosts as $post) : ?>
               <div class="post">
-                <h2><?php echo htmlspecialchars($post['title']); ?></h2>
-                <?php if (!empty($post['image_url'])) : ?>
-                  <img src="<?php echo htmlspecialchars($post['image_url']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>">
-                <?php endif; ?>
-                <p><?php echo nl2br(htmlspecialchars(excerpt($post['content']))); ?></p>
+                <h2><?php //echo htmlspecialchars($post['title']); ?></h2>
+                <?php //if (!empty($post['image_url'])) : ?>
+                  <img src="<?php //echo htmlspecialchars($post['image_url']); ?>" alt="<?php //echo htmlspecialchars($post['title']); ?>">
+                <?php //endif; ?>
+                <p><?php //echo nl2br(htmlspecialchars(excerpt($post['content']))); ?></p>
                 <?php
                 // Debugging line to check if 'id' is set
                 //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
                 ?>
-                <a href="web/post.php?id=<?php echo htmlspecialchars($post['id']); ?>">Read more</a>
+                <a href="web/post.php?id=<?php //echo htmlspecialchars($post['id']); ?>">Read more</a>
 
-                <small><?php echo htmlspecialchars($post['created_at']); ?></small>
+                <small><?php //echo htmlspecialchars($post['created_at']); ?></small>
               </div>
-            <?php endforeach; ?>
+            <?php //endforeach; ?>
           </div>
           <div class="card m-3">
             <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
