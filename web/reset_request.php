@@ -14,6 +14,8 @@
       
         <h2>Reset Password</h2>
     <?php
+    require '../vendor/autoload.php'; // Path to Composer autoload file
+
     // Start the session
     session_start();
 

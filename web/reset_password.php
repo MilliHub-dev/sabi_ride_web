@@ -13,6 +13,8 @@
         <center><img id="nav-logo" src="../sabimages/Sabiride3.png" alt="" width="200px" height="200px"></center>
         <h2>Set New Password</h2>
     <?php
+    require '../vendor/autoload.php'; // Path to Composer autoload file
+
     // Start the session
     session_start();
 
