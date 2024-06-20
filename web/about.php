@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sabi Ride</title>
-    <link rel="icon" type="image/x-icon" href="./sabimages/Sabiride3.png">
+    <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style/style1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -103,11 +103,57 @@
 
     <h3>Sabi Ride – More Than Just a Ride. A Journey Together.</h3>
   </div>
-
-
+<br>
+<hr>
   <!-- CTATWO -->
+  <div class="container">
+<h2 style="color:blue" >Privacy Policy</h2>
+ 
+<h4>Last Updated: 7th June, 2024</h4>
 
+<p>This privacy policy describes how and why we might collect, store, use, and process your information when you use our services. When you use SabiRide and any of its other services, you trust us with your personal data. We are committed to keeping that trust.</p>
+<h3>Collected Data</h3>
 
+<p>The sources of the data collected and processed by SabiRide include:
+1.	User provided data
+2.	Service usage data</p>
+
+<h4>User provided data:</h4>
+<p>Account Information:  This includes first and last name, email, phone number, login name and password, address, profile picture, payment or banking information (including related payment verification information), user settings (including accessibility settings).
+Verification Information: This includes government issued identification such as passport, user-submitted photos such as selfies and profile pictures, proof of car ownership, driver license, certificate of roadworthiness.
+User Content: This includes chat logs and recordings when users contact customer support, provide ratings, or use the in-app messenger.
+Service Usage Data:
+•	Geolocation data
+•	Transaction information</p>
+
+<h4>How we use data</h4>
+<p>In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
+We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
+To  provide our service: 
+•	To connect you with a driver
+•	To connect you with other ride Sharers
+•	To use geo-location data to plan your routes to be convenient and cheapest
+•	To collect payments
+•	To keep you informed about our service updates </p>
+
+<h4>WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h4>
+ <p>In Short: We may share information in specific situations described in this section and/or with the following third parties. 
+We may need to share your personal information in the following situations: 
+Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company. 
+Affiliates. We may share your information with our affiliates, in which case we will require those affiliates to honor this privacy notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us. 
+Business Partners. We may share your information with our business partners to offer you certain products, services, or promotions.</p>
+
+<h4>HOW LONG DO WE KEEP YOUR INFORMATION? </h4>
+<p>In Short: We keep your information for as long as necessary to fulfil the purposes outlined in this privacy notice unless otherwise required by law. 
+We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). When we have no on-going legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+
+<h4>DO WE COLLECT INFORMATION FROM MINORS?</h4>
+ <p>In Short: We do not knowingly collect data from or market to children under 18 years of age. 
+We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at………</p>
+
+<h4>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h4>
+ <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please contact ……</p>
+</div>
   <!-- CTATHREE -->
 
 
