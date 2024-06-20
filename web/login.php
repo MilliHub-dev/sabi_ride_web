@@ -6,8 +6,8 @@
 session_start();
 
 // Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 
 try {
@@ -49,9 +49,9 @@ try {
             $signup = $stmt->fetch();
 
             // Debugging: Output the user data
-            echo "<pre>";
-            print_r($signup);
-            echo "</pre>";
+           // echo "<pre>";
+            //print_r($signup);
+            //echo "</pre>";
 
             // Verify the password and check if user exists
             if ($signup && password_verify($password, $signup['password'])) {
@@ -76,13 +76,19 @@ try {
                 }
                 exit();
             } else {
-                echo "Invalid email/phone or password!";
+                // Set error message in session and redirect back to login page
+                $_SESSION['error_message'] = "<script>alert('Invalid email/phone or password!');</script>";
+                header('Location: sabi_login.php');
+                exit();
             }
         } else {
-            echo "Please provide both identifier and password!";
+            // Set error message in session and redirect back to login page
+            $_SESSION['error_message'] = "<script>alert('Please provide both identifier and password!');</script>";
+            header('Location: sabi_login.php');
+            exit();
         }
     }
 } catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
+    echo "<script>alert('Connection failed: " . $e->getMessage() . "');</script>";
 }
 ?>

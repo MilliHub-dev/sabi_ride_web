@@ -90,6 +90,7 @@ $verification_status = $result ? $result['verification_status'] : 'Not Submitted
                 <div class="col-sm-12 center-flex-elem mt-4">
                     <a href="../index.php" tabindex="-1" role="button" aria-disabled="true" class="btn">
                         <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx    bx-fade-right mt-1'></i> <a href="../index.php" tabindex="-1" role="button" aria-disabled="true"></button>
+                        <button type="submit" class=" icon-button"><span>Logout</span><i class='bx bx-right-arrow bx    bx-fade-right mt-1'></i> <a href="logout.php" tabindex="-1" role="button" aria-disabled="true"></button>
                     </a>
                 </div>
             </div>

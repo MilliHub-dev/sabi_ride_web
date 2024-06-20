@@ -1,10 +1,15 @@
 <?php
 // Start the session
 session_start();
-
+ // Check for error messages in the session
+ if (isset($_SESSION['error_message'])) {
+    echo "<p style='color:red;'>" . $_SESSION['error_message'] . "</p>";
+    // Clear the error message after displaying it
+    unset($_SESSION['error_message']);
+}
 // Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,10 +21,11 @@ ini_set('display_errors', 1);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../style/sabi_login.css">
-    <link href="../style/animations.css" rel="stylesheet">
+    
 </head>
 
 <body>
+
     <div class="container-fluid">
         <center><img id="nav-logo" src="../sabimages/Sabiride3.png" alt="" width="200px" height="200px"></center>
         <div class="col-sm-12 col-md-4 col-lg-12 bbox text-center">
@@ -113,7 +119,7 @@ ini_set('display_errors', 1);
                 </div>
             </div>
         </form>
-        <p id="forget-password" class="text-center">Forget Password</p>
+        <p id="forget-password" class="text-center"><a href="reset_request.php">Forget Password</a></p>
         <p id="create-account" class="text-center">Don't have an account? <a href="driver.php">Sign up here</a></p>
         </form>
     </div>

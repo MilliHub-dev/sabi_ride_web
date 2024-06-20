@@ -38,7 +38,8 @@ try {
             
             exit();
         } else {
-            echo "Signup failed!";
+            echo  "<script>alert('Signup failed!');</script>";
+            header('Location: driver.php');
         }
     }
 } catch (PDOException $e) {
