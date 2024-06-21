@@ -6,6 +6,12 @@ require_once("../db/config.php");
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// Include PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require '../vendor/autoload.php'; // Make sure this path is correct
+
+
 try {
     // Create a new PDO instance
     $pdo = new PDO($pg_connect, $user, $password, [
@@ -49,14 +55,39 @@ try {
 
                 // Send the reset token to the user's email or phone
                 if (filter_var($identifier, FILTER_VALIDATE_EMAIL)) {
-                    // Send email (implement your email sending logic here)
-                    mail($identifier, 'Password Reset', "Your reset token is: $reset_token");
+                    // Send email using PHPMailer
+                    $mail = new PHPMailer(true);
+                    try {
+                        //Server settings
+                        $mail->SMTPDebug = 0;                                     
+                        $mail->isSMTP();                                           
+                        $mail->Host       = 'smtp.office365.com'; // Set the SMTP server to send through
+                        $mail->SMTPAuth   = true;                                  
+                        $mail->Username   = 'millihub@hotmail.com';               
+                        $mail->Password   = '08120889843Ek';                         
+                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        
+                        $mail->Port       = 587;                                    
+
+                        //Recipients
+                        $mail->setFrom('millihub@hotmail.com', 'Sabi Ride');
+                        $mail->addAddress($identifier);     
+
+                        // Content
+                        $mail->isHTML(true);                                  
+                        $mail->Subject = 'Password Reset';
+                        $mail->Body    = "Your reset token is: $reset_token";
+                        $mail->AltBody = "Your reset token is: $reset_token";
+
+                        $mail->send();
+                        $_SESSION['success_message'] = "A reset token has been sent to your email.";
+                    } catch (Exception $e) {
+                        $_SESSION['error_message'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                    }
                 } else {
-                    // Send SMS (implement your SMS sending logic here)
+                    // Implement your SMS sending logic here
                 }
 
-                $_SESSION['success_message'] = "A reset token has been sent to your email/phone.";
-                header('Location: reset_password.php');
+                header('Location: reset_request.php');
                 exit();
             } else {
                 $_SESSION['error_message'] = "No account found with that email/phone.";

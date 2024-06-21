@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sabi Ride</title>
-    <link rel="icon" type="image/x-icon" href="../sabimages/Sabi ride 3.png">
+    <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
@@ -55,29 +55,29 @@
             <form action="action.php" method="post" id="form" enctype="multipart/form-data" >
                 <h1>Become a driver</h1>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter Email Address"><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required><br><br>
                 <label for="num">Phone Number</label><br>
 
                 <div class="select">
                     <select title="code" name="country-selector" class="country-selector">
                       <option value="NG" class="ng">+234</option>
                     </select>
-                    <input type="tel" name="phone_number" id="p-num" placeholder="Mobile Number">
+                    <input type="tel" name="phone_number" id="p-num" placeholder="Mobile Number" required>
                 </div><br><br>
                 <label for="city" class="city">City</label><br>
-                <select title="city" name="location_city" class="cities">
+                <select title="city" name="location_city" class="cities" required>
                     <option value="0">City where you drive</option>
                     <option value="UYO">UYO</option>
 
                 </select><br><br>
                 <label for="password" class="password">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="password"><br><br>
+                <input type="password" id="password" name="password" placeholder="password" required><br><br>
                 <div class="chk">
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check" required  >
                     <p>
-                        By signing up, you agree to our <a href="">Terms and Conditions</a>
+                        By signing up, you agree to our <a href="about.php">Terms and Conditions</a>
                         and confirm that you have read and understood the
-                        <a href="">Privacy Policy for Drivers</a>
+                        <a href="about.php">Privacy Policy for Drivers</a>
                         applicable for your country
                         of operation.
                     </p>
