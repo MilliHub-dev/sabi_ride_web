@@ -61,15 +61,15 @@ try {
                         //Server settings
                         $mail->SMTPDebug = 0;                                     
                         $mail->isSMTP();                                           
-                        $mail->Host       = 'smtp.gmail.com'; // Set the SMTP server to send through
+                        $mail->Host       = 'smtp.office365.com'; // Set the SMTP server to send through
                         $mail->SMTPAuth   = true;                                  
-                        $mail->Username   = 'info.millihub@gmail.com';               
+                        $mail->Username   = 'millihub@hotmail.com';               
                         $mail->Password   = '08120889843Ek';                         
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        
                         $mail->Port       = 587;                                    
 
                         //Recipients
-                        $mail->setFrom('your-email@example.com', 'Your Name');
+                        $mail->setFrom('millihub@hotmail.com', 'Sabi Ride');
                         $mail->addAddress($identifier);     
 
                         // Content
