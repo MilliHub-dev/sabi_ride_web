@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
 
 body,
 html {
         min-width: auto;
         height: 100%;
         margin: 0;
-        font: "Lato", sans-serif;
+        font: "Lato", 'Fira Sans', sans-serif;
 
+}
+
+:root {
+        --bs-card-: #cfd9dfd7;
 }
 
 
@@ -64,7 +69,15 @@ html {
 } */
 
 .brandcaption {
-        padding: 7%;
+        padding: 6%;
+        margin: auto;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3rem;
+}
+
+.servicecaption {
+        padding: 6%;
         margin: auto;
         font-weight: 700;
         font-size: 3rem;
@@ -72,14 +85,15 @@ html {
 }
 
 .caption0 {
-        padding: 7%;
+        padding: 6%;
         text-align: justify;
         margin: auto;
 }
 
 
+
 .caption1 {
-        padding: 7%;
+        padding: 6%;
         text-align: justify;
         margin: auto;
         font-size: 1.5rem;
@@ -100,6 +114,10 @@ html {
         /* position: absolute; */
         font-size: 1.8rem;
         margin: auto;
+}
+
+#phonemockup {
+        width: 80%;
 }
 
 .numpill {
@@ -160,6 +178,7 @@ html {
         color: #ffffff;
         font-weight: 600;
         font-size: 18px;
+        font-family: 'Fira Sans';
 }
 
 .btn:hover {
@@ -168,15 +187,20 @@ html {
         color: #0088CD;
 }
 
-.card-body {
-        padding-bottom: 0;
+/* .card-body {
+        padding-bottom: 5px;
         padding-right: 3px;
+}*/
+.card-title {
+        font-weight: bold;
+
 }
 
-.card-text {
-        max-width: 9rem;
-        padding-bottom: 0;
+.serviceCard .card-text {
+        font-family: 'fira Sans';
+        text-align: start;
 }
+
 
 .card {
         background-color: #cfd9dfd7;
@@ -191,6 +215,25 @@ card:focus {
 
 }
 
+.serviceCard .card {
+        font-size: 1rem;
+        transition: all 0.1s;
+
+        background: rgb(0, 136, 205);
+        background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+        perspective: 2500px;
+        /* z-index: -1; */
+}
+
+
+.serviceCard img {
+        padding-top: 2%;
+        max-width: 40%;
+        display: block;
+        margin: auto;
+}
+
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1000px) {
 
@@ -204,10 +247,11 @@ card:focus {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
         .bgimg-1 {
                 min-height: 200%;
         }
+
 
         .bgimg-3 {
                 min-height: 150%;
@@ -217,19 +261,29 @@ card:focus {
                 min-height: 300%;
         }
 
+
         .brandcaption {
                 position: absolute;
                 top: 15%;
+                max-width: 500px;
+        }
+
+        #phonemockup {
+                position: absolute;
+                top: 5%;
+                left: auto;
+                padding: 2px;
+                width: 50%;
         }
 
         .caption0 {
                 position: absolute;
-                top: 40%;
+                top: 50%;
         }
 
         .caption1 {
                 position: absolute;
-                top: 46%;
+                top: 56%;
         }
 
         .caption2 {
@@ -240,9 +294,6 @@ card:focus {
                 transform: translateX(-50%);
         }
 
-        /* #phonemockup {
-                margin-left: 15%;
-        } */
 
         .caption3 {
                 position: absolute;
@@ -252,4 +303,24 @@ card:focus {
                 transform: translateX(-50%);
         }
 
+        .serviceCard img {
+                max-width: 40%;
+                display: none;
+        }
+
+        .serviceCard:hover .card {
+                transform: perspective(900px) translateY(-5%) rotateX(10deg) translateZ(0);
+                box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+                /* background: #0088CD;
+        color: white; */
+
+        }
+
+        .serviceCard:hover .card img {
+                display: block;
+                margin: auto;
+                transform: translate3d(0%, 0px, 25px);
+                width: 50%;
+                filter: sepia(0.5);
+        }
 }

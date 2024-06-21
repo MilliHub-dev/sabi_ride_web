@@ -84,9 +84,17 @@
   <div class="parallax bgimg-1 pt-5">
     <div class="container-fluid">
       <div class="row g-0 justify-content-between min-vh-100">
-        <div class="col-12">
-          <div class="brandcaption">
-            <span class="text-start text-white text-wrap">Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</span>
+        <div>
+          <div class="row gx-2 justify-content-around">
+            <div class="col-12 gx-2">
+              <div class="text-center">
+                <img src="./sabimages/phone-mockup-cropped.png" alt="SabiRide App interface" id="phonemockup">
+              </div>
+              <div class="brandcaption">
+                <span class="text-start text-white text-wrap">Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</span>
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="col-12 mt-5">
@@ -110,7 +118,7 @@
   <div class="container-fluid row mt-4">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h3 class="text-start display-3 fw-bold" style="padding-left:7%;  text-align: justify;">Our services</h3>
+        <h3 class="text-start display-3 fw-bold" style="padding-left:6%;  text-align: justify;">Our services</h3>
       </div>
     </div>
   </div>
@@ -119,8 +127,8 @@
   <div class="parallax bgimg-3 mb-2 pt-5 mt-0 shadow-m">
     <div class="pt-2">
       <div class="container-fluid">
-        <div class="row g-3 align-items-center justify-content-center">
-          <div class=" col-md-6 col-lg-4 col-xl-3 col-xxl-4">
+        <div class="row g-3 align-items-center justify-content-between">
+          <div class=" col-md-6 col-xl-4 col-xxl-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Rides</h5>
@@ -130,7 +138,7 @@
               </div>
             </div>
           </div>
-          <div class=" col-md-6 col-xl-3 col-lg-4 col-xxl-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">VIP Rides</h5>
@@ -140,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class=" col-md-6 col-lg-4 col-xl-3 col-xxl-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3">
             <div class="card h-100">
               <div class="card-body ">
                 <h5 class="card-title">Food Delivery</h5>
@@ -149,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class=" col-md-6 col-lg-4 col-xl-3 col-xxl-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Groceries</h5>
@@ -160,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class=" col-md-6 col-xl-3 col-lg-4 col-xxl-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Logistics</h5>
@@ -171,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class=" col-md-6 col-xl-3 col-lg-4 col-xxl-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3 mb-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Dispatch</h5>
@@ -225,7 +233,7 @@
   </section>
 
   <!-- Hero2 -->
-  <div class="parallax bgimg-4">
+  <div class="parallax bgimg-4 mb-5">
     <div class="pt-5">
       <div class="container-fluid">
         <div class="row g-5 gx-5">
@@ -277,7 +285,7 @@
             </div>
             <div class="col-6 ">
               <div class="d-flex">
-                <img id="phonemockup" src="./sabimages/555.png" height="70px" alt="" class="img-fluid img-5 mb-5">
+                <img src="./sabimages/555.png" height="70px" alt="" class="img-fluid img-5 mb-5">
               </div>
             </div>
           </div>
@@ -291,16 +299,26 @@
   <!-- Our Advantage -->
   <section class="section section-lg text-center bg-gray-950 mt-4">
     <div class="container-fluid">
-      <div class="row align-items-center g-3 gray_border pb-5 h-100">
+      <div class="row align-items-center g-3 gray_border pb-2 h-100 ">
         <div class="col-12 justify-contents-center">
           <h2 class="wow fadeIn text-dark-50 display-2">Our Advantage</h2>
         </div>
+        <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay=".3s">
+          <div class="btn">
+            <!-- Box Classic-->
+            <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-planetary2"></span><span class="box-classic-main">
+                <h4 class="box-classic-title">Social Feature</h4>
+                <p class="text-start fw-light">Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
+              </span></article>
+          </div>
+        </div>
+
         <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn">
           <div class="btn">
             <!-- Box Classic-->
             <article class="box-classic "><span class="icon box-classic-icon fl-bigmug-line-map87 text-decoration-none"></span><span class="box-classic-main">
                 <h4 class="box-classic-title">Ride Sharing</h4>
-                <p>Ride sharing offers cost savings, convenience through sabi ride mobile apps,<br> flexible ride options, and enhanced safety with background checks and driver ratings.</p>
+                <p class="text-start fw-light">Ride sharing offers cost savings, convenience through sabi ride mobile apps, flexible ride options, and enhanced safety with background checks and driver ratings.</p>
               </span></article>
           </div>
         </div>
@@ -309,26 +327,17 @@
             <!-- Box Classic-->
             <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-portfolio23"></span><span class="box-classic-main">
                 <h4 class="box-classic-title">Price Transparency</h4>
-                <p>Price transparency in Sabi Ride ensures clear, <br> upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
-              </span></article>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay=".3s">
-          <div class="btn">
-            <!-- Box Classic-->
-            <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-planetary2"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Social Feature</h4>
-                <p>Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
+                <p class="text-start fw-light">Price transparency in Sabi Ride ensures clear, upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
               </span></article>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-6 col-xl-3 h-100 wow fadeIn" data-wow-delay=".5s">
-          <div class="btn pb-5">
+          <div class="btn">
             <!-- Box Classic-->
             <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-headphones32"></span><span class="box-classic-main">
                 <h4 class="box-classic-title">24/7 Online Support</h4>
-                <p>Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
+                <p class="text-start fw-light">Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
               </span></article>
           </div>
         </div>
@@ -354,28 +363,28 @@
       <div class="row mt-2 p-4">
         <?php
         // index.php
-       // require_once("db/config.php");
+        // require_once("db/config.php");
 
         // Function to limit content length
         //function excerpt($text, $max_length = 100)
-       // {
-          //if (strlen($text) > $max_length) {
-            //$text = substr($text, 0, $max_length) . '...';
-         // }
-          //return $text;
+        // {
+        //if (strlen($text) > $max_length) {
+        //$text = substr($text, 0, $max_length) . '...';
+        // }
+        //return $text;
         //}
 
-         //$query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
-          //$stmt = $pdo->query($query);
+        //$query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
+        //$stmt = $pdo->query($query);
 
         // Debugging: Check for query execution errors
         //if (!$stmt) {
-          //$errorInfo = $pdo->errorInfo();
-          //echo "SQL Error: " . $errorInfo[2];
-          //exit;
-       // }
+        //$errorInfo = $pdo->errorInfo();
+        //echo "SQL Error: " . $errorInfo[2];
+        //exit;
+        // }
 
-       // $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        // $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // Debugging output
         //echo '<pre>';
@@ -393,22 +402,32 @@
 
         <div class="card-group">
           <div class="card m-3">
-            <?php //foreach ($latestPosts as $post) : ?>
-              <div class="post">
-                <h2><?php //echo htmlspecialchars($post['title']); ?></h2>
-                <?php //if (!empty($post['image_url'])) : ?>
-                  <img src="<?php //echo htmlspecialchars($post['image_url']); ?>" alt="<?php //echo htmlspecialchars($post['title']); ?>">
-                <?php //endif; ?>
-                <p><?php //echo nl2br(htmlspecialchars(excerpt($post['content']))); ?></p>
-                <?php
-                // Debugging line to check if 'id' is set
-                //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
-                ?>
-                <a href="web/post.php?id=<?php //echo htmlspecialchars($post['id']); ?>">Read more</a>
+            <?php //foreach ($latestPosts as $post) :
+            ?>
+            <div class="post">
+              <h2><?php //echo htmlspecialchars($post['title']);
+                  ?></h2>
+              <?php //if (!empty($post['image_url'])) :
+              ?>
+              <img src="<?php //echo htmlspecialchars($post['image_url']);
+                        ?>" alt="<?php //echo htmlspecialchars($post['title']);
+                                  ?>">
+              <?php //endif;
+              ?>
+              <p><?php //echo nl2br(htmlspecialchars(excerpt($post['content'])));
+                  ?></p>
+              <?php
+              // Debugging line to check if 'id' is set
+              //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
+              ?>
+              <a href="web/post.php?id=<?php //echo htmlspecialchars($post['id']);
+                                        ?>">Read more</a>
 
-                <small><?php //echo htmlspecialchars($post['created_at']); ?></small>
-              </div>
-            <?php //endforeach; ?>
+              <small><?php //echo htmlspecialchars($post['created_at']);
+                      ?></small>
+            </div>
+            <?php //endforeach;
+            ?>
           </div>
           <div class="card m-3">
             <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
