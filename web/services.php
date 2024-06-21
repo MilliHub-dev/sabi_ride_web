@@ -5,17 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabi Ride</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <!-- <link rel="stylesheet" href="../style/style1.css"> -->
+    <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/verification.css">
-    <style>
-        :root {
-            --bs-card-bg: #cfd9dfd7;
-        }
-    </style>
 </head>
 
 <body>
@@ -118,7 +111,7 @@
                 </div>
                 <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/groceries.png" class="card-img-top" alt="Service 3">
+                        <img src="../sabimages/Groceries.png" class="card-img-top" alt="Service 3">
                         <div class="card-body">
                             <h3 class="card-title">Groceries</h3>
                             <p class="card-text">Food delivery is the service of bringing prepared meals, groceries, or restaurant dishes directly to a customer's specified location, typically using a delivery driver or courier.</p>
@@ -127,7 +120,7 @@
                 </div>
                 <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/Ride sharing.jpg" class="card-img-top" alt="Service 3">
+                        <img src="../sabimages/ride sharing.jpg" class="card-img-top" alt="Service 3">
                         <div class="card-body">
                             <h3 class="card-title">Ride Sharing</h3>
                             <p class="card-text"> sabi Ride Sharing your reliable ride-sharing companion. Whether you're commuting to work, heading to a social event, or exploring the city, Sabi Ride offers a seamless, convenient, and affordable way to get around.</p>
@@ -144,7 +137,7 @@
             <div class="row g-3">
                 <div class="col-md-6 col-xl-4 col-xxl-3 serviceCard text-start">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/community.png" class="card-img-top" alt="Reason 1">
+                        <img src="../sabimages/Community.png" class="card-img-top" alt="Reason 1">
                         <div class="card-body">
                             <h3 class="card-title">Community Engagement</h3>
                             <p class="card-text">We believe in fostering strong community connections. Our social ride-hailing service is designed to bring people together. By sharing rides with neighbors and fellow commuters, you can make new friends, share stories, and build a sense of community. Experience the joy of connecting with others while traveling to your destination.</p>
@@ -162,7 +155,7 @@
                 </div>
                 <div class="col-md-6 col-xl-4 col-xxl-3 serviceCard">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/social.jpeg" class="card-img-top" alt="Reason 3">
+                        <img src="../sabimages/Social.jpeg" class="card-img-top" alt="Reason 3">
                         <div class="card-body">
                             <h3 class="card-title">Enhanced Social Experience</h3>
                             <p class="card-text">Sabi Ride isn't just about getting from point A to point B; it's about the journey and the people you meet along the way. Our platform encourages social interaction, making your rides more enjoyable and engaging. Whether you're carpooling with colleagues or sharing a ride with fellow event-goers, Sabi Ride turns ordinary commutes into memorable experiences.</p>
@@ -205,7 +198,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 
