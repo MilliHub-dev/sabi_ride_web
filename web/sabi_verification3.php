@@ -36,7 +36,7 @@
             </div>
             <div class="row g-3 ms-5 justify-content-start">
                 <div class="row justify-content-start">
-                    <p class="fw-nowrap display-7    text-center col-6 fw-bold text-start  ">Documents</p>
+                    <h2 class="fw-nowrap display-7    text-center col-6 fw-bold text-start  ">Documents</h2>
                 </div>
                 <form action="verification.php" method="POST" enctype="multipart/form-data">
 
@@ -147,8 +147,42 @@
                             <p class="w-75" id="fileName8"></p>
                         </div>
                     </div>
+                    <hr><br>
+                        <div class="alert alert-primary" role="alert">
+                    <h4> If you have an account with any ride hailing platform fill in this section for faster verification if not leave it blank</h4>
+                        </div>
+                    <br>
+                    <div class="mb-3">
+                        <h2>screenshot of Dashboard</h2>
+                        <p class="w-75">Please upload screenshot of Dashboard</p>
+                        <div>
+                            <label for="inputType9" class="file-upload text-center">&#43; Upload File
+                                <input type="file" id="inputType9" name="screenshot_of_dashboard" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
+                            </label>
+                            <p class="w-75" id="fileName9"></p>
+                        </div>
+                    </div>
                     <hr>
-
+                    <div class="mb-3">
+                        <h2>screenshot of rating with reviews</h2>
+                        <p class="w-75">Please upload screenshot of rating with reviews</p>
+                        <div>
+                            <label for="inputType10" class="file-upload text-center">&#43; Upload File
+                                <input type="file" id="inputType10" name="screenshot_of_rating" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
+                            </label>
+                            <p class="w-75" id="fileName10"></p>
+                        </div>
+                    <hr>
+                    <div class="mb-3">
+                        <h2>screenshot of Notification screen</h2>
+                        <p class="w-75">Please upload screenshot Notification screen</p>
+                        <div>
+                            <label for="inputType11" class="file-upload text-center">&#43; Upload File
+                                <input type="file" id="inputType11" name="screenshot_of_notification" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
+                            </label>
+                            <p class="w-75" id="fileName11"></p>
+                        </div>
+                    <hr><br>
                     <div class="row justify-content-center mb-5">
                         <div class="col-sm-12 center-flex-elem mt-4">
                             <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
@@ -167,6 +201,9 @@
                 const fileInput6 = document.getElementById('inputType6');
                 const fileInput7 = document.getElementById('inputType7');
                 const fileInput8 = document.getElementById('inputType8');
+                const fileInput9 = document.getElementById('inputType9');
+                const fileInput10 = document.getElementById('inputType10');
+                const fileInput11 = document.getElementById('inputType11');
 
                 const fileName1 = document.getElementById('fileName1');
                 const fileName2 = document.getElementById('fileName2');
@@ -176,6 +213,9 @@
                 const fileName6 = document.getElementById('fileName6');
                 const fileName7 = document.getElementById('fileName7');
                 const fileName8 = document.getElementById('fileName8');
+                const fileName9 = document.getElementById('fileName9');
+                const fileName10 = document.getElementById('fileName10');
+                const fileName11 = document.getElementById('fileName11');
 
                 fileInput1.addEventListener('change', function() {
                     fileName1.textContent = fileInput1.files[0].name;
@@ -207,6 +247,18 @@
 
                 fileInput8.addEventListener('change', function() {
                     fileName8.textContent = fileInput8.files[0].name;
+                });
+
+                fileInput9.addEventListener('change', function() {
+                    fileName9.textContent = fileInput9.files[0].name;
+                });
+
+                fileInput10.addEventListener('change', function() {
+                    fileName10.textContent = fileInput10.files[0].name;
+                });
+
+                fileInput11.addEventListener('change', function() {
+                    fileName11.textContent = fileInput11.files[0].name;
                 });
             </script>
 </body>
