@@ -64,14 +64,14 @@
         </div>
     </nav>
 
-    <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="background: url('../sabimages/bg.jpg') no-repeat center center/cover; height: 100vh;">
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="background: url('../sabimages/serv.jpg') no-repeat center center/cover; height: 100vh;">
         <div>
 
         </div>
         <div class=" servicecaption card text-bg-dark w-75 mx-5">
             <div class="card-body">
                 <h1>Welcome to Our Service</h1>
-                <a href="#" class="btn btn-success mt-4">Get Started</a>
+                <a href="driver.php" class="btn btn-success mt-4">Get Started</a>
             </div>
         </div>
     </section>
