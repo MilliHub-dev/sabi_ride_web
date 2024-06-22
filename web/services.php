@@ -69,58 +69,58 @@
         </div>
     </section>
 
-    <section class="services py-5 text-center">
+    <section class="services py-5 text-center service-card">
         <div class="container">
             <h2 class="mb-5 text-dark-50 display-2">Our Services</h2>
             <div class="row g-3 align-items-center justify-content-center">
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 ">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/Ridehailing.jpg" class="card-img-top" alt="Service 1">
+                        <!-- <img src="../sabimages/Ridehailing.jpg" class="card-img-top" alt="Service 1"> -->
                         <div class="card-body">
-                            <h3 class="card-title">Ride Hailing</h3>
+                            <h3 class="card-header">Ride Hailing</h3>
                             <p class="card-text float-start">Ride-hailing is a transportation service that allows passengers to request a ride from a location using a mobile app, connecting them with drivers who use their own vehicles to provide the service.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/dispatch.png" class="card-img-top" alt="Service 2">
+                        <!-- <img src="../sabimages/dispatch.png" class="card-img-top" alt="Service 2"> -->
                         <div class="card-body">
                             <h3 class="card-title">Dispatch</h3>
                             <p class="card-text">Dispatch ride refers to the process of assigning and coordinating the pickup and delivery of goods or passengers to specific vehicles or drivers within a transportation or ride-hailing service.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/food-delivery.jpg" class="card-img-top" alt="Service 3">
+                        <!-- <img src="../sabimages/food-delivery.jpg" class="card-img-top" alt="Service 3"> -->
                         <div class="card-body">
                             <h3 class="card-title">Food delivery</h3>
                             <p class="card-text">A VIP ride refers to a premium or exclusive transportation service designed to provide a higher level of comfort, luxury, and personalized experience to passengers, often at a premium price.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/vip1.jpg" class="card-img-top" alt="Service 3">
+                        <!-- <img src="../sabimages/vip1.jpg" class="card-img-top" alt="Service 3"> -->
                         <div class="card-body">
                             <h3 class="card-title">VIP Ride</h3>
                             <p class="card-text">A VIP ride refers to a premium or exclusive transportation service designed to provide a higher level of comfort, luxury, and personalized experience to passengers, often at a premium price.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/Groceries.png" class="card-img-top" alt="Service 3">
+                        <!-- <img src="../sabimages/Groceries.png" class="card-img-top" alt="Service 3"> -->
                         <div class="card-body">
                             <h3 class="card-title">Groceries</h3>
                             <p class="card-text">Food delivery is the service of bringing prepared meals, groceries, or restaurant dishes directly to a customer's specified location, typically using a delivery driver or courier.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3 serviceCard">
+                <div class="col-sm-3 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card shadow-sm">
-                        <img src="../sabimages/ride sharing.jpg" class="card-img-top" alt="Service 3">
+                        <!-- <img src="../sabimages/ride sharing.jpg" class="card-img-top" alt="Service 3"> -->
                         <div class="card-body">
                             <h3 class="card-title">Ride Sharing</h3>
                             <p class="card-text"> sabi Ride Sharing your reliable ride-sharing companion. Whether you're commuting to work, heading to a social event, or exploring the city, Sabi Ride offers a seamless, convenient, and affordable way to get around.</p>
@@ -131,7 +131,7 @@
         </div>
     </section>
 
-    <section class="why-us py-5 text-center bg-light">
+    <section class="why-us py-5 text-center">
         <div class="container">
             <h2 class="mb-5 text-dark-50 display-2">Why Choose Us</h2>
             <div class="row g-3">

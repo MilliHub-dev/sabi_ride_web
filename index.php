@@ -11,8 +11,10 @@
   <!-- <link rel="stylesheet" href="./style/style1.css"> -->
   <link rel="stylesheet" href="./css/fonts.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style/verification.css">
+  <link rel="stylesheet" href="./style/main.css">
+
 
 </head>
 
@@ -83,7 +85,7 @@
     <div class="container-fluid">
       <div class="row g-0 justify-content-between min-vh-100">
         <div>
-          <div class="row gx-2 justify-content-around">
+          <div class="row gx-2 justify-content-between">
             <div class="col-12 gx-2">
               <div class="text-center">
                 <img src="./sabimages/phone-mockup-cropped.png" alt="SabiRide App interface" id="phonemockup">
@@ -122,110 +124,99 @@
   </div>
 
   <!-- Serivce cards -->
-  <div class="parallax bgimg-3 mb-2 pt-5 mt-0 shadow-m">
-    <div class="pt-2">
-      <div class="container-fluid">
-        <div class="row g-3 align-items-center justify-content-between">
-          <div class=" col-md-6 col-xl-4 col-xxl-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Rides</h5>
-                <p class="card-text float-start"> Transportation service that allows passengers
-                  to request a ride from a location using a mobile app.</p>
-                <img src="./sabimages/Rectangle 17.png" class="float-end pb-0" alt="">
-              </div>
+  <div class="mb-2 pt-5 mt-0">
+    <div class="container-fluid">
+      <div class="row g-2 justify-content-between">
+        <div class=" col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Rides</h5>
+              <p class="card-text float-start"> Transportation service that allows passengers
+                to request a ride from a location using a mobile app.</p>
+              <img src="./sabimages/Rectangle 17.png" class="float-end" alt="Rides">
             </div>
           </div>
-          <div class=" col-md-6 col-xl-4 col-xxl-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">VIP Rides</h5>
-                <p class="card-text float-start"> This service is designed to provide a higher level of comfort, luxury,
-                  and personalized experience to users.</p>
-                <img src="./sabimages/Rectangle 31.png" class="float-end pb-0" alt="">
-              </div>
-            </div>
-          </div>
-          <div class=" col-md-6 col-xl-4 col-xxl-3">
-            <div class="card h-100">
-              <div class="card-body ">
-                <h5 class="card-title">Food Delivery</h5>
-                <p class="card-text float-start">This is a service of bringing prepared meals directly to a customer's specified location.</p>
-                <img src="./sabimages/Rectangle 18.png" class="float-end pb-0" alt="">
-              </div>
-            </div>
-          </div>
-          <div class=" col-md-6 col-xl-4 col-xxl-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Groceries</h5>
-                <p class="card-text float-start">This is a service of bringing
-                  groceries directly to a customer's
-                  specified location.</p>
-                <img src="./sabimages/Rectangle 19.png" class="float-end pb-0" alt="">
-              </div>
-            </div>
-          </div>
-          <div class=" col-md-6 col-xl-4 col-xxl-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Logistics</h5>
-                <p class="card-text float-start">This is a service of delivering
-                  items directly to a customer's
-                  specified location.</p>
-                <img src="./sabimages/Rectangle 28.png" class="float-end pb-0" alt="">
-              </div>
-            </div>
-          </div>
-          <div class=" col-md-6 col-xl-4 col-xxl-3 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Dispatch</h5>
-                <p class="card-text float-start">This is a service of assigning and
-                  coordinating the pickup and delivery of small goods. </p>
-                <img src="./sabimages/dispatch.png" width="120" class="float-end pb-0" alt="">
-              </div>
-            </div>
-          </div>
-
         </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">VIP Rides</h5>
+              <p class="card-text float-start "> This service is designed to provide a higher level of comfort, luxury,
+                and personalized experience to users.</p>
+              <img src="./sabimages/Rectangle 31.png" class="" alt="VIP">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Food Delivery</h5>
+              <p class="card-text float-start">This is a service of bringing prepared meals directly to a customer's specified location.</p>
+              <img src="./sabimages/Rectangle 18.png" class="float-end" alt="Food delivery">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Groceries</h5>
+              <p class="card-text float-start">This is a service of bringing
+                groceries directly to a customer's
+                specified location.</p>
+              <img src="./sabimages/Rectangle 19.png" class="float-end" alt="Groceries">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Logistics</h5>
+              <p class="card-text float-start">This is a service of delivering
+                items directly to a customer's
+                specified location.</p>
+              <img src="./sabimages/Rectangle 28.png" class="float-end" alt="Logistics">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Dispatch</h5>
+              <p class="card-text float-start">This is a service of assigning and
+                coordinating the pickup and delivery of small goods. </p>
+              <img src="./sabimages/dispatch.png" class="float-end" width="120px" alt="Dispatch">
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- Info icons -->
   <section class="rel container-fluid mt-4 mb-4">
-    <div class="row g-2 justify-content-center align-items-center">
-      <div class="col-md-6 text-center col-xl-3 col-xxl-4 col-sm-6 ">
-        <article class="counter-modern border w-50  d-block center-block-elem text-center btn ">
-          <span class="counter-modern-main icon counter-modern-icon mdi mdi-flag-variant badge rounded-pill bg-info ">
-            24K
-          </span>
-          <p class="pt-0 mb-0 counter-modern-title">Customers</p>
-
-        </article>
+    <div class="row g-2 justify-content-between align-items-start">
+      <div class="col-6 d-flex flex-column align-items-center justify-content-center ">
+        <span class="icon mdi mdi-flag-variant badge rounded-pill bg-info ">
+          24K
+        </span>
+        <p class=" ">Customers</p>
       </div>
-      <div class="col-md-6 text-center col-xl-3 col-xxl-4 col-sm-6  justify-content-center align-items-center">
-        <article class="border  w-50  d-block center-block-elem text-center btn ">
-          <span class="icon mdi mdi-car badge rounded-pill bg-info">250
-          </span>
-          <p class="pt-1 mb-0">Total Rides</p>
-        </article>
+      <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+        <span class="icon mdi mdi-car badge rounded-pill bg-info">250
+        </span>
+        <p class="">Total Rides</p>
       </div>
 
-      <div class="col-md-6 text-center  col-xl-3 col-xxl-4 col-sm-6 ">
-        <article class="counter-modern border w-50  d-block center-block-elem text-center btn ">
-          <span class="counter-modern-main icon counter-modern-icon mdi mdi-coin  badge rounded-pill bg-info">
-            231k
-          </span>
-          <p class="pt-0 mb-0">Active Ride</p>
-        </article>
+      <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+        <span class="icon mdi mdi-coin badge rounded-pill bg-info">
+          231k
+        </span>
+        <p class="">Active Ride</p>
       </div>
-      <div class="col-md-6 text-center  col-xl-3 col-xxl-4 col-sm-6 ">
-        <article class="border w-50  d-block center-block-elem text-center btn ">
-          <span class="icon mdi mdi-account badge rounded-pill bg-info">17</span>
-          <p class="pt-0 mb-0">Drivers</p>
-        </article>
+      <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+        <span class="icon mdi mdi-account badge rounded-pill bg-info">17</span>
+        <p class="">Drivers</p>
       </div>
     </div>
   </section>
@@ -254,7 +245,7 @@
             <div class="col-6">
               <h3 class="display-6 text-start text-white fw-bold mb-3">Drive and Earn Money</h3>
               <div class="d-flex gap-3">
-                <span class="numpill btn" style="font-size: 1.5rem; padding-top: 1px;">1</span>
+                <div class="numpill">1</div>
                 <div class="d-grid">
                   <h3 class="text-white text-start pt-1">Drive more, Earn More.</h3>
                   <p class="text-white text-start">Make more money when you when you ride more</p>
@@ -263,7 +254,7 @@
 
               <div class="my-3">
                 <div class="d-flex gap-3">
-                  <span class="numpill btn" style="font-size: 1.5rem; padding-top: 1px;">2</span>
+                  <div class="numpill">2</div>
                   <div class="d-grid">
                     <h3 class="text-white pt-1 text-start">Drive according to your schedule.</h3>
                     <p class="text-white text-start">Pick up passengers as schedule</p>
@@ -272,7 +263,7 @@
               </div>
               <div class="my-3">
                 <div class="d-flex gap-3">
-                  <span class=" numpill btn" style="font-size: 1.5rem; padding-top: 1px;">3</span>
+                  <div class="numpill">3</div>
                   <div class="d-grid">
                     <h3 class="text-white pt-1 text-start">Get paid each day.</h3>
                     <p class="text-white text-start">Get paid anytime anyday</p>
@@ -293,63 +284,43 @@
     </div>
   </div>
 
-
+  <!-- TODO::TO BE STYLED LATER -->
   <!-- Our Advantage -->
-  <section class="section section-lg text-center bg-gray-950 mt-4">
-    <div class="container-fluid">
-      <div class="row align-items-center g-3 gray_border pb-2 h-100 ">
-        <div class="col-12 justify-contents-center">
-          <h2 class="wow fadeIn text-dark-50 display-2">Our Advantage</h2>
-        </div>
-        <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay=".3s">
-          <div class="btn">
-            <!-- Box Classic-->
-            <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-planetary2"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Social Feature</h4>
-                <p class="text-start fw-light">Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
-              </span></article>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn">
-          <div class="btn">
-            <!-- Box Classic-->
-            <article class="box-classic "><span class="icon box-classic-icon fl-bigmug-line-map87 text-decoration-none"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Ride Sharing</h4>
-                <p class="text-start fw-light">Ride sharing offers cost savings, convenience through sabi ride mobile apps, flexible ride options, and enhanced safety with background checks and driver ratings.</p>
-              </span></article>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay=".4s">
-          <div class="btn">
-            <!-- Box Classic-->
-            <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-portfolio23"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">Price Transparency</h4>
-                <p class="text-start fw-light">Price transparency in Sabi Ride ensures clear, upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
-              </span></article>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-6 col-xl-3 h-100 wow fadeIn" data-wow-delay=".5s">
-          <div class="btn">
-            <!-- Box Classic-->
-            <article class="box-classic"><span class="icon box-classic-icon fl-bigmug-line-headphones32"></span><span class="box-classic-main">
-                <h4 class="box-classic-title">24/7 Online Support</h4>
-                <p class="text-start fw-light">Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
-              </span></article>
-          </div>
-        </div>
-
-
+  <!-- <div class="container-fluid clearfix">
+    <div class="row g-2 d-flex flex-row flex-wrap overflow-x-scroll">
+      <div class="col-12">
+        <h2 class="text-dark-50 display-2 text-center">Our Advantage</h2>
       </div>
-    </div>
-    </div>
-    </div>
-  </section>
+      <div class="col-6 p-2 flex-fill">
+        <div class="card d-flex flex- align-items-center justify-content-center">
+          <img src="" class="card-img-top fa fa-arrow-left">
+          <h4 class="card-title">Social Feature</h4>
+          <p class="card-text p-3">Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
+        </div>
+      </div>
+      <div class="col-6 p-2 flex-fill">
+        <div class="card d-flex flex-row align-items-center justify-content-center">
+          <span class="icon box-classic-icon fl-bigmug-line-map87 text-decoration-none"></span>
+          <h4 class="card-title">Ride Sharing</h4>
+          <p class="card-text">Ride sharing offers cost savings, convenience through sabi ride mobile apps, flexible ride options, and enhanced safety with background checks and driver ratings.</p>
+        </div>
+      </div>
+      <div class="col-6 p-2 flex-fill">
+        <div class="card d-flex flex-row align-items-center justify-content-center">
+          <h4 class="card-title">Price Transparency</h4>
+          <p class="card-text">Price transparency in Sabi Ride ensures clear, upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
+        </div>
+      </div>
+      <div class="col-6 p-2 flex-fill">
+        <div class="card d-flex flex-row align-items-center justify-content-center">
+          <h4 class="card-title">24/7 Online Support</h4>
+          <p class="card-text">Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
+        </div>
+      </div> -->
 
   <!-- News and update -->
   <div class="container CTAFOUR my-3">
-    <div class="row News border">
+    <div class="row News border rounded">
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h1 class="fw-bolder text-black">News and Updates</h1>
       </div>
@@ -399,7 +370,7 @@
         </style>
 
         <div class="card-group">
-          <div class="card m-3">
+          <div class="card m-3 rounded">
             <?php //foreach ($latestPosts as $post) :
             ?>
             <div class="post">
@@ -427,19 +398,19 @@
             <?php //endforeach;
             ?>
           </div>
-          <div class="card m-3">
+          <div class="card m-3 rounded">
             <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
             <div class="card-body">
               <b class="card-text">The 2020 Guide For White Men in Tech</b>
             </div>
           </div>
-          <div class="card m-3">
+          <div class="card m-3 rounded">
             <img src="sabimages/Rectangle 33.png" class="card-img-top" alt="...">
             <div class="card-body">
               <b class="card-text">Dear Designer: How to Explain to Your Kids That You Work at Facebook</b>
             </div>
           </div>
-          <div class="card m-3">
+          <div class="card m-3 rounded">
             <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
             <div class="card-body">
               <b class="card-text">Data-Driven Design is Killing Our Instinct</b>
@@ -465,14 +436,14 @@
           <h1 class="py-5">Download our mobile app to make your Ride experience better than ever before!</h1>
         </center>
         <div class="col-6 mx-auto d-block">
-          <div class="card mb-3 p-3" style="max-width: 540px;">
+          <div class="card mb-3 p-3 rounded" style="max-width: 540px;">
             <div class="row g-0">
               <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
               <div class="col-md-4">
                 <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body ">
                   <img src="./sabimages/store-apple-logo-apple.png" width="100px" alt="">
                   <p class="card-text">Scan to download</p>
                   <button class="btn btn-primary" type="button">Download Now</button>
@@ -482,7 +453,7 @@
           </div>
         </div>
         <div class="col-6 mx-auto d-block">
-          <div class="card mb-3 p-3" style="max-width: 540px;">
+          <div class="card mb-3 p-3 rounded" style="max-width: 540px;">
             <div class="row g-0">
               <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
               <div class="col-md-4">
@@ -528,8 +499,8 @@
         <div class="col-md-3 mt-md-0 mt-3">
           <img src="./sabimages/Sabi ride 2.png" width="150" alt="">
         </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-3 mb-md-0 mb-3">
+        <hr class="clearfix w-50 m-auto d-md-none pb-3">
+        <div class=" col-md-3 mb-md-0 mb-3">
           <h5 class="fw-bold">Sabi Ride</h5>
           <ul class="list-unstyled">
             <li>
@@ -590,12 +561,14 @@
     </div>
   </footer>
   </div>
+  </div>
 
   <!-- </div> -->
 
 
   <script src="./js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
