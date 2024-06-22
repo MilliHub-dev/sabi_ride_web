@@ -38,7 +38,6 @@ $vehicle_model = $_SESSION['vehicle_model'] = getSessionOrPost('vehicle_model');
 $vehicle_year = $_SESSION['vehicle_year'] = getSessionOrPost('vehicle_year');
 $vehicle_color = $_SESSION['vehicle_color'] = getSessionOrPost('vehicle_color');
 
-
 // Debug output
 echo "<pre>";
 print_r($_POST);
@@ -71,7 +70,11 @@ $files = [
     'vehicle_license_certification' => $_FILES['vehicle_license_certification'],
     'certification_of_roadworthiness' => $_FILES['certification_of_roadworthiness'],
     'issued_id' => $_FILES['issued_id'],
-    'proof_of_ownership' => $_FILES['proof_of_ownership']
+    'proof_of_ownership' => $_FILES['proof_of_ownership'],
+    'screenshot_of_dashboard' => $_FILES['screenshot_of_dashboard'],
+    'screenshot_of_rating' => $_FILES['screenshot_of_rating'],
+    'screenshot_of_notification' => $_FILES['screenshot_of_notification']
+    
 ];
 
 $uploadDir = 'uploads/';
@@ -104,11 +107,13 @@ foreach ($files as $key => $file) {
 $query = "INSERT INTO driver (
     first_name, user_id, middle_name, last_name, gender, referral_code, driver_type, driver_license_number, driver_license_expiry,
     vehicle_manufacturer, vehicle_model, vehicle_year, vehicle_color, profile_photo, car_photo_inner, car_photo_outter,
-    driver_license_document, vehicle_license_certification, certification_of_roadworthiness, issued_id, proof_of_ownership
+    driver_license_document, vehicle_license_certification, certification_of_roadworthiness, issued_id, proof_of_ownership,
+     screenshot_of_dashboard, screenshot_of_rating, screenshot_of_notification
 ) VALUES (
     :first_name, :user_id, :middle_name, :last_name, :gender, :referral_code, :driver_type, :driver_license_number, :driver_license_expiry,
     :vehicle_manufacturer, :vehicle_model, :vehicle_year, :vehicle_color, :profile_photo, :car_photo_inner, :car_photo_outter,
-    :driver_license_document, :vehicle_license_certification, :certification_of_roadworthiness, :issued_id, :proof_of_ownership
+    :driver_license_document, :vehicle_license_certification, :certification_of_roadworthiness, :issued_id, :proof_of_ownership,
+    :screenshot_of_dashboard, :screenshot_of_rating, :screenshot_of_notification 
 )";
 
 $stmt = $pdo->prepare($query);
@@ -134,7 +139,10 @@ $params = [
     ':vehicle_license_certification' => $file_paths['vehicle_license_certification'],
     ':certification_of_roadworthiness' => $file_paths['certification_of_roadworthiness'], 
     ':issued_id' => $file_paths['issued_id'], 
-    ':proof_of_ownership' => $file_paths['proof_of_ownership']
+    ':proof_of_ownership' => $file_paths['proof_of_ownership'],
+    ':screenshot_of_dashboard' => $file_paths['screenshot_of_dashboard'],
+    ':screenshot_of_rating' => $file_paths['screenshot_of_rating'],
+    ':screenshot_of_notification' => $file_paths['screenshot_of_notification']
 ];
 
 if ($stmt->execute($params)) {

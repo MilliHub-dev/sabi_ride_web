@@ -46,25 +46,25 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="web/sabi_login.php">Login</a>
+                            <a class="nav-link active" aria-current="page" href="sabi_login.php">Login</a>
                         </li>
 
                     </ul>
-                    <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="web/driver.php" style="text-decoration: none; color: #fff;">Sign up</a></button>
+                    <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="driver.php" style="text-decoration: none; color: #fff;">Sign up</a></button>
 
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="background: url('../sabimages/bg.jpg') no-repeat center center/cover; height: 100vh;">
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="background: url('../sabimages/serv.jpg') no-repeat center center/cover; height: 100vh;">
         <div>
 
         </div>
         <div class=" servicecaption card text-bg-dark w-75 mx-5">
             <div class="card-body">
                 <h1>Welcome to Our Service</h1>
-                <a href="#" class="btn btn-success mt-4">Get Started</a>
+                <a href="driver.php" class="btn btn-success mt-4">Get Started</a>
             </div>
         </div>
     </section>

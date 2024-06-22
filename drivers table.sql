@@ -23,5 +23,8 @@ CREATE TABLE driver_verification (
     verification_status VARCHAR(20) DEFAULT 'pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	user_id VARCHAR(50) NOT NULL
+	user_id VARCHAR(50) NOT NULL,
+	screenshot_of_dashboard BYTEA,
+	screenshot_of_rating BYTEA,
+	screenshot_of_notification BYTEA
 );

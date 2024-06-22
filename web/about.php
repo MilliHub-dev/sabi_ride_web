@@ -47,11 +47,11 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="web/sabi_login.php">Login</a>
+            <a class="nav-link active" aria-current="page" href="sabi_login.php">Login</a>
           </li>
          
         </ul>
-        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="web/driver.php" style="text-decoration: none; color: #fff;">Sign up</a></button>
+        <button style="background-color: #0088CD; outline: none; border: 0; border-radius: 20px; height: 30px; padding: 0 10px; margin-top: 5px;"><a href="driver.php" style="text-decoration: none; color: #fff;">Sign up</a></button>
        
         
       
