@@ -178,8 +178,8 @@ if (!$post) {
 
   <div class="footer-copyright text-center py-3">© 2023 Copyright:
     <a href="/"><img src="../sabimages/instagram.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="../sabimages/facebook.png" alt="" class="px-2" width="60"></a>
-    <a href="/"><img src="../sabimages/twitter.png" alt="" class="px-2" width="60"></a>
+    <a href="https://www.facebook.com/profile.php?id=61553823904645"><img src="../sabimages/facebook.png" alt="" class="px-2" width="60"></a>
+    <a href="https://x.com/sabiride"><img src="../sabimages/twitter.png" alt="" class="px-2" width="60"></a>
   </div>
 </footer>
 <script src="assets/js/jquery.min.js"></script>

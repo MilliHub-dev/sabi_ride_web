@@ -186,9 +186,9 @@
                 </div>
                 <div class="col-md-4 mb-3 text-decoration-none">
                     <h3>Follow Us</h3>
-                    <a href=""><img src="../sabimages/facebook.png" alt="Facebook" width="30"></a>
-                    <a href="#"><img src="../sabimages/twitter.png" alt="Twitter" width="30"></a>
-                    <a href="#"><img src="../sabimages/instagram.png" alt="Instagram" width="30"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61553823904645"><img src="../sabimages/facebook.png" alt="Facebook" width="30"></a>
+                    <a href="https://x.com/sabiride"><img src="../sabimages/twitter.png" alt="Twitter" width="30"></a>
+                    <a href="https://www.instagram.com/sabiride.ng?utm_source=qr&igsh=MWg5bXR4MnE2ODljZw=="><img src="../sabimages/instagram.png" alt="Instagram" width="30"></a>
                 </div>
             </div>
             <div class="footer-bottom mt-3">

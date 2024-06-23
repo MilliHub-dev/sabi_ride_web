@@ -123,7 +123,7 @@
             <h2 class="border">Be your own boss. As you sabi drive, you go sabi earn.</h2>
             <p>Join our unique ride-hailing platform and take control of your earnings. <br> With flexible hours and competitive rates, driving with us means maximizing your income while enjoying the freedom of being your own boss. <br> Sign up now and start earning!</p>
             <button type="button" style="text-decoration: none;">Apply online <span>></span></i></button>
-          </div>
+          </div><br><br><br><br>
           <div>
             <img src="../sabimages/sabiImage_rec_58.jpg" alt=""  alt="...">
           </div>

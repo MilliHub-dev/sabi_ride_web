@@ -61,8 +61,8 @@
     </div>
   </div>
   <div class="footer-copyright text-center py-3">© 2024 Copyright: Powered By MILLIHUB 
-    <a href="/"><img src="../sabimages/instagram.png" alt="" class="px-2" width="40"></a>
-    <a href="/"><img src="../sabimages/facebook.png" alt="" class="px-2" width="40"></a>
-    <a href="/"><img src="../sabimages/twitter.png" alt="" class="px-2" width="40"></a>
+    <a href="https://www.instagram.com/sabiride.ng?utm_source=qr&igsh=MWg5bXR4MnE2ODljZw=="><img src="../sabimages/instagram.png" alt="" class="px-2" width="40"></a>
+    <a href="https://www.facebook.com/profile.php?id=61553823904645"><img src="../sabimages/facebook.png" alt="" class="px-2" width="40"></a>
+    <a href="https://x.com/sabiride"><img src="../sabimages/twitter.png" alt="" class="px-2" width="40"></a>
   </div>
 </footer>
