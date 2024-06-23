@@ -28,7 +28,7 @@
         <h5 class="fw-bold">Partner with Sabi Ride</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">sign up as driver</a>
+            <a href="../driver.php">sign up as driver</a>
           </li>
           <li>
             <a href="#!">Sign your car as vip</a>
@@ -45,7 +45,7 @@
         <h5 class="fw-bold">Company</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">About us</a>
+            <a href="../web/about.php">About us</a>
           </li>
           <li>
             <a href="#!">News and Update</a>

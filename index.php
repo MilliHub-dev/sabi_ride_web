@@ -88,7 +88,7 @@
           <div class="row gx-2 justify-content-between">
             <div class="col-12 gx-2">
               <div class="text-center">
-                <img src="./sabimages/phone-mockup-cropped.png" alt="SabiRide App interface" id="phonemockup">
+                <img src="./sabimages/home11.png" alt="SabiRide App interface" id="phonemockup">
               </div>
               <div class="brandcaption">
                 <span class="text-start text-white text-wrap">Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</span>
