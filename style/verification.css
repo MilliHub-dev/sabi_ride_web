@@ -33,11 +33,12 @@ body {
         background-repeat: no-repeat;
         background-clip: border-box;
         background-attachment: scroll;
-        filter: blur(1em);
+        /* filter: blur(1em); */
         filter: opacity(0.2);
+        z-index: -1;
 }
 
-.bg-1>.container-fluid {
+.bg-1:first-child {
         position: relative;
 }
 
