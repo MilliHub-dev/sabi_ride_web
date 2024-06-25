@@ -34,6 +34,7 @@ try {
 
         // Execute the statement
         if ($stmt->execute()) {
+            echo "<script>alert('Signup Successful ');</script>";
             header('Location: sabi_login.php');
             
             exit();

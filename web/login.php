@@ -69,9 +69,11 @@ try {
 
                 if ($result) {
                     // Redirect to verification status page if already submitted
+                    echo "<script>alert('You have already submited your form');</script>";
                     header('Location: sabi_verification4.php');
                 } else {
                     // Redirect to the form submission page
+                    echo "<script>alert('Login Successfull ');</script>";
                     header('Location: sabi_verification1.php');
                 }
                 exit();
