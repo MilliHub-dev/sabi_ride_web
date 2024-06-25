@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 
 * {
         box-sizing: border-box;
+        transition-duration: 0.5s;
 }
 
 body,
@@ -22,6 +25,9 @@ a[href] {
         --brand-ash: #cfd9dfd7;
         --brand-blue: #0088CD;
         --brand-subtle-ash: #DAE3EAB2;
+        --card-ash: #EDEDED;
+        --card-text-ash: #575757;
+        --bg-img-blend-color: #56707ea2;
 }
 
 
@@ -34,26 +40,23 @@ a[href] {
         background-size: cover;
 }
 
-/* Sabi Car */
+/* Sabi Car -> Page Hero*/
 .bgimg-1 {
-        background-image: url(../sabimages/Sabiridecarcropped2.png);
-        min-height: 100%;
+        background-image: url("../img/sabi_car@780px.png");
         width: 100%;
-        background-color: #56707ea2;
+        height: auto;
+        background-color: var(--bg-img-blend-color);
         background-blend-mode: multiply;
-        margin-left: auto;
-        margin-right: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-clip: border-box;
+        background-size: cover;
 }
 
-
-/*  Service cards bg */
-.bgimg-3 {
-        /* background-image: url(../sabimages/Rectangle_48.png); */
-        /* min-height: 100%; */
-        /* background-blend-mode: lighten; */
-        background-color: none;
-        margin-left: auto;
-        margin-right: auto;
+.brandcaption {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
 }
 
 /* Earn bg */
@@ -65,25 +68,12 @@ a[href] {
         margin-right: auto;
 }
 
-/* phone mock-up -> Unused */
-/* .bgimg-5 {
-        background-image: url(../sabimages/555.png);
-        min-height: 100%;
-        width: 100%;
-        top: 30%;
-        background-color: #56707ea2;
-        background-blend-mode: multiply;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 999;
-} */
+/* Earn money */
+.caption2 {
 
-.brandcaption {
-        padding: 6%;
-        margin: auto;
-        font-weight: 700;
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: justify;
 }
 
 .servicecaption {
@@ -94,34 +84,6 @@ a[href] {
         line-height: 3rem;
 }
 
-.caption0 {
-        padding: 6%;
-        text-align: justify;
-        margin: auto;
-        /* font-size: 1.2rem; */
-        /* line-height: 1rem; */
-        /* font-family: fira sans; */
-}
-
-
-
-.caption1 {
-        padding: 6%;
-        text-align: justify;
-        margin: auto;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-}
-
-
-/* Earn money */
-.caption2 {
-
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: justify;
-}
-
 
 .sp {
         /* position: absolute; */
@@ -129,10 +91,7 @@ a[href] {
         margin: auto;
 }
 
-#phonemockup {
-        width: 80%;
-        background-blend-mode: multiply;
-}
+
 
 .numpill {
         display: flex;
@@ -192,22 +151,52 @@ a[href] {
         text-shadow: 2px 1px #000000;
 }
 
-.btn {
+/*
+.btn-blue {
         background-color: #0088CD;
         text-decoration: none;
         color: #ffffff;
         font-weight: 600;
         font-size: 18px;
-        /* font-family: 'Fira Sans'; */
+        font-family: 'Fira Sans';
 }
 
-.btn:hover {
+.btn-blue:hover {
         background-color: #ffffff;
         text-decoration: none;
         color: #0088CD;
+} */
+
+/* .btn-white {
+        background-color: #ffffff;
+        text-decoration: none;
+        color: #0088CD;
+        font-weight: 600;
+        border: none;
+        border-radius: 1rem;
+        min-height: 2.5rem;
+        font-size: 0.8rem;
+
 }
 
+.btn-white:hover {
+        background-color: #0088CD;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+} */
+.bgimg-1 .btn-light {
+        color: #0088CD;
+        border-radius: 3em;
+        border: none;
+        /* padding: 0.5em; */
+        /* font-size: 0em; */
+}
 
+.bgimg-1 .btn-light:hover {
+        color: white;
+        background-color: #0088CD;
+}
 
 
 
@@ -217,8 +206,9 @@ a[href] {
 /* .card-dark {} */
 
 .card:hover,
-card:focus {
-        box-shadow: 0px 3px 5px rgb(0, 0, 0.6);
+.card:focus {
+        /* box-shadow: 0px 3px 5px rgb(0, 0, 0.6); */
+        transform: scale(1.05);
 
 }
 
@@ -266,30 +256,29 @@ card:focus {
                 background-attachment: scroll;
         }
 
-        .bgimg-1 {
-                padding-top: 90px;
-        }
-
         .adv {
                 display: flex;
                 overflow-x: auto;
                 overflow-x: scroll;
         }
 
-        /* .caption0 {
-                font-size: 0.9rem;
-                line-height: 1.2rem;
-                font-weight: normal;
-        } */
-
 }
 
 /*Parallax media queries*/
 @media only screen and (min-width: 1000px) {
         .bgimg-1 {
-                min-height: 200%;
+                background-image: url(../img/Sabiridecar.png);
+                width: 100%;
+                height: auto;
+                background-color: var(--bg-img-blend-color);
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-clip: border-box;
+                background-size: cover;
         }
 
+        /*
         .bgimg-4 {
                 min-height: 180%;
         }
@@ -307,7 +296,7 @@ card:focus {
                 width: 50%;
         }
 
-        .caption0 {
+        .lead-caption {
                 position: absolute;
                 top: 50%;
                 font-size: 1rem;
@@ -335,7 +324,7 @@ card:focus {
                 left: 50%;
                 transform: translateX(-50%);
         }
-
+ */
 
         div.login>img {
                 width: 10%;
@@ -371,3 +360,20 @@ div.login>img {
 
         }
 }
+
+.card {
+        border: none;
+}
+
+.card-body img {
+        max-height: 64px;
+        max-width: 64px;
+}
+
+/* button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        justify-content: space-between;
+} */

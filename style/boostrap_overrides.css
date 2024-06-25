@@ -1,0 +1,56 @@
+:root {
+        /* --bs-card-bg: #EDEDED; */
+        /* --bs-body-color: red; */
+        --bs-card-color: #575757;
+        /* --bs-navbar-toggler-icon-bg: url("../img/toggler.png"); */
+        --bs-nav-link-hover-color: white;
+}
+
+.navbar-toggler-icon {
+        background-image: url("../img/toggler.png");
+
+}
+
+.navbar-toggler {
+        border: none;
+}
+
+.card-title {
+        font-weight: 700;
+        font-size: 18px;
+        /* big = 35px; */
+}
+
+.services .card {
+        border-radius: 15px;
+        /* big = 18px */
+        background-color: #EDEDED;
+}
+
+.card-text {
+        font-size: 12px;
+        color: var(--card-text-ash);
+        /* big = 25px */
+}
+
+.btn-sm {
+
+        border-radius: 3em;
+        border: none;
+}
+
+.nav-item:hover,
+.nav-item .active:hover {
+        border-left: none;
+        border-radius: 3em;
+        background-color: var(--brand-blue);
+        color: white;
+}
+
+.nav-item .active {
+
+        border-bottom: solid 10px;
+        border-top-right-radius: 3em;
+        border-bottom-right-radius: 3em;
+        border-color: var(--brand-blue);
+}
