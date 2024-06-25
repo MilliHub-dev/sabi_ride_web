@@ -14,29 +14,35 @@
 </head>
 
 <body>
+
     <div class="container-fluid text-body">
-        <div class="row justify-content-center">
-            <div class="mt-5 brand-name  align-self-center text-center">
-                <span id="sabi">Sabi </span><span>Driver</span>
+        <div class="bg-1">
+            <!-- Header -->
+            <div class="row justify-content-center">
+                <div class="mt-5 brand-name  align-self-center text-center">
+                    <span id="sabi">Sabi </span><span>Driver</span>
+                </div>
+                <div class="  text-center align-self-center">
+                    <hr class="text-center center-block-elem">
+                </div>
+                <div class="mt-1"></div>
+                <div class=" progressbar">
+                    <span class="bar" id="bar1"></span>
+                    <span class="num" id="num-active">1</span>
+                    <span class="bar"></span>
+                    <span class="num" id="num-active">2</span>
+                    <span class="bar"></span>
+                    <span class="num" id="num-active">3</span>
+                    <span class="bar"></span>
+                    <span class="num">4</span>
+                    <span class="bar" id="last-bar"></span>
+                </div>
             </div>
-            <div class="  text-center align-self-center">
-                <hr class="text-center center-block-elem">
-            </div>
-            <div class="mt-1"></div>
-            <div class=" progressbar">
-                <span class="bar" id="bar1"></span>
-                <span class="num" id="num-active">1</span>
-                <span class="bar"></span>
-                <span class="num" id="num-active">2</span>
-                <span class="bar"></span>
-                <span class="num" id="num-active">3</span>
-                <span class="bar"></span>
-                <span class="num">4</span>
-                <span class="bar" id="last-bar"></span>
-            </div>
+            <!-- Form -->
             <div class="row g-3 ms-5 justify-content-start">
                 <div class="row justify-content-start">
-                    <h2 class="fw-nowrap display-7    text-center col-6 fw-bold text-start  ">Documents</h2>
+                    <h2 class="fw-nowrap alert display-7 col-6 fw-bold text-start ">Documents</h2>
+                    <p class="alert bg-info fade-out mt-0"> You are almost there...</p>
                 </div>
                 <form action="verification.php" method="POST" enctype="multipart/form-data">
 
@@ -148,119 +154,121 @@
                         </div>
                     </div>
                     <hr><br>
-                        <div class="alert alert-primary" role="alert">
-                    <h4> If you have an account with any ride hailing platform fill in this section for faster verification if not leave it blank</h4>
-                        </div>
+                    <div class="alert mt-4 alert-primary w-75" role="alert">
+                        <h4 class="display-7"> If you have an account with any ride hailing platform fill in this section for faster verification if not leave it blank</h4>
+                    </div>
                     <br>
                     <div class="mb-3">
-                        <h2>screenshot of Dashboard</h2>
-                        <p class="w-75">Please upload screenshot of Dashboard</p>
+                        <h2>Screenshot of Dashboard</h2>
+                        <p class="w-75">Please upload Screenshot of Dashboard</p>
                         <div>
                             <label for="inputType9" class="file-upload text-center">&#43; Upload File
-                                <input type="file" id="inputType9" name="screenshot_of_dashboard" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
+                                <input type="file" id="inputType9" name="screenshot_of_dashboard" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                             </label>
                             <p class="w-75" id="fileName9"></p>
                         </div>
                     </div>
                     <hr>
                     <div class="mb-3">
-                        <h2>screenshot of rating with reviews</h2>
-                        <p class="w-75">Please upload screenshot of rating with reviews</p>
+                        <h2>Screenshot of rating with reviews</h2>
+                        <p class="w-75">Please upload Screenshot of rating with reviews</p>
                         <div>
                             <label for="inputType10" class="file-upload text-center">&#43; Upload File
-                                <input type="file" id="inputType10" name="screenshot_of_rating" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
+                                <input type="file" id="inputType10" name="screenshot_of_rating" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
                             </label>
                             <p class="w-75" id="fileName10"></p>
                         </div>
-                    <hr>
-                    <div class="mb-3">
-                        <h2>screenshot of Notification screen</h2>
-                        <p class="w-75">Please upload screenshot Notification screen</p>
-                        <div>
-                            <label for="inputType11" class="file-upload text-center">&#43; Upload File
-                                <input type="file" id="inputType11" name="screenshot_of_notification" accept=".jpg, .jpeg, .png" placeholder="* Upload File" >
-                            </label>
-                            <p class="w-75" id="fileName11"></p>
-                        </div>
-                    <hr><br>
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-sm-12 center-flex-elem mt-4">
-                            <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
-                        </div>
-                    </div>
+                        <hr>
+                        <div class="mb-3">
+                            <h2>Screenshot of Notification screen</h2>
+                            <p class="w-75">Please upload Screenshot Notification screen</p>
+                            <div>
+                                <label for="inputType11" class="file-upload text-center">&#43; Upload File
+                                    <input type="file" id="inputType11" name="screenshot_of_notification" accept=".jpg, .jpeg, .png" placeholder="* Upload File">
+                                </label>
+                                <p class="w-75" id="fileName11"></p>
+                            </div>
+                            <hr><br>
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-sm-12 center-flex-elem mt-4">
+                                    <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
+                                </div>
+                            </div>
                 </form>
             </div>
             <hr>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            <script>
-                const fileInput1 = document.getElementById('inputType1');
-                const fileInput2 = document.getElementById('inputType2');
-                const fileInput3 = document.getElementById('inputType3');
-                const fileInput4 = document.getElementById('inputType4');
-                const fileInput5 = document.getElementById('inputType5');
-                const fileInput6 = document.getElementById('inputType6');
-                const fileInput7 = document.getElementById('inputType7');
-                const fileInput8 = document.getElementById('inputType8');
-                const fileInput9 = document.getElementById('inputType9');
-                const fileInput10 = document.getElementById('inputType10');
-                const fileInput11 = document.getElementById('inputType11');
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            const fileInput1 = document.getElementById('inputType1');
+            const fileInput2 = document.getElementById('inputType2');
+            const fileInput3 = document.getElementById('inputType3');
+            const fileInput4 = document.getElementById('inputType4');
+            const fileInput5 = document.getElementById('inputType5');
+            const fileInput6 = document.getElementById('inputType6');
+            const fileInput7 = document.getElementById('inputType7');
+            const fileInput8 = document.getElementById('inputType8');
+            const fileInput9 = document.getElementById('inputType9');
+            const fileInput10 = document.getElementById('inputType10');
+            const fileInput11 = document.getElementById('inputType11');
 
-                const fileName1 = document.getElementById('fileName1');
-                const fileName2 = document.getElementById('fileName2');
-                const fileName3 = document.getElementById('fileName3');
-                const fileName4 = document.getElementById('fileName4');
-                const fileName5 = document.getElementById('fileName5');
-                const fileName6 = document.getElementById('fileName6');
-                const fileName7 = document.getElementById('fileName7');
-                const fileName8 = document.getElementById('fileName8');
-                const fileName9 = document.getElementById('fileName9');
-                const fileName10 = document.getElementById('fileName10');
-                const fileName11 = document.getElementById('fileName11');
+            const fileName1 = document.getElementById('fileName1');
+            const fileName2 = document.getElementById('fileName2');
+            const fileName3 = document.getElementById('fileName3');
+            const fileName4 = document.getElementById('fileName4');
+            const fileName5 = document.getElementById('fileName5');
+            const fileName6 = document.getElementById('fileName6');
+            const fileName7 = document.getElementById('fileName7');
+            const fileName8 = document.getElementById('fileName8');
+            const fileName9 = document.getElementById('fileName9');
+            const fileName10 = document.getElementById('fileName10');
+            const fileName11 = document.getElementById('fileName11');
 
-                fileInput1.addEventListener('change', function() {
-                    fileName1.textContent = fileInput1.files[0].name;
-                });
+            fileInput1.addEventListener('change', function() {
+                fileName1.textContent = fileInput1.files[0].name;
+            });
 
-                fileInput2.addEventListener('change', function() {
-                    fileName2.textContent = fileInput2.files[0].name;
-                });
+            fileInput2.addEventListener('change', function() {
+                fileName2.textContent = fileInput2.files[0].name;
+            });
 
-                fileInput3.addEventListener('change', function() {
-                    fileName3.textContent = fileInput3.files[0].name;
-                });
+            fileInput3.addEventListener('change', function() {
+                fileName3.textContent = fileInput3.files[0].name;
+            });
 
-                fileInput4.addEventListener('change', function() {
-                    fileName4.textContent = fileInput4.files[0].name;
-                });
+            fileInput4.addEventListener('change', function() {
+                fileName4.textContent = fileInput4.files[0].name;
+            });
 
-                fileInput5.addEventListener('change', function() {
-                    fileName5.textContent = fileInput5.files[0].name;
-                });
+            fileInput5.addEventListener('change', function() {
+                fileName5.textContent = fileInput5.files[0].name;
+            });
 
-                fileInput6.addEventListener('change', function() {
-                    fileName6.textContent = fileInput6.files[0].name;
-                });
+            fileInput6.addEventListener('change', function() {
+                fileName6.textContent = fileInput6.files[0].name;
+            });
 
-                fileInput7.addEventListener('change', function() {
-                    fileName7.textContent = fileInput7.files[0].name;
-                });
+            fileInput7.addEventListener('change', function() {
+                fileName7.textContent = fileInput7.files[0].name;
+            });
 
-                fileInput8.addEventListener('change', function() {
-                    fileName8.textContent = fileInput8.files[0].name;
-                });
+            fileInput8.addEventListener('change', function() {
+                fileName8.textContent = fileInput8.files[0].name;
+            });
 
-                fileInput9.addEventListener('change', function() {
-                    fileName9.textContent = fileInput9.files[0].name;
-                });
+            fileInput9.addEventListener('change', function() {
+                fileName9.textContent = fileInput9.files[0].name;
+            });
 
-                fileInput10.addEventListener('change', function() {
-                    fileName10.textContent = fileInput10.files[0].name;
-                });
+            fileInput10.addEventListener('change', function() {
+                fileName10.textContent = fileInput10.files[0].name;
+            });
 
-                fileInput11.addEventListener('change', function() {
-                    fileName11.textContent = fileInput11.files[0].name;
-                });
-            </script>
+            fileInput11.addEventListener('change', function() {
+                fileName11.textContent = fileInput11.files[0].name;
+            });
+        </script>
+    </div>
 </body>
 
 </html>

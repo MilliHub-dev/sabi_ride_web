@@ -3,12 +3,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+        --bg-img-blend-color: #56707ea2;
+}
 
 body {
 
         font-family: Lato, fira sans;
         box-sizing: border-box;
+
 }
+
+.bg-1 {
+        position: relative;
+}
+
+.bg-1::before {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/Sabiridecar-branch_main-croppedASP.png);
+        background-color: var(--bg-img-blend-color);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-attachment: scroll;
+        filter: blur(1em);
+        filter: opacity(0.2);
+}
+
+.bg-1>.container-fluid {
+        position: relative;
+}
+
 
 .display-7 {
         font-size: larger;
@@ -40,18 +72,23 @@ label {
 }
 
 select {
-        width: 60%;
+        width: 50%;
+
 }
 
 input {
         border-radius: 7px;
-        background-color: #3860ad2b;
+        background-color: #FAFAFA;
+        border: 1px;
+        border-color: #D6D6D6;
 }
 
 input[type="text"] {
         border-radius: 10px;
-        background-color: #3860ad2b;
+        background-color: #FAFAFA;
         width: 50%;
+        border: 1px;
+        border-color: #D6D6D6;
 }
 
 input[type="tel"] {
@@ -61,11 +98,13 @@ input[type="tel"] {
 
 input:focus,
 input:active {
-        border: hsl(212, 100%, 65%);
+        border: 1px;
+        border-color: #D6D6D6;
 }
 
 input[type="file"] {
         display: none;
+
 }
 
 .file-upload {
@@ -79,6 +118,7 @@ input[type="file"] {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         @media only screen and(max-width:600px) {
                 width: 70px
@@ -187,3 +227,24 @@ hr {
 }
 
 /* ------------ !form progress bar ------------------ */
+
+/* animations */
+.fade-out {
+        animation: fade-out 3s linear 2s 1;
+        animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+        0% {
+                opacity: 1;
+        }
+
+        50% {
+                transform: scaleY(1.06);
+        }
+
+        100% {
+                opacity: 0;
+                display: none;
+        }
+}

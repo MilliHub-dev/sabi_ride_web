@@ -12,44 +12,50 @@
  </head>
 
  <body>
+
    <div class="container-fluid text-body">
-     <div class="row justify-content-center">
-       <div class="mt-5 brand-name  align-self-center text-center">
-         <span id="sabi">Sabi </span><span>Driver</span>
-       </div>
-       <div class="  text-center align-self-center">
-         <hr class="text-center center-block-elem">
-       </div>
-       <div class="mt-1"></div>
-       <div class=" progressbar">
-         <span class="bar" id="bar1"></span>
-         <span class="num" id="num-active">1</span>
-         <span class="bar"></span>
-         <span class="num">2</span>
-         <span class="bar"></span>
-         <span class="num">3</span>
-         <span class="bar"></span>
-         <span class="num">4</span>
-         <span class="bar" id="last-bar"></span>
+     <div class="bg-1">
+
+       <div class="row justify-content-center">
+         <div class="mt-5 brand-name  align-self-center text-center">
+           <span id="sabi">Sabi </span><span>Driver</span>
+         </div>
+         <div class="  text-center align-self-center">
+           <hr class="text-center center-block-elem">
+         </div>
+         <div class="mt-1"></div>
+         <div class=" progressbar">
+           <span class="bar" id="bar1"></span>
+           <span class="num" id="num-active">1</span>
+           <span class="bar"></span>
+           <span class="num">2</span>
+           <span class="bar"></span>
+           <span class="num">3</span>
+           <span class="bar"></span>
+           <span class="num">4</span>
+           <span class="bar" id="last-bar"></span>
+         </div>
        </div>
 
-       <div class="row g-3 ms-5 justify-content-start">
+
+       <div class="row mt-5 ms-5 justify-content-start">
          <p class="fw-nowrap col-6 fw-bold text-start">Personal Information and vehicle details</p>
+         <p class="mt-0 text-success"> It takes about 5 minutes to be verified...</p>
 
          <form action="sabi_verification2.php" class="needs-validation" no-validate method="POST" enctype="multipart/form-data">
            <div class="mb-3 ">
              <label for="f-name">First Name</label>
-             <input type="text" name="first_name" id="f-name" class="form-control" autofocus required>
+             <input type="text" name="first_name" id="f-name" placeholder="First Name" class="form-control" autofocus required>
              <div id="error_msg"></div>
            </div>
            <div class="mb-3  ">
              <label for="m-name">Middle Name</label>
-             <input type="text" id="m_name" name="middle_name" class="form-control" required>
+             <input type="text" id="m_name" name="middle_name" placeholder="Middle Name" class="form-control" required>
            </div>
            <div class="mb-3  ">
              <label for="l-name">Last Name</label>
              <!-- autocapitalize only works on safari -->
-             <input type="text" id="l-name" name="last_name" class="form-control" autocapitalize="characters">
+             <input type="text" id="l-name" name="last_name" placeholder="Last Name" class="form-control" autocapitalize="characters">
            </div>
            <div class="mb-3 col-sm-12">
              <label for="gender">Gender</label>
@@ -61,7 +67,7 @@
            </div>
            <div class="mb-3 ">
              <label for="referral_code">Referral code</label>
-             <input type="text" id="disabledTextInput" class="form-control" name="referral_code" required>
+             <input type="text" id="disabledTextInput" class="form-control" placeholder="Referral Code" name="referral_code">
              <label style="font-size: 18px; color: #6D7D8B; font-weight: 500;">If someone refered you, enter their code</label>
            </div>
            <div class="mb-3 ">
@@ -105,17 +111,17 @@
 
            <div class="mb-3 ">
              <label for="vehicle_model"> Vehicle model</label>
-             <input type="text" id="vehicle_model" name="vehicle_model" class="form-control" required>
+             <input type="text" id="vehicle_model" name="vehicle_model" placeholder="Vehicle Model" class="form-control" required>
            </div>
 
            <div class="mb-3 ">
-             <label for="vehicle_year" ehicle model> Vehicle year</label>
-             <input type="number" id="vehicle_year" name="vehicle_year" class="form-control w-50" required>
+             <label for="vehicle_year"> Vehicle year</label>
+             <input type="number" id="vehicle_year" name="vehicle_year" placeholder="Vehicle Year" class="form-control w-50" required>
            </div>
 
            <div class="mb-3 ">
              <label for="license_plate"> License plate</label>
-             <input type="text" id="license_plate" name="license_plate" class="form-control" required>
+             <input type="text" id="license_plate" name="license_plate" placeholder="License Plate Number" class="form-control" required>
            </div>
 
            <div class="mb-3 ">
@@ -137,12 +143,12 @@
            </div>
            <div class="row justify-content-center mb-5">
              <div class="col-sm-12 center-flex-elem mt-4">
-               <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
+               <button type="submit" class=" icon-button d-flex flex-row justify-content-center align-items-center"><span>continue</span><i class='bx bx-right-arrow-alt bx-fade-right-hover mt-1'></i></button>
              </div>
            </div>
          </form>
-
        </div>
+
      </div>
    </div>
    </div>
