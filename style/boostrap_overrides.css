@@ -1,0 +1,98 @@
+/* :root {
+        --bs-card-bg: #EDEDED;
+        --bs-body-color: red;
+
+        --bs-navbar-toggler-icon-bg: url("../img/toggler.png");
+
+} */
+
+:root {
+        --brand-ash: #cfd9dfd7;
+        --brand-blue: rgb(0, 136, 205);
+        --brand-subtle-ash: #DAE3EAB2;
+        --card-ash: #EDEDED;
+        --card-text-ash: #575757;
+        --bg-img-blend-color: #56707ea2;
+        --bs-nav-link-hover-color: white;
+        /* --bs-primary-rgb: rgb(0, 136, 205); */
+        --bs-card-color: #575757;
+}
+
+.navbar-toggler-icon {
+        background-image: url("../img/toggler.png");
+
+}
+
+.navbar-toggler {
+        border: none;
+}
+
+.card-title {
+        font-weight: 700;
+        font-size: 18px;
+        /* big = 35px; */
+}
+
+.services .card {
+        border-radius: 15px;
+        /* big = 18px */
+        background-color: #EDEDED;
+}
+
+.card-text {
+        font-size: 12px;
+        color: var(--card-text-ash);
+        /* big = 25px */
+}
+
+.btn-sm {
+
+        border-radius: 1em;
+        border: none;
+}
+
+.nav-link:hover {
+        border-left: none;
+        border-radius: 3em;
+        background-color: var(--brand-blue);
+        color: white;
+}
+
+.nav-link.active {
+
+        border-bottom: solid 10px;
+        border-top-right-radius: 3em;
+        border-bottom-right-radius: 3em;
+        border-color: var(--brand-blue);
+}
+
+.btn-primary {
+        background-color: var(--brand-blue);
+}
+
+.btn-primary:hover {
+        background-color: white;
+        color: var(--brand-blue);
+}
+
+.nav-link {
+        padding-left: 10px;
+}
+
+.bg-primary {
+        background-color: var(--brand-blue);
+}
+
+.btn-light {
+        color: var(--brand-blue);
+}
+
+.btn-light:hover {
+        color: white;
+        background-color: var(--brand-blue);
+}
+
+.card-img-top {
+        max-width: 250px;
+        max-height: 250px;
+}

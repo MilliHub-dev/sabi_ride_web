@@ -167,6 +167,7 @@ input[type="file"] {
 #sabi {
         color: #4DA1FF;
         letter-spacing: 0em;
+        text-transform: uppercase;
 }
 
 .sabi-color {
