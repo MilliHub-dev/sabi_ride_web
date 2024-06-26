@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="d-flex  mb-5 gap-3 py-3 flex-row flex-wrap">
-          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center text-nowrap" type="button">Become a Driver <i class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
+          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center text-nowrap" type="button"> <a href="web/driver.php">Become a Driver</a>    <i href="web/driver.php "  class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
           <span class="me-md-auto"></span>
           <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
           <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
