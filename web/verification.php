@@ -39,10 +39,10 @@ $vehicle_year = $_SESSION['vehicle_year'] = getSessionOrPost('vehicle_year');
 $vehicle_color = $_SESSION['vehicle_color'] = getSessionOrPost('vehicle_color');
 
 // Debug output
-echo "<pre>";
-print_r($_POST);
-print_r($_SESSION);
-echo "</pre>";
+//echo "<pre>";
+//print_r($_POST);
+//print_r($_SESSION);
+//echo "</pre>";
 
 // Ensure all required fields are set
 $required_fields = [

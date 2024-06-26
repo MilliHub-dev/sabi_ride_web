@@ -3,8 +3,8 @@ session_start();
 require_once("../db/config.php"); 
 
 // Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 // Include PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
