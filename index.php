@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -35,15 +35,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- brand-logo -->
-        <a class="navbar-brand me-5" href="index.php"> <img src="./sabimages/Sabi ride 2.png" alt="Logo" width="150px" class="d-inline-block align-text-top text-white">
+        <a class="navbar-brand bg-transparent" href="index.php"> <img src="./sabimages/Sabi ride 2.png" alt="Logo" width="150px" class="d-inline-block align-text-top text-white">
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <img class="offcanvas-title" id="offcanvasNavbarLabel" src="./sabimages/Sabi ride 2.png" alt="Logo" width="150px" class="d-inline-block align-text-top text-white"></img>
+            <img class="offcanvas-title bg-transparent" id="offcanvasNavbarLabel" src="./sabimages/Sabi ride 2.png" alt="Logo" width="150px" class="d-inline-block align-text-top text-white"></img>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-start flex-grow-1 justify-content-end pe-3">
+            <ul class="navbar-nav justify-content-start flex-grow-1 justify-content-end ms-3">
               <li class="nav-item">
                 <a class="nav-link active " href="#">Home</a>
               </li>
@@ -73,7 +73,7 @@
       <div class="row g-2 justify-content-start mt-0">
         <div class="col-8">
           <div class="brandcaption">
-            <span class="text-start text-white">Anywhere you dey go,<br>we <span class="bluey">sabi</span> am.</span>
+            <span class="text-start text-white">Anywhere you dey go,<br>we <span class="bluey" id="sabi">sabi</span> am.</span>
           </div>
         </div>
         <div class="col-10 justify-content-start mt-5">
@@ -83,10 +83,10 @@
           </div>
         </div>
         <div class="d-flex  mb-5 gap-3 py-3 flex-row flex-wrap">
-          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center justify-content-between text-nowrap" type="button">Become a Driver <i class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
+          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center text-nowrap" type="button">Become a Driver <i class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
           <span class="me-md-auto"></span>
-          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column pe-2"><small>Download on the</small> App Store</span></button>
-          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column justify-content-between pe-2"><small>Download on the</small> Play Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
         </div>
       </div>
 
@@ -169,7 +169,7 @@
   </div>
 
   <!-- Info icons -->
-  <section class="rel container-fluid mt-4 mb-4">
+  <!-- <section class="rel container-fluid mt-4">
     <div class="row g-2 justify-content-between align-items-start">
       <div class="col-6 d-flex flex-column align-items-center justify-content-center ">
         <span class="icon mdi mdi-flag-variant badge rounded-pill bg-info ">
@@ -194,260 +194,225 @@
         <p class="">Drivers</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Hero2 -->
-  <div class="parallax bgimg-4 mb-5">
-    <div class="pt-5">
-      <div class="container-fluid">
-        <div class="row g-5 gx-5">
-          <div class="col-12">
-            <!-- caption2 -->
-            <div class="caption2 d-block text-center">
-              <h3 class="display-6 fw-bold text-white text-center mt-0">
-                Earn Money With Sabi Ride
-              </h3>
-              <div class="col-12 text-center">
-                <button class="btn btn-link m-auto border" type="button">Driver</button>
-                <button class="btn btn-link m-auto border" type="button">Dispatch Rider</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- caption3 -->
-        <div class="caption3 d-block text-center">
-          <div class="row pt-1 g-3 mt-1">
-            <div class="col-6">
-              <h3 class="display-6 text-start text-white fw-bold mb-3">Drive and Earn Money</h3>
-              <div class="d-flex gap-3">
-                <div class="numpill">1</div>
-                <div class="d-grid">
-                  <h3 class="text-white text-start pt-1">Drive more, Earn More.</h3>
-                  <p class="text-white text-start">Make more money when you when you ride more</p>
-                </div>
-              </div>
-
-              <div class="my-3">
-                <div class="d-flex gap-3">
-                  <div class="numpill">2</div>
-                  <div class="d-grid">
-                    <h3 class="text-white pt-1 text-start">Drive according to your schedule.</h3>
-                    <p class="text-white text-start">Pick up passengers as schedule</p>
-                  </div>
-                </div>
-              </div>
-              <div class="my-3">
-                <div class="d-flex gap-3">
-                  <div class="numpill">3</div>
-                  <div class="d-grid">
-                    <h3 class="text-white pt-1 text-start">Get paid each day.</h3>
-                    <p class="text-white text-start">Get paid anytime anyday</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="Learn text-decoration-none btn-link btn mb-5">Learn More</a>
-            </div>
-            <div class="col-6 ">
-              <div class="d-flex">
-                <img src="./sabimages/555.png" height="70px" alt="" class="img-fluid img-5 mb-5">
-              </div>
-            </div>
-          </div>
-        </div>
-
+  <div class="container p-3">
+    <div class="bgimg-2 text-center mt-4 mb-5">
+    </div>
+  </div>
+  <!-- Service DESC -->
+  <div class="container-fluid">
+    <div class="row g-5 justify-content-center">
+      <div class="col-12">
+        <h3 class="display-6 fw-bold text-center mt-0">
+          Earn Money With <span id="sabi">sabi</span> Ride
+        </h3>
       </div>
+    </div>
+    <div class="d-flex justify-content-center gap-5 mt-4">
+      <button class="btn btn-md btn-shadow btn-primary" type="button">Driver</button>
+      <button class="btn btn-md btn-shadow btn-primary" type="button">Dispatch Rider</button>
+    </div>
+
+    <div class="d-flex gap-5 flex-row justify-content-center mt-4">
+
+      <div class="ms-3">
+        <div class="d-flex gap-3">
+          <div class="numpill">1</div>
+          <div class="d-flex flex-column">
+            <h3 class="fw-bold">Drive more, Earn More.</h3>
+            <p class="">With a large number of requests coming daily, you stand to get more</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3">
+          <div class="numpill">2</div>
+          <div class="d-flex flex-column">
+            <h3 class="fw-bold">Drive according to your schedule.</h3>
+            <p class="">Go online and offline whenever you want, because you rule your schedule.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-3">
+          <div class="numpill">3</div>
+          <div class="">
+            <h3 class="fw-bold">Dispatch Rider</h3>
+            <p class="">Do not wait for a weekly or monthly paycheck, Get it daily as you drive.</p>
+          </div>
+        </div>
+      </div>
+      <div id="PC-only-mockup"></div>
+
     </div>
   </div>
 
-  <!-- TODO::TO BE STYLED LATER -->
-  <!-- Our Advantage -->
-  <!-- <div class="container-fluid clearfix">
-    <div class="row g-2 d-flex flex-row flex-wrap overflow-x-scroll">
-      <div class="col-12">
-        <h2 class="text-dark-50 display-2 text-center">Our Advantage</h2>
-      </div>
-      <div class="col-6 p-2 flex-fill">
-        <div class="card d-flex flex- align-items-center justify-content-center">
-          <img src="" class="card-img-top fa fa-arrow-left">
-          <h4 class="card-title">Social Feature</h4>
-          <p class="card-text p-3">Enhancing user experience by enabling friend connections and social interactions, fostering a sense of community and safety, while also providing opportunities for sharing ride costs.</p>
+  <!-- app download Ad -->
+  <div class="container">
+    <div class="rounded-3 app-ad">
+      <div class="d-flex flex-column justify-content-center p-3 gap-2">
+        <div class="d-flex justify-content-between">
+          <h3 class="text-white w-75 w-md-100 display-4 fw-bold">Download our mobile App to begin
+            Today!</h3>
+          <img src="./img/multiple-phone-mockup.png" alt="Sabi Ride mobile App" class="">
+
+        </div>
+        <div class="d-flex gap-5 justify-content-center">
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-1 gap-md-5">
+            <div class="order-last order-md-first align-self-center">
+              <button class="btn btn-md btn-light text-nowrap" type="button"> Get App </button>
+            </div>
+            <div class="d-flex flex-column gap-3 align-items-center">
+              <a href=""><img src="./img/App Store.png" alt="App store"></a>
+              <a href=""><img src="./img/Google Play.png" alt="Google play store"></a>
+            </div>
+          </div>
+          <div class="align-self-center">
+            <img src="./img/qr-code.png" width="100px" height="100px" alt="App QR code">
+          </div>
         </div>
       </div>
-      <div class="col-6 p-2 flex-fill">
-        <div class="card d-flex flex-row align-items-center justify-content-center">
-          <span class="icon box-classic-icon fl-bigmug-line-map87 text-decoration-none"></span>
-          <h4 class="card-title">Ride Sharing</h4>
-          <p class="card-text">Ride sharing offers cost savings, convenience through sabi ride mobile apps, flexible ride options, and enhanced safety with background checks and driver ratings.</p>
-        </div>
-      </div>
-      <div class="col-6 p-2 flex-fill">
-        <div class="card d-flex flex-row align-items-center justify-content-center">
-          <h4 class="card-title">Price Transparency</h4>
-          <p class="card-text">Price transparency in Sabi Ride ensures clear, upfront fare information, preventing hidden costs, fostering trust, and allowing users to make informed decisions.</p>
-        </div>
-      </div>
-      <div class="col-6 p-2 flex-fill">
-        <div class="card d-flex flex-row align-items-center justify-content-center">
-          <h4 class="card-title">24/7 Online Support</h4>
-          <p class="card-text">Support ensures continuous assistance, immediate issue resolution, enhanced user satisfaction, and trust by providing round-the-clock availability for queries and troubleshooting.</p>
-        </div>
-      </div> -->
+    </div>
+
+  </div>
+
+  <!-- PHP connect -->
+  <?php
+  // index.php
+  // require_once("db/config.php");
+
+  // Function to limit content length
+  //function excerpt($text, $max_length = 100)
+  // {
+  //if (strlen($text) > $max_length) {
+  //$text = substr($text, 0, $max_length) . '...';
+  // }
+  //return $text;
+  //}
+
+  //$query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
+  //$stmt = $pdo->query($query);
+
+  // Debugging: Check for query execution errors
+  //if (!$stmt) {
+  //$errorInfo = $pdo->errorInfo();
+  //echo "SQL Error: " . $errorInfo[2];
+  //exit;
+  // }
+
+  // $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+  // Debugging output
+  //echo '<pre>';
+  // print_r($latestPosts);
+  // echo '</pre>';
+  ?>
+
 
   <!-- News and update -->
-  <div class="container CTAFOUR my-3 news">
+  <div class="container news ms-3 mt-5">
+    <!-- <header> -->
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="col">
         <h1 class="fw-bolder text-black">News and Updates</h1>
       </div>
-      <div class="text-end col-6">
-        <h3 class="pt-2 fw-bold">View All &nbsp; <i class="bi bi-globe"></i></h3>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row mt-2 p-4">
-        <?php
-        // index.php
-        // require_once("db/config.php");
-
-        // Function to limit content length
-        //function excerpt($text, $max_length = 100)
-        // {
-        //if (strlen($text) > $max_length) {
-        //$text = substr($text, 0, $max_length) . '...';
-        // }
-        //return $text;
-        //}
-
-        //$query = 'SELECT id, title, content, image_url, created_at FROM blog_posts ORDER BY created_at DESC LIMIT 3';
-        //$stmt = $pdo->query($query);
-
-        // Debugging: Check for query execution errors
-        //if (!$stmt) {
-        //$errorInfo = $pdo->errorInfo();
-        //echo "SQL Error: " . $errorInfo[2];
-        //exit;
-        // }
-
-        // $latestPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        // Debugging output
-        //echo '<pre>';
-        // print_r($latestPosts);
-        // echo '</pre>';
-        ?>
-        <style>
-          .custom-image {
-            height: 200px;
-            object-fit: cover;
-          }
-        </style>
-
-        </style>
-
-        <div class="card-group">
-          <div class="card m-3 rounded">
-            <?php //foreach ($latestPosts as $post) :
-            ?>
-            <div class="post">
-              <h2><?php //echo htmlspecialchars($post['title']);
-                  ?></h2>
-              <?php //if (!empty($post['image_url'])) :
-              ?>
-              <img src="<?php //echo htmlspecialchars($post['image_url']);
-                        ?>" alt="<?php //echo htmlspecialchars($post['title']);
-                                  ?>">
-              <?php //endif;
-              ?>
-              <p><?php //echo nl2br(htmlspecialchars(excerpt($post['content'])));
-                  ?></p>
-              <?php
-              // Debugging line to check if 'id' is set
-              //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
-              ?>
-              <a href="web/post.php?id=<?php //echo htmlspecialchars($post['id']);
-                                        ?>">Read more</a>
-
-              <small><?php //echo htmlspecialchars($post['created_at']);
-                      ?></small>
-            </div>
-            <?php //endforeach;
-            ?>
-          </div>
-          <div class="card m-3 rounded">
-            <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <b class="card-text">The 2020 Guide For White Men in Tech</b>
-            </div>
-          </div>
-          <div class="card m-3 rounded">
-            <img src="sabimages/Rectangle 33.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <b class="card-text">Dear Designer: How to Explain to Your Kids That You Work at Facebook</b>
-            </div>
-          </div>
-          <div class="card m-3 rounded">
-            <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <b class="card-text">Data-Driven Design is Killing Our Instinct</b>
-            </div>
-          </div>
-
-        </div>
-
+      <div class="text-end col">
+        <a href=""><small class="fw-bold">View All <span class="bi bi-chevron-right"></span> </small></a>
       </div>
     </div>
   </div>
+  <!-- News content -->
+  <div class="container my-2">
+    <div class="d-flex justify-content-between overflow-x-auto flex-row news-flow align-items-center">
+      <div col flex-fill>
+        <div class="card  rounded">
+          <?php //foreach ($latestPosts as $post) :
+          ?>
+          <div class="post">
+            <h2><?php //echo htmlspecialchars($post['title']);
+                ?></h2>
+            <?php //if (!empty($post['image_url'])) :
+            ?>
+            <img src="<?php //echo htmlspecialchars($post['image_url']);
+                      ?>" alt="<?php //echo htmlspecialchars($post['title']);
+                                ?>">
+            <?php //endif;
+            ?>
+            <p><?php //echo nl2br(htmlspecialchars(excerpt($post['content'])));
+                ?></p>
+            <?php
+            // Debugging line to check if 'id' is set
+            //echo "ID: " . (isset($post['id']) ? htmlspecialchars($post['id']) : 'Not Set');
+            ?>
+            <a href="web/post.php?id=<?php //echo htmlspecialchars($post['id']);
+                                      ?>">Read more</a>
 
-
-
-  <div class="container-fluid CTAFIVE my-3" style="background-color: rgb(207, 242, 247);">
-    <div class="container scan">
-      <center>
-        <h2 class="py-5">Download our apps</h2>
-      </center>
-
-      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
-        <center>
-          <h1 class="py-5">Download our mobile app to make your Ride experience better than ever before!</h1>
-        </center>
-        <div class="col-6 mx-auto d-block">
-          <div class="card mb-3 p-3 rounded" style="max-width: 540px;">
-            <div class="row g-0">
-              <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
-              <div class="col-md-4">
-                <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body ">
-                  <img src="./sabimages/store-apple-logo-apple.png" width="100px" alt="">
-                  <p class="card-text">Scan to download</p>
-                  <button class="btn btn-primary" type="button">Download Now</button>
-                </div>
-              </div>
-            </div>
+            <small><?php //echo htmlspecialchars($post['created_at']);
+                    ?></small>
           </div>
+          <?php //endforeach;
+          ?>
         </div>
-        <div class="col-6 mx-auto d-block">
-          <div class="card mb-3 p-3 rounded" style="max-width: 540px;">
-            <div class="row g-0">
-              <center><img src="./sabimages/113.png" alt="" class="mx-auto d-flex" width="30%"></center><br>
-              <div class="col-md-4">
-                <img src="./sabimages/Rectangle 38.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <img src="./sabimages/google-play-store-logo.png" width="100px" alt="">
-                  <p class="card-text">Scan to download</p>
-                  <button class="btn btn-primary" type="button">Download Now</button>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card  rounded">
+          <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">The guide to using the Sabi Ride Mobile App</div>
           </div>
         </div>
       </div>
+      <div class="col flex-fill">
+        <div class="card rounded">
+          <img src="sabimages/Rectangle 33.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">Dear <span id="sabi">sabi</span> Driver: How to explain that You <span id="sabi">sabi</span> Earn, You <span id="sabi">sabi</span> Drive</div>
+          </div>
+        </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card  rounded">
+          <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">Sabi Ride Launches in Abuja, Nigeria</div>
+          </div>
+        </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card  rounded">
+          <img src="sabimages/Rectangle 32.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">The guide to using the Sabi Ride Mobile App</div>
+          </div>
+        </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card rounded">
+          <img src="sabimages/Rectangle 33.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">Dear <span id="sabi">sabi</span> Driver: How to explain that You <span id="sabi">sabi</span> Earn, You <span id="sabi">sabi</span> Drive</div>
+          </div>
+        </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card  rounded">
+          <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">Sabi Ride Launches in Abuja, Nigeria</div>
+          </div>
+        </div>
+      </div>
+      <div class="col flex-fill">
+        <div class="card  rounded">
+          <img src="sabimages/Rectangle 34.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text text-nowrap overflow-hidden">Sabi Ride Launches in Abuja, Nigeria</div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
-
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -466,85 +431,103 @@
   <!--End of Tawk.to Script-->
   <!-- FOOTER -->
 
-
-  <footer class="page-footer font-small blue py-4 my-3">
-    <div class="container text-center text-md-left">
-
-      <div class="row">
-        <div class="col-md-3 mt-md-0 mt-3">
+  <footer class="page-footer pb-4">
+    <div class="container-fluid mt-5">
+      <div class="d-flex flex-row  justify-content-center px-4 align-items-center">
+        <div class="me-auto">
+          <h5 class="fw-bold display-4">Sabi Ride</h5>
+        </div>
+        <div class="">
           <img src="./sabimages/Sabi ride 2.png" width="150" alt="">
         </div>
-        <hr class="clearfix w-50 m-auto d-md-none pb-3">
-        <div class=" col-md-3 mb-md-0 mb-3">
-          <h5 class="fw-bold">Sabi Ride</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Rides</a>
-            </li>
-            <li>
-              <a href="#!">Food Delivery</a>
-            </li>
-            <li>
-              <a href="#!">Dispatch </a>
-            </li>
-            <li>
-              <a href="#!">Vip </a>
-            </li>
-          </ul>
+      </div>
+      <div class="d-flex flex-row gap-2 flex-wrap justify-content-start justify-content-between px-5 mb-5">
+        <div class="d-flex flex-column gap-1 align-items-start">
+          <h6 class="fw-bold">Contact us</h6>
+          <div>
+            <a href="mailto:Sabi_ride@gmail.com">admin@sabi-ride.com.ng</a>
+          </div>
+          <div>
+            <a href="tel:+2348145639201">+2348145639201</a>
+          </div>
+          <div class="d-flex flex-row">
+            <a href="https://www.instagram.com/sabiride.ng?utm_source=qr&igsh=MWg5bXR4MnE2ODljZw=="><img src="./sabimages/instagram.png" alt="" class="px-2" width="40"></a>
+            <a href="https://www.facebook.com/profile.php?id=61553823904645"><img src="./sabimages/facebook.png" alt="" class="px-2" width="40"></a>
+            <a href="https://x.com/sabiride"><img src="./sabimages/twitter.png" alt="" class="px-2" width="40"></a>
+          </div>
         </div>
+        <div class="d-flex flex-column gap-1 align-items-start">
+          <h6 class="fw-bold">Products</h6>
+          <div>
+            <a href="#!">Rides</a>
+          </div>
+          <div>
+            <a href="#!">Food Delivery</a>
+          </div>
+          <div>
+            <a href="#!">Dispatch </a>
+          </div>
+          <div>
+            <a href="#!">Vip </a>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-1 align-items-start">
+          <h6 class="fw-bold">Partner with Sabi Ride</h6>
 
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="fw-bold">Partner with Sabi Ride</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">sign up as driver</a>
-            </li>
-            <li>
-              <a href="#!">Sign your car as vip</a>
-            </li>
-            <li>
-              <a href="#!"></a>
-            </li>
-            <li>
-              <a href="#!"></a>
-            </li>
-          </ul>
+          <div>
+            <a href="#!">sign up as driver</a>
+          </div>
+          <div>
+            <a href="#!">Sign your car as vip</a>
+          </div>
+          <div>
+            <a href="#!"></a>
+          </div>
+          <div>
+            <a href="#!"></a>
+          </div>
+
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="fw-bold">Company</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">About us</a>
-            </li>
-            <li>
-              <a href="#!">News and Update</a>
-            </li>
-            <li>
-              <a href="#!">Brand guidelines</a>
-            </li>
-            <li>
-              <a href="#!"></a>
-            </li>
-          </ul>
+        <div class="d-flex flex-column gap-1 align-items-start">
+          <h6 class="fw-bold">Company</h6>
+
+          <div>
+            <a href="#!">About us</a>
+          </div>
+          <div>
+            <a href="#!">News and Update</a>
+          </div>
+          <div>
+            <a href="#!">Brand guidelines</a>
+          </div>
+          <div>
+            <a href="#!"></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column mt-0 flex-md-row justify-content-center justify-content-between gap-1 gap-md-5">
+          <button class="btn btn-sm btn-primary d-flex flex-row
+          align-items-center justify-content-center text-nowrap" type="button">Get the App <i class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
+          <span class="me-md-auto"></span>
+          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2024 Copyright: Powered By MILLIHUB
-      <a href="https://www.instagram.com/sabiride.ng?utm_source=qr&igsh=MWg5bXR4MnE2ODljZw=="><img src="./sabimages/instagram.png" alt="" class="px-2" width="40"></a>
-      <a href="https://www.facebook.com/profile.php?id=61553823904645"><img src="./sabimages/facebook.png" alt="" class="px-2" width="40"></a>
-      <a href="https://x.com/sabiride"><img src="./sabimages/twitter.png" alt="" class="px-2" width="40"></a>
+      <div class="d-flex flex-column justify-items-start gap-1 mb-5 px-5">
+        <div class="d-flex flex-row gap-2">
+          <span class="bi bi-globe"></span> English <span class="bi bi-chevron-down"></span>
+        </div>
+        Copyright &COPY; 2024. All rights reserved.
+      </div>
     </div>
   </footer>
-  </div>
-  </div>
 
-  <!-- </div> -->
+
+
 
 
   <script src="./js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </body>
 
 </html>
