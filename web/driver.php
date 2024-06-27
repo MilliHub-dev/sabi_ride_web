@@ -23,7 +23,7 @@
 
   <div class="container-fluid">
     <div id="sec-1">
-      <nav class=" navbar navbar-expand-lg ps-4 ps-md-5 mt-0 pt-0">
+      <nav class=" navbar navbar-expand-lg mt-0 pt-0">
         <div class="container-fluid">
           <!-- Mobile NAV Toggle -->
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                   <a class="nav-link " href="#">Ride</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="web/blog2.php">Blog</a>
+                  <a class="nav-link " href="">Blog</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link " href="web/about.php">About</a>
@@ -75,7 +75,7 @@
 
     </div>
   </div>
-  <div class="container mt-5">
+  <div class="container mt-3">
     <form action="action.php" method="post" id="form" enctype="multipart/form-data">
       <h1>Become a driver</h1>
       <label for="email">Email</label><br>
@@ -83,17 +83,13 @@
       <label for="num">Phone Number</label><br>
 
       <div class="select">
-        <select title="code" name="country-selector" class="country-selector">
+        <select title="code" name="country-selector" class="country-selector w-25">
           <option value="NG" class="ng">+234</option>
         </select>
         <input type="tel" name="phone_number" id="p-num" placeholder="Mobile Number" required>
-      </div><br><br>
+      </div><br>
       <label for="city" class="city">City</label><br>
-      <select title="city" name="location_city" class="cities" required>
-        <option value="0">City where you drive</option>
-        <option value="UYO">UYO</option>
-
-      </select><br><br>
+      <input title="city" type="text" name="location_city" class="border w-75" id="city" placeholder="city where you drive" required><br><br>
       <label for="password" class="password">Password</label><br>
       <input type="password" id="password" name="password" placeholder="password" required><br><br>
       <div class="chk">
@@ -141,8 +137,67 @@
       <a href="#" style="text-decoration: none; margin-top: -5%; margin-bottom: 5%; margin-top: 5%;">Apply to drive</a>
     </div>
   </div>
+
+  <!-- Driver Workflow Description -->
+  <div class="container-fluid">
+    <div class="row g-5 justify-content-center">
+      <div class="col-12">
+        <h3 class="display-6 fw-bold text-center mt-0">
+          Work flow as a <span id="sabi">sabi</span> Driver
+        </h3>
+      </div>
+    </div>
+
+
+    <div class="d-flex gap-5 flex-row justify-content-center mt-4 align-items-center">
+
+      <div class="ms-3">
+        <div class="d-flex gap-4">
+          <div class="numpill bg-info">1</div>
+          <div class="d-flex flex-column">
+            <!-- TODO:: REPEATING ID SELECTOR, refactor sabi to CSS class -->
+            <h3 class="fw-bold">Accept <span id="sabi">sabi</span> Rider request</h3>
+            <p class="">
+              <!-- short Description here! -->
+              <!-- if description remove chevron -->
+            </p>
+          </div>
+        </div>
+
+        <div class="bi bi-arrow-down-circle-fill text-info text-center p-1" style="font-size: 1rem;"></div>
+
+        <div class="d-flex gap-4">
+          <div class="numpill bg-warning">2</div>
+          <div class="d-flex flex-column">
+            <h3 class="fw-bold">Drive to Pickup passanger.</h3>
+            <p class="">
+              <!-- short Description here! -->
+            </p>
+          </div>
+        </div>
+
+        <div class="bi bi-arrow-down-circle-fill text-warning text-center p-1" style="font-size: 1rem;"></div>
+
+        <div class="d-flex gap-4">
+          <div class="numpill bg-success">3</div>
+          <div class="">
+            <h3 class="fw-bold">Arrive at your destination</h3>
+            <!-- short Description here! -->
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+      <div class="bi bi-cash-coin text-success text-center" style="font-size: 5rem;">
+      </div>
+
+    </div>
+  </div>
+  <!-- mobile app Ad -->
+  <?php require_once("../include/app_ad.php"); ?>
+
+
   <div class=" container PAGE mb-5">
-    <div class="d-flex flex-row justify-content-between gap-2">
+    <div class="d-flex flex-row justify-content-between gap-2 pt-5">
       <div id="hpb" class=" ps-2">
         <h4 class="display-4 fw-bold">Be your own boss.</h4>
         <h4 class="display-4 fw-bold">As you sabi drive,</h4>
@@ -177,7 +232,7 @@
       </section>
       </h2>
     </div>
-    <?php require_once("../include/app_ad.php"); ?>
+
 
   </div>
   <!-- FOOTER -->

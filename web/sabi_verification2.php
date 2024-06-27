@@ -74,7 +74,7 @@ session_start();
                     </div>
                     <div class="col-12 mb-5">
                         <div class="col-sm-12 center-flex-elem mt-4">
-                            <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx bx-fade-right-hover mt-1'></i></button>
+                            <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow-alt bx bx-fade-right-hover mt-1'></i></button>
                         </div>
                     </div>
                     </form>

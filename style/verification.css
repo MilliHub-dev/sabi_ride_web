@@ -14,6 +14,7 @@ body {
 
 }
 
+/*
 .bg-1 {
         position: relative;
 }
@@ -33,14 +34,13 @@ body {
         background-repeat: no-repeat;
         background-clip: border-box;
         background-attachment: scroll;
-        /* filter: blur(1em); */
         filter: opacity(0.2);
         z-index: -1;
 }
 
 .bg-1:first-child {
         position: relative;
-}
+} */
 
 
 .display-7 {
@@ -91,6 +91,7 @@ input[type="text"] {
         border: 1px;
         border-color: #D6D6D6;
 }
+
 
 input[type="tel"] {
         height: 50px;
@@ -249,4 +250,17 @@ hr {
                 opacity: 0;
                 display: none;
         }
+}
+
+@media only screen and (max-device-width: 1000px) {
+
+        input[type="text"] {
+                width: 75%;
+        }
+
+        select {
+                width: 75%;
+
+        }
+
 }

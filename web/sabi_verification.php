@@ -37,7 +37,7 @@ session_start();
 
 
             <div col-12 class="text-center">
-                <p class="text-center text-black-50 " id="txt">A verification code was sent to<span class="fw-bold text-decoration-line-through text-danger text-truncate" id="num"> number from @backend</span></p>
+                <p class="text-center text-black-50 " id="txt">A verification code was sent to<span class="fw-bold text-truncate" id="num"> +234...</span></p>
             </div>
 
 
@@ -45,7 +45,7 @@ session_start();
 
                 <div class="col-12 text-center">
                     <label class="col-12 fw-bold text-center" id=" error">
-                        <input class="text-center" type="tel" id="code">
+                        <input class="text-center" type="tel" id="code" autofocus>
                         <p id="error" class="text-danger"></p>
                         <p class="text-center sabi-color mt-3">Resend Code</p>
                     </label>
@@ -56,7 +56,7 @@ session_start();
 
                 <div class="row justify-content-center">
                     <div class="col-12 center-flex-elem mt-4">
-                        <button type="button" class=" icon-button" id="submit"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
+                        <button type="button" class=" icon-button" id="submit"><span>Continue</span><i class='bx bx-right-arrow-alt bx-fade-right-hover mt-1'></i></button>
                     </div>
                 </div>
 

@@ -24,7 +24,12 @@ if (isset($_SESSION['error_message'])) {
     <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/verification.css">
-
+    <style>
+        input {
+            border: 1px solid;
+            border-color: var(--brand-ash);
+        }
+    </style>
 </head>
 
 <!-- Note: Abstract CSS class = .login -->
@@ -42,8 +47,8 @@ if (isset($_SESSION['error_message'])) {
 
     <div class="container">
         <div id="driver-info" class="login d-flex flex flex-column bg-light gap-3 p-2 justify-content-between align-items-center mt-5">
-            <button type="button" class="col-12 btn" id="username" data-bs-toggle="modal" data-bs-target="#Modal">Email or Username</button>
-            <button type="button" class="col-12 btn" id="phone-number" data-bs-toggle="modal" data-bs-target="#Modal2">Phone number</button>
+            <button type="button" class="col-12 btn btn-primary" id="username" data-bs-toggle="modal" data-bs-target="#Modal">Email or Username</button>
+            <button type="button" class="col-12 btn btn-primary" id="phone-number" data-bs-toggle="modal" data-bs-target="#Modal2">Phone number</button>
         </div>
     </div>
     <!-- username option -->
@@ -62,18 +67,18 @@ if (isset($_SESSION['error_message'])) {
                         <div class="row">
                             <div class="col input-control">
                                 <div>
-                                    <input type="text" id="user" name="identifier" placeholder="Email or Username" required>
-                                    <div id="error">Please enter an input</div>
+                                    <input type="text" id="user" name="identifier" placeholder="Email or Username" required autofocus class="border">
+                                    <div id="error">Please enter your e-mail or username</div>
                                 </div>
                                 <br>
                                 <div>
                                     <input type="password" id="user" name="password" placeholder="Password" required>
-                                    <div id="error">Please enter an input</div>
+                                    <div id="error">Please enter your password</div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button type="submit" id="btn" class="btn"><span>SIGN IN</span><i class='bx bx-right-arrow-alt'></i></button>
+                            <button type="submit" id="btn" class="btn btn-primary"><span>SIGN IN</span><i class='bx bx-right-arrow-alt'></i></button>
                         </div>
                     </form>
                 </div>
@@ -98,17 +103,17 @@ if (isset($_SESSION['error_message'])) {
                             <div class="mb-3">
                                 <div>
                                     <input type="tel" id="user" name="identifier" placeholder="Phone number" required>
-                                    <div id="error">Please enter an input</div>
+                                    <div id="error">Please enter an phone number</div>
                                 </div>
                                 <br>
                                 <div>
                                     <input type="password" id="user" name="password" placeholder="Password" required>
-                                    <div id="error">Please enter an input</div>
+                                    <div id="error">Please enter your password</div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button type="submit" id="btn" class="btn"><span>SIGN IN</span><i class='bx bx-right-arrow-alt bx-fade-right'></i></button>
+                            <button type="submit" id="btn" class="btn btn-primary"><span>SIGN IN</span><i class='bx bx-right-arrow-alt'></i></button>
                         </div>
                     </form>
                 </div>

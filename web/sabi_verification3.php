@@ -43,7 +43,7 @@ session_start();
                 </div>
             </div>
             <!-- Form -->
-            <div class="row g-3 ms-5 justify-content-start">
+            <div class="row g-3 ms-2 justify-content-start">
                 <div class="row justify-content-start">
                     <h2 class="fw-nowrap alert display-7 col-6 fw-bold text-start ">Documents</h2>
                     <p class="alert bg-info fade-out mt-0"> You are almost there...</p>
@@ -195,7 +195,7 @@ session_start();
                             <hr><br>
                             <div class="row justify-content-center mb-5">
                                 <div class="col-sm-12 center-flex-elem mt-4">
-                                    <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow bx-fade-right-hover mt-1'></i></button>
+                                    <button type="submit" class=" icon-button"><span>Continue</span><i class='bx bx-right-arrow-alt bx-fade-right-hover mt-1'></i></button>
                                 </div>
                             </div>
                 </form>
