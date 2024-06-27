@@ -75,7 +75,7 @@
 
     </div>
   </div>
-  <div class="container">
+  <div class="container mt-5">
     <form action="action.php" method="post" id="form" enctype="multipart/form-data">
       <h1>Become a driver</h1>
       <label for="email">Email</label><br>
