@@ -54,7 +54,7 @@
                 <a class="nav-link " href="#">Ride</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="web/blog2.php">Blog</a>
+                <a class="nav-link " href="">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="web/about.php">About</a>
