@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$host = 'c3nv2ev86aje4j.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com';          // e.g., 'localhost' or '127.0.0.1'
+$host = 'c3nv2ev86aje4j.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com';   // e.g., 'localhost' or '127.0.0.1'
 $port = '5432';          // default PostgreSQL port is 5432
 $dbname = 'd72fknmleq0oq4';    // name of your database
 $user = 'usof740a83k29';      // database username
