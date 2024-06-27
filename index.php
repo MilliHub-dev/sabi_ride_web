@@ -83,10 +83,10 @@
           </div>
         </div>
         <div class="d-flex  mb-5 gap-3 py-3 flex-row flex-wrap">
-          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center text-nowrap" type="button"> <a href="web/driver.php">Become a Driver</a>    <i href="web/driver.php "  class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
+          <button class="btn btn-sm btn-light d-flex flex-row align-items-center justify-content-center text-nowrap" type="button"> <a href="web/driver.php">Become a Driver</a> <i href="web/driver.php " class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
           <span class="me-md-auto"></span>
-          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
-          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 1.5rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 1.5rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
         </div>
       </div>
 
@@ -431,8 +431,8 @@
   <!--End of Tawk.to Script-->
   <!-- FOOTER -->
 
-  <footer class="page-footer pb-4">
-    <div class="container-fluid mt-5">
+  <footer class="page-footer container-fluid  pb-4">
+    <div class="mt-5">
       <div class="d-flex flex-row  justify-content-center px-4 align-items-center">
         <div class="me-auto">
           <h5 class="fw-bold display-4">Sabi Ride</h5>
@@ -508,8 +508,8 @@
           <button class="btn btn-sm btn-primary d-flex flex-row
           align-items-center justify-content-center text-nowrap" type="button">Get the App <i class="bi bi-chevron-right style=" font-size: 2rem;" aria-hidden="true"></i></button>
           <span class="me-md-auto"></span>
-          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
-          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 2rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-apple" style="font-size: 1.5rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> App Store</span></button>
+          <button class="btn btn-sm btn-dark text-nowrap  d-flex flex-row justify-content-between text-white" type="button"><i class="bi bi-play" style="font-size: 1.5rem;" aria-hidden=" true"></i><span class="d-flex flex-column align-items-center pe-2"><small>Download on the</small> Play Store</span></button>
         </div>
       </div>
       <div class="d-flex flex-column justify-items-start gap-1 mb-5 px-5">
