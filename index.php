@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabi Ride is a social ride hailing/sharing platform revolved around providing convenience, safety, and efficiency for both riders and drivers. Sabi ride is driven by safety, fueled by convenience.">
   <title>Sabi Ride</title>
   <link rel="icon" type="image/x-icon" href="./sabimages/Sabiride3.png">
   <!-- <link rel="stylesheet" href="./style/loader.css"> -->
