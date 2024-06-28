@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign up as a SABI diver today and take control of your work frequency, earn daily and above all, feel and at ease while driving">
   <title>Sabi Ride</title>
   <link rel="icon" type="image/x-icon" href="../sabimages/Sabiride3.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -40,7 +41,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-start flex-grow-1 justify-content-end ms-3">
                 <li class="nav-item">
-                  <a class="nav-link  " href="#">Home</a>
+                  <a class="nav-link  " href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="web/driver.php">Drive or deliver</a>
@@ -49,13 +50,13 @@
                   <a class="nav-link " href="#">Ride</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="">Blog</a>
+                  <a class="nav-link " href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="web/about.php">About</a>
+                  <a class="nav-link " href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="web/services.php">Services</a>
+                  <a class="nav-link " href="services.php">Services</a>
                 </li>
               </ul>
 
@@ -124,17 +125,17 @@
         <img src="../sabimages/Rectangle 65.png" alt="" width="70">
         <div class="pt-4">
           <h5 class="fw-bold pb-2">2. Upload your documents </h5>
-          <p id="p">Speed up the verification process by uploading your document securely. our platform ensures a seamless experience allowing you to submit your documents hassle-free.</p>
+          <p id="p">Speed up the verification process by uploading your document securely. Our platform ensures a seamless experience allowing you to submit your documents hassle-free.</p>
         </div>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 col-xs-8">
         <img src="../sabimages/Rectangle 66.png" alt="" width="70">
         <div class="pt-4">
           <h5 class="fw-bold pb-2">3. Get approved</h5>
-          <p id="p">start riding and making money on your own. submit your application today and experience the ease of approval. Get started now!.</p>
+          <p id="p">Start riding and making money on your own. Submit your application today and experience the ease of approval. Get started now!</p>
         </div>
       </div>
-      <a href="#" style="text-decoration: none; margin-top: -5%; margin-bottom: 5%; margin-top: 5%;">Apply to drive</a>
+      <a href="#" style="text-decoration: none; margin-top: -5%; margin-bottom: 5%; margin-top: 5%;">Apply to drive <span class="bi bi-chevron-right"></span></a>
     </div>
   </div>
 
@@ -203,7 +204,7 @@
         <h4 class="display-4 fw-bold">As you sabi drive,</h4>
         <h4 class="display-4 fw-bold">You go sabi earn!</h4>
 
-        <button class="btn btn-sm btn-light text-center ms-5 mb-5" type="button" style="width:150px; height:60px;">Apply online <span>></span></i></button>
+        <button class="btn btn-sm btn-light text-center ms-5 mb-5" type="button" style="width:150px; height:60px;">Apply online <span class="bi bi-chevron-right" style="font-size: 1rem;"></span></button>
       </div>
       <div class="mt-2">
         <img src="../img/pato_driver.png" alt="driver picture" class="align-self-bottom">
