@@ -1,6 +1,12 @@
 <?php
 // Start the session
 session_start();
+// Check if the login success message is set
+if (isset($_SESSION['login_success'])) {
+  echo '<p>' . $_SESSION['login_success'] . '</p>';
+  // Unset the message so it doesn't show again
+  unset($_SESSION['login_success']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

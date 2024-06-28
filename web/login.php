@@ -48,8 +48,8 @@ try {
             // Fetch the user data
             $signup = $stmt->fetch();
 
-            // Debugging: Output the user data
-           // echo "<pre>";
+             // Debugging: Output the user data
+            //echo "<pre>";
             //print_r($signup);
             //echo "</pre>";
 
@@ -61,11 +61,14 @@ try {
 
                 // Check if the user has already submitted for verification
                 $user_id = $signup['id'];
-                $query = "SELECT verification_status FROM driver WHERE user_id = :user_id";
+                $query = "SELECT verification_status FROM driver_verification WHERE user_id = :user_id";
                 $stmt = $pdo->prepare($query);
                 $stmt->bindParam(':user_id', $user_id);
                 $stmt->execute();
                 $result = $stmt->fetch();
+
+                 // Set success message
+                 $_SESSION['login_success'] = 'Login successful!';
 
                 if ($result) {
                     // Redirect to verification status page if already submitted
@@ -73,7 +76,7 @@ try {
                     header('Location: sabi_verification4.php');
                 } else {
                     // Redirect to the form submission page
-                    echo "<script>alert('Login Successfull ');</script>";
+                    //echo "<script>alert('Login Successfull ');</script>";
                     header('Location: sabi_verification1.php');
                 }
                 exit();
