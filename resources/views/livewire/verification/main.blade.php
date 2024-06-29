@@ -20,10 +20,13 @@ new #[layout('layouts.verification')] class extends Component
         $this->colors = [
             'red', 'blue', 'green', 'black', 'white', 'silver', 'gray', 'yellow', 'orange', 'brown', 'purple'
         ];
-
+        // session()->forget('documents');
+        // session()->forget('licensing_details');
+        // session()->forget('personal_details');
         $this->getStep();
     }
 
+    #[On('update-step')]
     public function getStep()
     {
         if(session('personal_details') && session('licensing_details')) {
@@ -38,6 +41,46 @@ new #[layout('layouts.verification')] class extends Component
         }
     }
 
+    #[On('save-driver')]
+    public function saveDriver ()
+    {
+        $personalDetails = session('personal_details');
+        $licensingDetails = session('licensing_details');
+        $documents = session('documents');
+
+
+        $data = [
+            'first_name' => $personalDetails['first_name'],
+            'user_id' => session('id'),
+            'middle_name' => $personalDetails['middle_name'],
+            'last_name' => $personalDetails['last_name'],
+            'gender' => $personalDetails['gender'],
+            'referral_code' => $personalDetails['referral_code'] ?? '',
+            'driver_type' => $personalDetails['driver_type'],
+            'driver_license_number' => $licensingDetails['license_number'],
+            'driver_license_expiry' => $licensingDetails['license_expiry_date']->format('Y-m-d'),
+            'vehicle_manufacturer' => $personalDetails['vehicle_manufacturer'],
+            'vehicle_model' => $personalDetails['vehicle_model'],
+            'vehicle_year' => $personalDetails['vehicle_year'],
+            'vehicle_color' => $personalDetails['vehicle_color'],
+            'profile_photo' => $documents['driver_profile_photo'],
+            'car_photo_inner' => $documents['car_interior_photo'],
+            'car_photo_outter' => $documents['car_exterior_photo'],
+            'driver_license_document' => $documents['driver_license'],
+            'vehicle_license_certification' => $documents['vehicle_license_certificate'],
+            'certification_of_roadworthiness' => $documents['road_worthiness_certificate'],
+            'issued_id' => $documents['government_issued_id'],
+            'proof_of_ownership' => $documents['proof_of_ownership_certificate'],
+            'screenshot_of_dashboard' => $documents['screenshot_of_dashboard'] ?? ' ',
+            'screenshot_of_rating' => $documents['screenshot_of_rating'] ?? '',
+            'screenshot_of_notification' => $documents['screenshot_of_notification'] ?? ''
+        ];
+        // DB::table('driver')->insert($data);
+
+        $this->redirectRoute('verification.complete');
+    }
+    
+
 
 }; 
 ?>
@@ -48,9 +91,6 @@ new #[layout('layouts.verification')] class extends Component
             <h1 class="text-4xl font-semibold text-black">
                 Register as a driver
             </h1>
-            @if (!auth()->user())
-                <p class="mt-4">Already have an account <span class="text-primary" wire:click='redirectToSignIn'>Log in here</span></p>
-            @endif
         </div>
     </div>
 

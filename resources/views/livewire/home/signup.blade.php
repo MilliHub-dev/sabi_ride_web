@@ -25,7 +25,7 @@ new #[layout('layouts.guest')] class extends Component
             </div>
             <h3>Sign up to <span class="text-primary">Become a driver</span></h3>
             <p class="my-3 sm:my-5 text-gray-600">It takes about 2 minutes to sign up</p>
-            <livewire:auth.signup status="register" />
+            <livewire:auth.signup />
         </div>
     </div>
 </div>

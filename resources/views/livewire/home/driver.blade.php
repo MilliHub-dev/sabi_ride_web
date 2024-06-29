@@ -31,7 +31,7 @@ new #[layout('layouts.home')] class extends Component
                     <div class="bg-white w-11/12 rounded-2xl float-end shadow-xl border p-8">
                         <h2>Sign up to <span class="text-primary">Become a driver</span> </h2>
                         <p class="my-5">It takes about 2 minutes to sign up</p>
-                        <livewire:auth.signup status="register" />
+                        <livewire:auth.signup />
                     </div>
                 </div>
             </x-body>

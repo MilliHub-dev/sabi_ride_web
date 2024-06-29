@@ -120,14 +120,13 @@ new #[layout('layouts.verification')] class extends Component
     public function saveLicensingDetails()
     {
         $photosPath = [];
-
-        foreach ($this->photos as $photo) {
+        foreach ($this->photos as $name => $photo) {
             if (!is_null($photo)) {
-                $photosPath[] = $photo->store(path: 'verification/documents');
+                $photosPath[$name] = $photo->store(path: 'verification/documents');
             }
         }
         session()->put('documents', $photosPath);
-        dd($photosPath);
+        $this->dispatch('save-driver');
     }
 
 }; 

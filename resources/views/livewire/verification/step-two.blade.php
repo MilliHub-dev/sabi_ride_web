@@ -17,8 +17,12 @@ new #[layout('layouts.verification')] class extends Component
     public function saveLicensingDetails()
     {
         $this->validate();
+        $form = [
+            'license_number' => $this->license_number,
+            'license_expiry_date' => $this->license_expiry_date,
+        ];
         session()->put('licensing_details', $form);
-        $this->dispatch('step-two-complete');
+        $this->dispatch('update-step');
     }
 }; 
 ?>

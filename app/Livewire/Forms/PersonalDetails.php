@@ -12,7 +12,12 @@ class PersonalDetails extends Form
     public string $email = '';
 
     #[Validate('required|string')]
-    public string $name = '';
+    public string $first_name = '';
+
+    #[Validate('required|string')]
+    public string $middle_name = '';
+    #[Validate('required|string')]
+    public string $last_name = '';
 
     #[Validate('required|string')]
     public string $gender = '';
@@ -34,4 +39,7 @@ class PersonalDetails extends Form
 
     #[Validate('required|string')]
     public string $vehicle_color = '';
+
+    #[Validate('required|string')]
+    public string $vehicle_year = '';
 }

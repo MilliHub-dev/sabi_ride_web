@@ -18,7 +18,7 @@ new #[layout('layouts.guest')] class extends Component
 
     public function verifyCode()
     {
-        $this->redirectRoute('application.verification');
+        $this->redirectRoute('verification.start');
     }
 }; 
 ?>

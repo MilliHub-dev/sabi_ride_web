@@ -26,8 +26,8 @@ new #[layout('layouts.verification')] class extends Component
     public function savePersonalDetails()
     {
         $this->validate();
-        session()->put('personal_details', $form);
-        $this->dispatch('step-one-complete');
+        session()->put('personal_details', $this->form->all());
+        $this->dispatch('update-step');
     }
 }; 
 ?>
@@ -38,10 +38,24 @@ new #[layout('layouts.verification')] class extends Component
             <h3>Personal Details</h2>
         </div>
         <form wire:submit='savePersonalDetails' class="mt-7">
-            <div>
-                <x-input-label>Full Name <span class="text-red-600">*</span></x-input-label>
-                <x-text-input wire:model="form.name" name="name"  class="w-full mt-2"/>
-                <x-input-error :messages="$errors->get('form.name')" class="mt-2" />
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <x-input-label>First Name <span class="text-red-600">*</span></x-input-label>
+                    <x-text-input wire:model="form.first_name" name="first_name"  class="w-full mt-2"/>
+                    <x-input-error :messages="$errors->get('form.first_name')" class="mt-2" />
+                </div>
+
+                <div>
+                    <x-input-label>Last Name <span class="text-red-600">*</span></x-input-label>
+                    <x-text-input wire:model="form.last_name" name="last_name"  class="w-full mt-2"/>
+                    <x-input-error :messages="$errors->get('form.last_name')" class="mt-2" />
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <x-input-label>Middle Name <span class="text-red-600">*</span></x-input-label>
+                <x-text-input wire:model="form.middle_name" name="middle_name"  class="w-full mt-2"/>
+                <x-input-error :messages="$errors->get('form.middle_name')" class="mt-2" />
             </div>
 
             <div class="mt-5">
@@ -95,6 +109,12 @@ new #[layout('layouts.verification')] class extends Component
                     <x-select-input wire:model="form.vehicle_color" :values="$colors" content="Select a color"  class="w-full mt-2"/>
                     <x-input-error :messages="$errors->get('form.vehicle_color')" class="mt-2" />
                 </div>
+            </div>
+
+            <div class="mt-5">
+                <x-input-label>Vehicle Year <span class="text-red-600">*</span></x-input-label>
+                <x-text-input wire:model="form.vehicle_year" name="vehicle_model" class="w-full mt-2"/>
+                <x-input-error :messages="$errors->get('form.vehicle_year')" class="mt-2" />
             </div>
 
 
