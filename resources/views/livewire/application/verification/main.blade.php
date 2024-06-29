@@ -7,7 +7,7 @@ use Livewire\Attributes\On;
 
 new #[layout('layouts.verification')] class extends Component
 {
-    public int $step = 1;
+    public int $step = 3;
 
     public function mount()
     {
@@ -25,6 +25,12 @@ new #[layout('layouts.verification')] class extends Component
     public function setStepTwo()
     {
         $this->step = 2;
+    }
+
+    #[On('step-two-complete')]
+    public function setStepThree()
+    {
+        $this->step = 3;
     }
 
 
@@ -49,6 +55,13 @@ new #[layout('layouts.verification')] class extends Component
         <x-steps :step="$step" />
         @if ($step === 1)
             <livewire:application.verification.step-one>
+        
+        @elseif ($step === 2)
+            <livewire:application.verification.step-two>
+
+        @elseif ($step === 3)
+            <livewire:application.verification.step-three>
+
         @endif
     </div>
 

@@ -12,7 +12,7 @@
                         </div>
                     </div>
                     <div class="mt-10">
-                        <a href="{{ route('driver.application') }}" class="text-primary bg-white rounded-full p-4 px-6 font-semibold">Become a driver</a>
+                        <a href="{{ route('driver.application.signup') }}" class="text-primary bg-white rounded-full p-4 px-6 font-semibold">Become a driver</a>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                         <p class="mt-5 leading-8 text-gray-500">
                             Our In-app services stretch out to serve other transportation needs Our In-app services stretch out to serve.
                         </p>
-                        <a href="{{ route('driver.application') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">
+                        <a href="{{ route('driver.application.signup') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">
                             <p>Apply to drive</p>
                             <x-svg.chevron-right />
                         </a>
@@ -76,7 +76,7 @@
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                         </div>
 
-                        <a href="{{ route('driver.application') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">
+                        <a href="{{ route('driver.application.signup') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">
                             <p>Apply to drive</p>
                             <x-svg.chevron-right />
                         </a>
