@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1 {
+        @apply text-3xl lg:text-5xl leading-tight font-bold;
+    }
+
+    h2 {
+        @apply text-2xl lg:text-3xl leading-tight font-bold;
+    }
+
+    h3 {
+        @apply text-2xl leading-tight font-bold;
+    }
+
+    h4 {
+        @apply text-xl leading-tight font-bold;
+    }
+
+    h5 {
+        @apply text-base lg:text-lg  leading-tight font-bold;
+    }
+    p {
+        @apply font-[500]
+    }
+
+    h6 {
+        @apply text-base lg:text-lg leading-tight font-bold;
+    }
+    .card {
+        @apply h-44 md:h-40 w-full bg-zinc-100 rounded-2xl p-4 sm:p-5 pb-0
+    }
+    .steps {
+        @apply bg-primary rounded-full size-4 text-[10px] text-white flex items-center justify-center shrink-0
+    }
+    .center {
+        @apply items-center flex justify-center
+    }
+  }
+
+.driver-page-bg{
+    background-image: url('../../public/images/driver-page-bg.svg');
+}
+
+.home-bg {
+    background-image: url('../../public/images/home-bg.png');
+}
+.hide-scroll{
+    overflow: auto;
+    --ms-overflow-style: none;
+    scrollbar-width: none;
+}
