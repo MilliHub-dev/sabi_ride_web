@@ -10,14 +10,22 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 mt-10 text-xs text-gray-600">
                     <div class="space-y-4">
                         <h6 class="text-gray-700">Contact Us</h6>
-                        <p>Sabi_ride@gmail.com</p>
-                        <p>+2348145639201</p>
+                        <p>info.sabiride@gmail.com</p>
+                        <p>+2349126092569</p>
                         <p>Abuja, Nigeria</p>
                         <div class="flex items-center text-[#304659] mt-5 gap-3">
-                            <x-svg.facebook size="30" />
-                            <x-svg.linkedin size="30" />
-                            <x-svg.instagram size="30" />
-                            <x-svg.twitter size="30" />
+                            <a href="https://www.facebook.com/profile.php?id=61553823904645">
+                                <x-svg.facebook size="30" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/sabi-ride/">
+                                <x-svg.linkedin size="30" />
+                            </a>
+                            <a href="https://www.instagram.com/sabiride.ng?igsh=MXNnaHBqbjB4YTJtcQ==">
+                                <x-svg.instagram size="30" />
+                            </a>
+                            <a href="https://x.com/SabiRide?t=NARV6qzuIOxHA2nXPr0wMw&s=09">
+                                <x-svg.twitter size="30" />
+                            </a>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -63,7 +71,7 @@
                     <p class="text-zinc-700"><x-svg.globe /></p>
                     <p>English</p>
                 </div>
-                <p class="mt-3">Copyright © 2020. All rights reserved.</p>
+                <p class="mt-3">Copyright © 2024. All rights reserved.</p>
             </div>
         </div>
     </x-body>

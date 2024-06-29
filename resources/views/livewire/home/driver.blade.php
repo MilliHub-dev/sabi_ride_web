@@ -1,4 +1,15 @@
-<x-home-layout>
+<?php
+
+use Livewire\Volt\Component;
+use Livewire\Attributes\Layout;
+
+
+new #[layout('layouts.home')] class extends Component
+{
+}; 
+?>
+
+<div>
     <header class="w-full lg:h-[650px] bg-cover bg-center bg-no-repeat relative driver-page-bg">
         <div class="absolute inset-0 w-full bg-black opacity-30"></div>
         <div class="relative">
@@ -121,4 +132,4 @@
             </section>
         </x-body>
     </main>
-</x-home-layout>
+</div>

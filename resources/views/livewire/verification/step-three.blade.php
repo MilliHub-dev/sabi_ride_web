@@ -126,6 +126,7 @@ new #[layout('layouts.verification')] class extends Component
                 $photosPath[] = $photo->store(path: 'verification/documents');
             }
         }
+        session()->put('documents', $photosPath);
         dd($photosPath);
     }
 

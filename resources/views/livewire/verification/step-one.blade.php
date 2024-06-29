@@ -25,7 +25,8 @@ new #[layout('layouts.verification')] class extends Component
 
     public function savePersonalDetails()
     {
-        // $this->validate();
+        $this->validate();
+        session()->put('personal_details', $form);
         $this->dispatch('step-one-complete');
     }
 }; 

@@ -12,7 +12,10 @@ class SignupForm extends Form
     public string $email = '';
 
     #[Validate('required|string')]
-    public string $name = '';
+    public string $phone_number = '';
+
+    #[Validate('required|string')]
+    public string $location_city = '';
 
     #[Validate('required|string')]
     public string $password = '';

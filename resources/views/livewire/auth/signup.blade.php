@@ -18,19 +18,20 @@ new class extends Component
 
     public function register()
     {
-        $this->validate();
-        $this->redirectRoute('driver.application.verify');
+        // $validated = $this->validate();
+        // $validated['passowrd'] = Hash::make($validated['password']);
+        // DB::table('signup')->insert($validated);
+        $this->redirectRoute('verify.account');
     }
 
     public function resendCode()
     {
-        $this->redirectRoute('driver.application.verify');
+        $this->redirectRoute('verify.account');
     }
 
 
     public function verifyCode()
     {
-        // dd(implode($this->code));
         $this->redirectRoute('application.verification');
     }
 }; 
@@ -39,18 +40,26 @@ new class extends Component
 <div>
     @if ($status === 'register')
         <form wire:submit='register'>
-            <div>
-                <h4 class="text-gray-600">Full Name</h4>      
-                <x-text-input class="w-full mt-2 bg-zinc-50" wire:model='form.name' type="text" placeholder="Enter your name" />  
-                <x-input-error :messages="$errors->get('form.name')" class="mt-2" /> 
-            </div>   
             
-            <div class="mt-7">
-                <h4 class="text-gray-600 bg-zinc-50">Email or phone number</h4>      
-                <x-text-input class="w-full mt-2" type="text" wire:model='form.email' placeholder="Enter your e-mail or phone number" />   
+            <div class="mt-5">
+                <h4 class="text-gray-600">Email</h4>      
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.email' placeholder="Enter your e-mail" />   
                 <x-input-error :messages="$errors->get('form.email')" class="mt-2" />
             </div>
-            <div class="mt-7">
+            
+            <div class="mt-5">
+                <h4 class="text-gray-600">Phone number</h4>      
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.phone_number' placeholder="Enter phone number" />   
+                <x-input-error :messages="$errors->get('form.phone_number')" class="mt-2" />
+            </div>
+
+            <div class="mt-5">
+                <h4 class="text-gray-600">City</h4>      
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.location_city' placeholder="City where you drive" />   
+                <x-input-error :messages="$errors->get('form.location_city')" class="mt-2" />
+            </div>
+
+            <div class="mt-5">
                 <h4 class="text-gray-600">Password</h4>      
                 <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.password' placeholder="Enter your password" /> 
                 <x-input-error :messages="$errors->get('form.password')" class="mt-2" />  

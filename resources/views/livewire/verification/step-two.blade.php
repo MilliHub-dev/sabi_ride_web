@@ -17,6 +17,7 @@ new #[layout('layouts.verification')] class extends Component
     public function saveLicensingDetails()
     {
         $this->validate();
+        session()->put('licensing_details', $form);
         $this->dispatch('step-two-complete');
     }
 }; 

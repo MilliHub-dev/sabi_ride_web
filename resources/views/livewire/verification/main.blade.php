@@ -7,7 +7,7 @@ use Livewire\Attributes\On;
 
 new #[layout('layouts.verification')] class extends Component
 {
-    public int $step = 3;
+    public int $step;
 
     public function mount()
     {
@@ -16,21 +16,26 @@ new #[layout('layouts.verification')] class extends Component
             'hyundai', 'kia', 'subaru', 'mazda', 'lexus', 'acura', 'infiniti', 'volvo', 'tesla', 'mitsubishi',
             'cadillac', 'chrysler', 'gmc', 'lincoln', 'alfa-romeo'
         ];
+
         $this->colors = [
             'red', 'blue', 'green', 'black', 'white', 'silver', 'gray', 'yellow', 'orange', 'brown', 'purple'
         ];
+
+        $this->getStep();
     }
 
-    #[On('step-one-complete')]
-    public function setStepTwo()
+    public function getStep()
     {
-        $this->step = 2;
-    }
+        if(session('personal_details') && session('licensing_details')) {
 
-    #[On('step-two-complete')]
-    public function setStepThree()
-    {
-        $this->step = 3;
+            $this->step = 3;
+        } elseif (session('personal_details') && !session('licensing_details')) {
+
+            $this->step = 2;
+        } else {
+
+            $this->step = 1;
+        }
     }
 
 
@@ -54,13 +59,13 @@ new #[layout('layouts.verification')] class extends Component
     <div class="max-w-3xl mx-auto">
         <x-steps :step="$step" />
         @if ($step === 1)
-            <livewire:application.verification.step-one>
+            <livewire:verification.step-one>
         
         @elseif ($step === 2)
-            <livewire:application.verification.step-two>
+            <livewire:verification.step-two>
 
         @elseif ($step === 3)
-            <livewire:application.verification.step-three>
+            <livewire:verification.step-three>
 
         @endif
     </div>
