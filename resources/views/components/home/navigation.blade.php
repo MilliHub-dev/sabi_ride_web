@@ -16,8 +16,8 @@
                         <p class="text-zinc-700"><x-svg.globe /></p>
                         <p>EN</p>
                     </div>
-                    <a href="">Log in</a>
-                    <a href="" class="text-primary text-sm bg-white rounded-full p-3 px-6 font-semibold">Sign up</a>
+                    <a href="{{ route('login') }}">Log in</a>
+                    <a href="{{ route('signup') }}" class="text-primary text-sm bg-white rounded-full p-3 px-6 font-semibold">Sign up</a>
                 </div>
             </div>
 

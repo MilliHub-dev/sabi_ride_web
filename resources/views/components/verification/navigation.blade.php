@@ -16,8 +16,8 @@
                         <p class="text-zinc-700"><x-svg.globe /></p>
                         <p>EN</p>
                     </div>
-                    <a href="">Log in</a>
-                    <a href="" class="text-white text-sm bg-primary rounded-full p-3 px-6 font-semibold">Sign up</a>
+                    <a href="{{ route('login') }}">Log in</a>
+                    <a href="{{ route('signup') }}" class="text-white text-sm bg-primary rounded-full p-3 px-6 font-semibold">Sign up</a>
                 </div>
             </div>
 
@@ -46,19 +46,19 @@
                 </button>
             </div>
             <div class="p-5 space-y-5 mt-10">
-                <x-nav-link :active="request()->routeIs('home')">
+                <x-nav-link :active="request()->routeIs('home')" href="/">
                     Homepage
                 </x-nav-link>
 
-                <x-nav-link :active="request()->routeIs('login')">
+                <x-nav-link :active="request()->routeIs('login')"  href="/login">
                     Log in
                 </x-nav-link>
 
-                <x-nav-link :active="request()->routeIs('services')">
+                <x-nav-link :active="request()->routeIs('home')"  href="/#services">
                     Services
                 </x-nav-link>
 
-                <x-nav-link :active="request()->routeIs('contact')">
+                <x-nav-link :active="request()->routeIs('home')" href="/#contact">
                     Contact
                 </x-nav-link>
             </div>

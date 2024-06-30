@@ -18,19 +18,9 @@ new class extends Component
         // if (! DB::table('signup')->where('email', $validated['email'])->exists()) {
         //     DB::table('signup')->insert($validated);
         // }
+        $this->form->sendVerificationSms();
         session()->put('id');
         $this->redirectRoute('verify.account');
-    }
-
-    public function resendCode()
-    {
-        $this->redirectRoute('verify.account');
-    }
-
-
-    public function verifyCode()
-    {
-        $this->redirectRoute('verification.start');
     }
 }; 
 ?>
@@ -58,7 +48,7 @@ new class extends Component
 
         <div class="mt-5">
             <h4 class="text-gray-600">Password</h4>      
-            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.password' placeholder="Enter your password" /> 
+            <x-text-input class="w-full mt-2 bg-zinc-50" type="password" wire:model='form.password' placeholder="Enter your password" /> 
             <x-input-error :messages="$errors->get('form.password')" class="mt-2" />  
         </div>
         <div class="mt-10">

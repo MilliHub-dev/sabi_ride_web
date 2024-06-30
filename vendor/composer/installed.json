@@ -8956,6 +8956,93 @@
             "install-path": "../tijsverkoyen/css-to-inline-styles"
         },
         {
+            "name": "tzsk/otp",
+            "version": "8.0.0",
+            "version_normalized": "8.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tzsk/otp.git",
+                "reference": "ba29dbbd3c3a2bad41d357fdbca29d1b7a590811"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tzsk/otp/zipball/ba29dbbd3c3a2bad41d357fdbca29d1b7a590811",
+                "reference": "ba29dbbd3c3a2bad41d357fdbca29d1b7a590811",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0",
+                "laravel/pint": "^1.4",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.3|^10.5",
+                "vimeo/psalm": "^5.0"
+            },
+            "time": "2024-03-26T16:20:40+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tzsk\\Otp\\OtpServiceProvider"
+                    ],
+                    "aliases": {
+                        "Otp": "Tzsk\\Otp\\Facades\\Otp"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Helper.php"
+                ],
+                "psr-4": {
+                    "Tzsk\\Otp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tzsk",
+                    "email": "mailtokmahmed@gmail.com",
+                    "homepage": "https://github.com/tzsk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OTP Generator and Verifier without database",
+            "homepage": "https://github.com/tzsk/otp",
+            "keywords": [
+                "laravel otp",
+                "otp",
+                "otp generator",
+                "otp verification",
+                "php otp",
+                "tzsk"
+            ],
+            "support": {
+                "issues": "https://github.com/tzsk/otp/issues",
+                "source": "https://github.com/tzsk/otp/tree/8.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/KMAhmed",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tzsk",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../tzsk/otp"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.0",
             "version_normalized": "5.6.0.0",

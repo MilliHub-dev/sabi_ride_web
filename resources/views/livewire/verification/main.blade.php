@@ -20,9 +20,6 @@ new #[layout('layouts.verification')] class extends Component
         $this->colors = [
             'red', 'blue', 'green', 'black', 'white', 'silver', 'gray', 'yellow', 'orange', 'brown', 'purple'
         ];
-        // session()->forget('documents');
-        // session()->forget('licensing_details');
-        // session()->forget('personal_details');
         $this->getStep();
     }
 
@@ -47,8 +44,6 @@ new #[layout('layouts.verification')] class extends Component
         $personalDetails = session('personal_details');
         $licensingDetails = session('licensing_details');
         $documents = session('documents');
-
-
         $data = [
             'first_name' => $personalDetails['first_name'],
             'user_id' => session('id'),
@@ -75,13 +70,9 @@ new #[layout('layouts.verification')] class extends Component
             'screenshot_of_rating' => $documents['screenshot_of_rating'] ?? '',
             'screenshot_of_notification' => $documents['screenshot_of_notification'] ?? ''
         ];
-        // DB::table('driver')->insert($data);
-
+        DB::table('driver')->insert($data);
         $this->redirectRoute('verification.complete');
     }
-    
-
-
 }; 
 ?>
 

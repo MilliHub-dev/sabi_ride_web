@@ -43,6 +43,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'c72349b1fe8d0deeedd3a52e8aa814d8' => __DIR__ . '/..' . '/mockery/mockery/library/helpers.php',
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'd634523d799d97a8ab4807b650bf5cea' => __DIR__ . '/..' . '/pestphp/pest-plugin-laravel/src/Autoload.php',
+        'b93967716309294a14068fe918165fe1' => __DIR__ . '/..' . '/tzsk/otp/src/Helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -61,6 +62,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         ),
         'T' => 
         array (
+            'Tzsk\\Otp\\' => 9,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
             'Termwind\\' => 9,
@@ -217,6 +219,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tzsk\\Otp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tzsk/otp/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -588,9 +594,13 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
 
     public static $classMap = array (
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Livewire\\Forms\\LoginForm' => __DIR__ . '/../..' . '/app/Livewire/Forms/LoginForm.php',
+        'App\\Livewire\\Forms\\PersonalDetails' => __DIR__ . '/../..' . '/app/Livewire/Forms/PersonalDetails.php',
+        'App\\Livewire\\Forms\\SignupForm' => __DIR__ . '/../..' . '/app/Livewire/Forms/SignupForm.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\VoltServiceProvider' => __DIR__ . '/../..' . '/app/Providers/VoltServiceProvider.php',
+        'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
         'App\\View\\Components\\HomeLayout' => __DIR__ . '/../..' . '/app/View/Components/HomeLayout.php',
         'App\\View\\Components\\VerificationLayout' => __DIR__ . '/../..' . '/app/View/Components/VerificationLayout.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -7073,6 +7083,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'Tzsk\\Otp\\Commands\\OtpPublishCommand' => __DIR__ . '/..' . '/tzsk/otp/src/Commands/OtpPublishCommand.php',
+        'Tzsk\\Otp\\Facades\\Otp' => __DIR__ . '/..' . '/tzsk/otp/src/Facades/Otp.php',
+        'Tzsk\\Otp\\Otp' => __DIR__ . '/..' . '/tzsk/otp/src/Otp.php',
+        'Tzsk\\Otp\\OtpServiceProvider' => __DIR__ . '/..' . '/tzsk/otp/src/OtpServiceProvider.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',

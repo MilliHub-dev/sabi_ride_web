@@ -3,6 +3,7 @@
 use Livewire\Volt\Component;
 use App\Livewire\Forms\SignupForm;
 use Livewire\Attributes\Layout;
+use Tzsk\Otp\Facades\Otp;
 
 
 new #[layout('layouts.guest')] class extends Component
@@ -10,9 +11,32 @@ new #[layout('layouts.guest')] class extends Component
     public array $code = [];
 
 
+    
+    public function matchCode()
+    {
+        $this->validate([
+            'code' => 'required|numeric|min:6'
+        ]);
+
+        if (Otp::match($this->code, $this->user->email)) {
+            $this->user->update([
+                'email_verified_at' => now()
+            ]);
+            $this->redirectRoute('user.dashboard');
+        }else{
+            $this->addError('code', 'Invalid Code');
+        }
+    }
+
+
     public function resendCode()
     {
-        $this->redirectRoute('verify.account');
+        $otp = Otp::digits(6)->generate($this->user->email);
+        flash('info', 'Code Resent.');
+        $this->redirect(
+            route('verification.notice'),
+             navigate:true
+        );
     }
 
 

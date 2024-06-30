@@ -17,7 +17,6 @@ class LoginForm extends Form
 
     public function authenticate()
     {
-        // dd($this->only(['email', 'password']));
         $user = DB::table('signup')->where('email', $this->email)->first();
         if (Hash::check($user->password, $this->password)) {
             session()->put('id', $user->id);
