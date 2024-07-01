@@ -54,8 +54,8 @@
             "@php artisan migrate --graceful --ansi"
         ],
         "post-install-cmd": [
-            "chmod +x create_sqlite_db.sh",
-            "./create_sqlite_db.sh"
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
         ]
     },
     "extra": {
