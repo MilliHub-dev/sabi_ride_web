@@ -7,7 +7,6 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
-use PDO;
 
 class SignupForm extends Form
 {

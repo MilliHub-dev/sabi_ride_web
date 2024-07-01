@@ -22,10 +22,16 @@ class LoginForm extends Form
         $query = "SELECT * FROM signup WHERE email = '$this->email'";
         $user = ConnectDB::run($query);
         if ($user !== false) {
-            if (Hash::check($this->password, $user['password'])) {
-                session()->put('user', $user);
-                return $user;
-            } else {
+            try {
+                if (Hash::check($this->password, $user['password'])) {
+                    session()->put('user', $user);
+                    return $user;
+                } else {
+                    throw ValidationException::withMessages([
+                        'form.email' => "Credentials don't match",
+                    ]);
+                }
+            } catch (\Throwable $th) {
                 throw ValidationException::withMessages([
                     'form.email' => "Credentials don't match",
                 ]);
