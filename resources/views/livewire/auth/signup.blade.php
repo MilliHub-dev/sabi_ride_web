@@ -23,22 +23,23 @@ new class extends Component
 <div>
     <form wire:submit='register'>
         
+
         <div class="mt-5">
-            <h4 class="text-gray-600">Email</h4>      
-            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.email' placeholder="Enter your e-mail" />   
-            <x-input-error :messages="$errors->get('form.email')" class="mt-2" />
+            <h4 class="text-gray-600">First Name</h4>      
+            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.first_name' placeholder="Enter first name" />   
+            <x-input-error :messages="$errors->get('form.first_name')" class="mt-2" />
+        </div>
+
+        <div class="mt-5">
+            <h4 class="text-gray-600">Last Name</h4>      
+            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.last_name' placeholder="Enter last name" />   
+            <x-input-error :messages="$errors->get('form.last_name')" class="mt-2" />
         </div>
         
         <div class="mt-5">
             <h4 class="text-gray-600">Phone number</h4>      
             <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.phone_number' placeholder="Enter phone number" />   
             <x-input-error :messages="$errors->get('form.phone_number')" class="mt-2" />
-        </div>
-
-        <div class="mt-5">
-            <h4 class="text-gray-600">City</h4>      
-            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.location_city' placeholder="City where you drive" />   
-            <x-input-error :messages="$errors->get('form.location_city')" class="mt-2" />
         </div>
 
         <div class="mt-5">
