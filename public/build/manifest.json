@@ -1,0 +1,21 @@
+{
+  "public/images/driver-page.png": {
+    "file": "assets/driver-page-B_dCunw_.png",
+    "src": "public/images/driver-page.png"
+  },
+  "public/images/home-bg.png": {
+    "file": "assets/home-bg-BzI7ZXTy.png",
+    "src": "public/images/home-bg.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BTEenL3T.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C1-XIpUa.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
