@@ -57,7 +57,7 @@ new #[layout('layouts.home')] class extends Component
                     </div>
 
                     <div class="mt-5 bg-primary/10 p-4 md:p-5 rounded-3xl">
-                        <div class="text-primary"><x-svg.signup size="50" /></div>
+                        <div class="text-primary"><x-svg.file size="50" /></div>
                         <h2 class="mt-5">2. Upload your documents</h2>
                         <p class="mt-5 leading-8 text-gray-500">
                             Our In-app services stretch out to serve other transportation needs.
@@ -66,7 +66,7 @@ new #[layout('layouts.home')] class extends Component
 
 
                     <div class="mt-5 bg-primary/10 p-4 md:p-5 rounded-3xl">
-                        <div class="text-primary"><x-svg.signup size="50" /></div>
+                        <div class="text-primary"><x-svg.check size="50" /></div>
                         <h2 class="mt-5">3. Get approved</h2>
                         <p class="mt-5 leading-8 text-gray-500">
                             Our In-app services stretch out to serve other transportation needs.
