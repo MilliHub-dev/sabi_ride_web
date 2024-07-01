@@ -53,11 +53,11 @@
                 </button>
             </div>
             <div class="p-5 space-y-5 mt-10">
-                <x-nav-link :active="request()->routeIs('home')" href="/">
+                <x-nav-link :active="request()->routeIs('home')" href="{{ route('home') }}">
                     Homepage
                 </x-nav-link>
 
-                <x-nav-link :active="request()->routeIs('login')"  href="/login">
+                <x-nav-link :active="request()->routeIs('login')" href="{{ route('login') }}">
                     Log in
                 </x-nav-link>
 
