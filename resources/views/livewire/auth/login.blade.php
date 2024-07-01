@@ -14,7 +14,7 @@ new #[layout('layouts.guest')] class extends Component
     {
         $user = $this->form->authenticate();
         if ($user) {
-            
+
             $this->redirectRoute('verify.account');
             return;
         }
