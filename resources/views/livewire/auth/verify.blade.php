@@ -1,7 +1,7 @@
 <?php
 
 use Livewire\Volt\Component;
-use App\Livewire\Forms\SignupForm;
+use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Layout;
 use Tzsk\Otp\Facades\Otp;
 
@@ -10,7 +10,10 @@ new #[layout('layouts.guest')] class extends Component
 {
     public array $code = [];
 
-
+    public function mount()
+    {
+        // dd(decrypt(session('xUser')));
+    } 
     
     public function matchCode()
     {
@@ -35,13 +38,21 @@ new #[layout('layouts.guest')] class extends Component
         flash('info', 'Code Resent.');
         $this->redirect(
             route('verification.notice'),
-             navigate:true
+            navigate:true
         );
     }
 
 
     public function verifyCode()
     {
+        $code = implode($this->code);
+        $response = Http::withHeaders([
+            'accept' => 'application/json',
+            'content-type' => 'application/json',
+        ])->post(env('API_URL') . '/api/v1/users/activate-account', [
+            'email' => 'test_rider@mail.com',
+            'activation_code' => $code
+        ]);
         $this->redirectRoute('verification.start');
     }
 }; 

@@ -16,8 +16,15 @@
                         <p class="text-zinc-700"><x-svg.globe /></p>
                         <p>EN</p>
                     </div>
-                    <a href="{{ route('login') }}">Log in</a>
-                    <a href="{{ route('signup') }}" class="text-primary text-sm bg-white rounded-full p-3 px-6 font-semibold">Sign up</a>
+                    @if (! session('user')) 
+                        <a href="{{ route('login') }}">Log in</a>
+                        <a href="{{ route('signup') }}" class="text-primary text-sm bg-white rounded-full p-3 px-6 font-semibold">Sign up</a>
+                    @else 
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <button class="text-white text-sm bg-red-500 rounded-full p-3 px-6 font-semibold">Log Out</button>
+                        </form>
+                    @endif
                 </div>
             </div>
 

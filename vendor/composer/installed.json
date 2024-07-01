@@ -1489,6 +1489,68 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "hen8y/laravel-flash",
+            "version": "v2.0.3",
+            "version_normalized": "2.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hen8y/Laravel-flash.git",
+                "reference": "db0b3f94d2d64a21c17064e0c9b84d6f35e60e9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hen8y/Laravel-flash/zipball/db0b3f94d2d64a21c17064e0c9b84d6f35e60e9c",
+                "reference": "db0b3f94d2d64a21c17064e0c9b84d6f35e60e9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.0"
+            },
+            "time": "2024-04-04T11:23:05+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hen8y\\Flash\\LaravelFlashServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Helpers/helper.php"
+                ],
+                "psr-4": {
+                    "Hen8y\\Flash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ogbonna Henry",
+                    "email": "hen8y@outlook.com",
+                    "homepage": "https://hen8y.dev"
+                }
+            ],
+            "description": "Flash notification for laravel",
+            "keywords": [
+                "LaravelFlash",
+                "flash",
+                "laravel",
+                "laravel-flash",
+                "laravel-notification",
+                "laravel-notify"
+            ],
+            "support": {
+                "issues": "https://github.com/hen8y/Laravel-flash/issues",
+                "source": "https://github.com/hen8y/Laravel-flash/tree/v2.0.3"
+            },
+            "install-path": "../hen8y/laravel-flash"
+        },
+        {
             "name": "jean85/pretty-package-versions",
             "version": "2.0.6",
             "version_normalized": "2.0.6.0",

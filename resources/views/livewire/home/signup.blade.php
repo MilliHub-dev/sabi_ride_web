@@ -19,7 +19,7 @@ new #[layout('layouts.guest')] class extends Component
                 </svg>
             </a>
         </div>
-        <div class="sm:p-10 sm:border sm:min-h-[700px] p-8 sm:mt-5 rounded-3xl sm:shadow-md sm:border-gray-200 w-full">
+        <div class="sm:p-10 sm:border sm:min-h-[700px] p-8 sm:mt-5 rounded-3xl sm:shadow-md sm:border-gray-200 w-full pb-10">
             <div class="center mb-5">
                 <x-application-logo />
             </div>

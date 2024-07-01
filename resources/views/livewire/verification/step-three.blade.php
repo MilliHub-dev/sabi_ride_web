@@ -204,7 +204,7 @@ new #[layout('layouts.verification')] class extends Component
                 </div>
 
                 <div class="flex w-full justify-end gap-2 mt-7">
-                    <x-primary-button content="Proceed" target="savePersonalDetails" />
+                    <x-primary-button content="Proceed" target="saveDriver" />
                 </div>
             </x-modal>
         </form>

@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c92208d9885cf5b2c37a0b3f51e50e97d5755c03',
+        'reference' => 'c52b9b6685bf4a56b3d0997d9f5509fe3ae9a4cf',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -192,6 +192,15 @@
             'install_path' => __DIR__ . '/../hamcrest/hamcrest-php',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'hen8y/laravel-flash' => array(
+            'pretty_version' => 'v2.0.3',
+            'version' => '2.0.3.0',
+            'reference' => 'db0b3f94d2d64a21c17064e0c9b84d6f35e60e9c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hen8y/laravel-flash',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'illuminate/auth' => array(
             'dev_requirement' => false,
@@ -418,7 +427,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c92208d9885cf5b2c37a0b3f51e50e97d5755c03',
+            'reference' => 'c52b9b6685bf4a56b3d0997d9f5509fe3ae9a4cf',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

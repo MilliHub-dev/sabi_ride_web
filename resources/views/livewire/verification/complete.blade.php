@@ -2,16 +2,17 @@
 
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
+use App\Actions\ConnectDB;
 
 new #[layout('layouts.verification')] class extends Component
 {
     public string $status = '';
     public function mount ()
     {
-        // $this->status = DB::table('driver_verification')
-        //         ->where('user_id', session('id'))
-        //             ->first()
-        //             ->verification_status;
+        if(!session('user')) {
+            $this->redirectRoute('login');
+            return;
+        }
     }
 }; 
 ?>

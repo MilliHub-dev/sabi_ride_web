@@ -13,14 +13,9 @@ new class extends Component
 
     public function register()
     {
-        $validated = $this->validate();
-        $validated['passowrd'] = Hash::make($validated['password']);
-        // if (! DB::table('signup')->where('email', $validated['email'])->exists()) {
-        //     DB::table('signup')->insert($validated);
-        // }
-        $this->form->sendVerificationSms();
-        session()->put('id');
-        $this->redirectRoute('verify.account');
+        $this->validate();        
+        $this->form->register();
+        $this->redirectRoute('verification.start');
     }
 }; 
 ?>

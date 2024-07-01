@@ -2,10 +2,12 @@
 
 namespace App\Livewire\Forms;
 
+use App\Actions\ConnectDB;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
-use Illuminate\Support\Facades\Http;
-use Tzsk\Otp\Facades\Otp;
+use PDO;
 
 class SignupForm extends Form
 {
@@ -24,20 +26,33 @@ class SignupForm extends Form
 
 
 
-    public function sendVerificationSms()
+    public function register()
     {
-        $otp = Otp::digits(6)->generate($this->email);
+        $query = "SELECT * FROM signup WHERE email = '$this->email'";
+        $result = ConnectDB::run($query);
+        $hashed = Hash::make($this->password);
+        if ($result === false) {
+            $pdo = ConnectDB::connect();
+            $query = "INSERT INTO signup (email, phone_number, location_city, password) VALUES (:email, :phone_number, :location_city, :password)";
+            $stmt = $pdo->prepare($query);
 
-        Http::post(
-            'https://api.ng.termii.com/api/sms/send',
-            [
-                'to' => $this->phone_number,
-                "from" => "Submmunity",
-                "sms" => "Your verification code $otp",
-                'type' => 'plain',
-                'channel' => 'generic',
-                "api_key" => "TLzBE3KDCHhdZtyjzEL02pnAg1Zj6P3qOEkUEZ8X4F3X5kl7kwxgQxJTTfXtWb"
-            ]
-        );
+            $stmt->bindParam(':email', $this->email);
+            $stmt->bindParam(':phone_number', $this->phone_number);
+            $stmt->bindParam(':location_city', $this->location_city);
+            $stmt->bindParam(':password', $hashed);
+
+            $result = $stmt->execute();
+            if ($result) {
+                $query = "SELECT id, email, phone_number FROM signup WHERE email = '$this->email'";
+                $user = ConnectDB::run($query);
+
+                session()->put('user', $user);
+                return $user;
+            }
+        } else {
+            throw ValidationException::withMessages([
+                'form.email' => 'Email is used',
+            ]);
+        }
     }
 }

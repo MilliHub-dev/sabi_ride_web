@@ -12,8 +12,12 @@ new #[layout('layouts.guest')] class extends Component
 
     public function login()
     {
-        $this->form->authenticate();
-        $this->redirectRoute('verify.account');
+        $user = $this->form->authenticate();
+        if ($user) {
+            
+            $this->redirectRoute('verify.account');
+            return;
+        }
     }
 
 }; 
@@ -36,13 +40,13 @@ new #[layout('layouts.guest')] class extends Component
         <form wire:submit='login'>
             <div class="mt-5">
                 <h4 class="text-gray-600">Email</h4>      
-                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.email' placeholder="Enter your e-mail" />   
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="email" wire:model='form.email' placeholder="Enter your e-mail" />   
                 <x-input-error :messages="$errors->get('form.email')" class="mt-2" />
             </div>
 
             <div class="mt-5 w-full">
                 <h4 class="text-gray-600">Password</h4>      
-                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.password' placeholder="Enter your password" /> 
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="password" wire:model='form.password' placeholder="Enter your password" /> 
                 <x-input-error :messages="$errors->get('form.password')" class="mt-2" />  
             </div>
             <div class="center flex-col mt-10 w-full">

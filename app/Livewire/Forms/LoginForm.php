@@ -2,8 +2,10 @@
 
 namespace App\Livewire\Forms;
 
-use Illuminate\Support\Facades\DB;
+use App\Actions\ConnectDB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
 
@@ -17,19 +19,22 @@ class LoginForm extends Form
 
     public function authenticate()
     {
-        $user = DB::table('signup')->where('email', $this->email)->first();
-        if (Hash::check($user->password, $this->password)) {
-            session()->put('id', $user->id);
 
-            $verification_status = DB::table('driver_verification')->where('user_id', $user->id)
-                ->first()
-                ->verification_status;
-
-            if ($verification_status) {
-                return redirect()->route('verification.complete');
+        $query = "SELECT * FROM signup WHERE email = '$this->email'";
+        $user = ConnectDB::run($query);
+        if ($user !== false) {
+            if (Hash::check($this->password, $user['password'])) {
+                session()->put('user', $user);
+                return $user;
             } else {
-                return redirect()->route('verification.start');
+                throw ValidationException::withMessages([
+                    'form.email' => "Credentials don't match",
+                ]);
             }
+        } else {
+            throw ValidationException::withMessages([
+                'form.email' => "Email doesn't exist",
+            ]);
         }
     }
 }
