@@ -1,5 +1,5 @@
 <div x-data="{ open:false }" class="w-full z-50 bg-white">
-    <div class="w-full h-20 flex items-center justify-center shadow-lg border" :class="{'block': ! open, 'hidden': open}">
+    <div class="w-full h-20 flex items-center justify-center shadow-md border" :class="{'block': ! open, 'hidden': open}">
         <x-body class="w-full text-primary text-xs">
             <div class="hidden md:flex items-center justify-between">
                 <div>

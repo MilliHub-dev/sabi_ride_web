@@ -4,6 +4,7 @@ namespace App\Livewire\Forms;
 
 use App\Actions\ConnectDB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
@@ -18,27 +19,32 @@ class LoginForm extends Form
 
     public function authenticate()
     {
+        try {
+            $response = Http::acceptJson()->post(env('BASE_URL') . '/api/v1/users/login/sabi-rider', [
+                'email' => $this->email,
+                'password' => $this->password
+            ]);
+            if (array_key_exists('message', $response->json())) {
+                $message = $response->json()['message'];
 
-        $query = "SELECT * FROM signup WHERE email = '$this->email'";
-        $user = ConnectDB::run($query);
-        if ($user !== false) {
-            try {
-                if (Hash::check($this->password, $user['password'])) {
-                    session()->put('user', $user);
-                    return $user;
-                } else {
+                if (str_contains($message, "user does not exist")) {
                     throw ValidationException::withMessages([
-                        'form.email' => "Credentials don't match",
+                        'form.email' => "credentials don't match",
                     ]);
                 }
-            } catch (\Throwable $th) {
+
+                if (str_contains($message, "user is not activated")) {
+                    return $message;
+                }
+
                 throw ValidationException::withMessages([
-                    'form.email' => "Credentials don't match",
+                    'form.email' => $response->json()['message'],
                 ]);
             }
-        } else {
+            return $response->json();
+        } catch (\Throwable $th) {
             throw ValidationException::withMessages([
-                'form.email' => "Email doesn't exist",
+                'form.email' => $th->getMessage(),
             ]);
         }
     }

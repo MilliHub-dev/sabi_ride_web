@@ -48,7 +48,7 @@ new #[layout('layouts.home')] class extends Component
                         <div class="text-primary"><x-svg.signup size="50" /></div>
                         <h2 class="mt-5">1. Sign up online</h2>
                         <p class="mt-5 leading-8 text-gray-500">
-                            Our In-app services stretch out to serve other transportation needs Our In-app services stretch out to serve.
+                            Signing up online is quick and easy. just provide a few details and gain access.
                         </p>
                         <a href="{{ route('signup') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">
                             <p>Apply to drive</p>
@@ -60,7 +60,7 @@ new #[layout('layouts.home')] class extends Component
                         <div class="text-primary"><x-svg.file size="50" /></div>
                         <h2 class="mt-5">2. Upload your documents</h2>
                         <p class="mt-5 leading-8 text-gray-500">
-                            Our In-app services stretch out to serve other transportation needs.
+                            Speed up the verification process by uploading your document securely. Our platform ensures a seamless experience allowing you to submit your documents hassle-free.
                         </p>
                     </div>
 
@@ -69,12 +69,12 @@ new #[layout('layouts.home')] class extends Component
                         <div class="text-primary"><x-svg.check size="50" /></div>
                         <h2 class="mt-5">3. Get approved</h2>
                         <p class="mt-5 leading-8 text-gray-500">
-                            Our In-app services stretch out to serve other transportation needs.
+                            Start riding and making money on your own. Submit your application today and experience the ease of approval. Get started now!
                         </p>
                     </div>
                 </div>
             </section>
-
+            
             <section class="sm:mt-60 mt-16">
                 <div class="sm:h-96 w-full rounded-3xl shadow-lg border border-gray-100 p-8 sm:p-10 grid sm:grid-cols-2 gap-16 sm:px-14">
                     <div class="order-2 sm:order-1">
@@ -84,7 +84,7 @@ new #[layout('layouts.home')] class extends Component
                             <h3>you go sabi earn!</h3>
                         </div>
                         <div class="mt-4 max-w-sm">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                            Join our driver community and start earning today
                         </div>
 
                         <a href="{{ route('signup') }}" class="bg-primary rounded-full px-8 p-4 text-white inline-flex items-center gap-2 mt-10">

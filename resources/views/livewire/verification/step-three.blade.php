@@ -12,32 +12,34 @@ new #[layout('layouts.verification')] class extends Component
     public array $requiredDocumentsArray = [];
     public array $extraDocumentsArray = [];
     public array $photos = [];
+    public string $id_type = '';
 
     public function rules()
     { 
         return [
-            'photos.driver_license' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.driver_licence' => 'required|file|mimes:jpeg,png|max:2048',
             'photos.driver_profile_photo' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.car_exterior_photo' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.car_interior_photo' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.vehicle_license_certificate' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.road_worthiness_certificate' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.government_issued_id' => 'required|file|mimes:jpeg,png|max:2048',
-            'photos.proof_of_ownership_certificate' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.car_photo_outer' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.car_photo_inner' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.vehicle_license' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.car_cert_of_road_worthiness' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.issued_id_card' => 'required|file|mimes:jpeg,png|max:2048',
+            'photos.car_proof_of_ownership' => 'required|file|mimes:jpeg,png|max:2048',
+            'id_type' => 'required|string'
         ];
     }
 
     public function validationAttributes()
     { 
         return [
-            'photos.driver_license' => 'driver license',
+            'photos.driver_licence' => 'driver license',
             'photos.driver_profile_photo' => 'driver profile photo',
-            'photos.car_exterior_photo' => 'car exterior photo',
-            'photos.car_interior_photo' => 'car interior photo',
-            'photos.vehicle_license_certificate' => 'vehicle license certificate',
-            'photos.road_worthiness_certificate' => 'road worthiness certificate',
-            'photos.government_issued_id' => 'government issued ID',
-            'photos.proof_of_ownership_certificate' => 'proof of ownership certificate',
+            'photos.car_photo_outer' => 'car exterior photo',
+            'photos.car_photo_inner' => 'car interior photo',
+            'photos.vehicle_license' => 'vehicle license certificate',
+            'photos.car_cert_of_road_worthiness' => 'road worthiness certificate',
+            'photos.issued_id_card' => 'government issued ID',
+            'photos.car_proof_of_ownership' => 'proof of ownership certificate',
         ];
     }
 
@@ -47,7 +49,7 @@ new #[layout('layouts.verification')] class extends Component
             [
                 "name" => "Driver's License",
                 "description" => "Please provide a clear driver's license showing the license number, your name, and date of birth.",
-                "model" => "photos.driver_license"
+                "model" => "photos.driver_licence"
             ],
             [
                 "name" => "Driver's Profile Photo",
@@ -57,32 +59,32 @@ new #[layout('layouts.verification')] class extends Component
             [
                 "name" => "Exterior Photo of the Car",
                 "description" => "Upload a clear exterior photo that captures the plate number. Visit Sample Exterior Photo.",
-                "model" => "photos.car_exterior_photo"
+                "model" => "photos.car_photo_outer"
             ],
             [
                 "name" => "Interior Photo of the Car",
                 "description" => "Provide a clear interior photo of your car. Visit Sample Interior Photo.",
-                "model" => "photos.car_interior_photo"
+                "model" => "photos.car_photo_inner"
             ],
             [
                 "name" => "Vehicle License Certificate",
                 "description" => "Upload the vehicle license document of the car.",
-                "model" => "photos.vehicle_license_certificate"
+                "model" => "photos.vehicle_license"
             ],
             [
                 "name" => "Certificate of Roadworthiness",
                 "description" => "Picture of Roadworthiness Certificate.",
-                "model" => "photos.road_worthiness_certificate"
+                "model" => "photos.car_cert_of_road_worthiness"
             ],
             [
                 "name" => "Government Issued ID",
                 "description" => "Upload any government-issued ID: NIN slip, National ID card Or Passport, Permanent Voter's Card, Driver's License.",
-                "model" => "photos.government_issued_id"
+                "model" => "photos.issued_id_card"
             ],
             [
                 "name" => "Proof of Car Ownership Certificate",
                 "description" => "Upload proof of ownership of the car, such as the car's title document or any certificate that verifies you as the owner.",
-                "model" => "photos.proof_of_ownership_certificate"
+                "model" => "photos.car_proof_of_ownership"
             ]
         ];
     }
@@ -96,11 +98,11 @@ new #[layout('layouts.verification')] class extends Component
             ],
             [
                 "name" => "Screenshot of rating with reviews",
-                "model" => "photos.screenshot_of_rating_with_reviews"
+                "model" => "photos.screenshot_of_rating"
             ],
             [
                 "name" => "Screenshot of Notification screen",
-                "model" => "photos.screenshot_of_notification_screen"
+                "model" => "photos.screenshot_of_notification"
             ]
         ];
     }
@@ -109,6 +111,11 @@ new #[layout('layouts.verification')] class extends Component
     {
         $this->requiredDocumentsArray = $this->requiredDocuments();
         $this->extraDocumentsArray = $this->extraDocuments();
+        $this->photos = [
+            'screenshot_of_dashboard' => '',
+            'screenshot_of_rating' => '',
+            'screenshot_of_notification' => ''
+        ];
     }
 
     public function validateAndProceed()
@@ -121,10 +128,13 @@ new #[layout('layouts.verification')] class extends Component
     {
         $photosPath = [];
         foreach ($this->photos as $name => $photo) {
-            if (!is_null($photo)) {
-                $photosPath[$name] = $photo->store(path: 'verification/documents');
+            if (!is_null($photo) && !is_string($photo)) {
+                $photosPath[$name] = $photo->storePublicly(path: 'verification/documents');
+            } else {
+                $photosPath[$name] = '';
             }
         }
+        $photosPath['issued_id_card_type'] = $this->id_type;
         session()->put('documents', $photosPath);
         $this->dispatch('save-driver');
     }
@@ -137,9 +147,17 @@ new #[layout('layouts.verification')] class extends Component
         <div class="pb-3 border-b-2 mb-3">
             <h3>Upload Documents</h2>
         </div>
-        <p>8 documents are required from you</p>
-        <form wire:submit='saveLicensingDetails' class="mt-3">
-            <div class="grid sm:grid-cols-2 gap-3">
+        <p class="mb-10">8 documents are required from you</p>
+        <div class="mt-3">
+            <div>
+                <x-input-label>Identification Type<span class="text-red-600">*</span></x-input-label>
+                <x-select-input wire:model="id_type" :values="[
+                    'NIN'
+                ]" content="Select an identification type"  class="w-full mt-2"/>
+                <x-input-error :messages="$errors->get('id_type')" class="mt-2" />
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-3 mt-3">
                 @foreach ($requiredDocumentsArray as $key => $item) 
                     <div class="mt-7" x-data="{ showImage{{ $key }}:false, imagePreview{{ $key }}: '' }">
                         <h4>{{ $item['name'] }}</h4>
@@ -170,10 +188,10 @@ new #[layout('layouts.verification')] class extends Component
                     </div>
                 @endforeach
             </div>
-            <div class="flex justify-end mt-4">
-                <div class="bg-primary rounded-full px-8 p-3 text-sm inline-block text-white cursor-pointer" @click="$wire.validateAndProceed()">Proceed</div>
+            <div class="flex justify-end w-full mt-4">
+                <div class="bg-primary rounded-full px-8 p-3 text-sm text-white cursor-pointer" @click="$wire.validateAndProceed()">Proceed</div>
             </div>
-
+            
             <div class="mt-10 flex justify-end">
             </div>
             <x-modal>
@@ -203,10 +221,16 @@ new #[layout('layouts.verification')] class extends Component
                     @endforeach
                 </div>
 
-                <div class="flex w-full justify-end gap-2 mt-7">
-                    <x-primary-button content="Proceed" target="saveDriver" />
+                <div class="flex w-full justify-end gap-2 mt-7" x-data="{ loading: false }">
+                    <div class='items-center gap-2 my-3 flex' x-show="loading">
+                        <div
+                            class="w-5 h-5 rounded-full border-2 border-primary border-r-neutral-300 dark:border-r-neutral-300 animate animate-spin">
+                        </div>
+                    </div>
+                    {{-- <x-primary-button content="Proceed" target="saveDriver" /> --}}
+                    <div class="bg-primary rounded-full px-8 p-3 text-sm text-white cursor-pointer" @click="loading = true; $wire.saveLicensingDetails()">Proceed</div>
                 </div>
             </x-modal>
-        </form>
+        </div>
     </div>
 </div>

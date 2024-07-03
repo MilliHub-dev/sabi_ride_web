@@ -12,12 +12,17 @@ new #[layout('layouts.guest')] class extends Component
 
     public function login()
     {
-        $user = $this->form->authenticate();
-        if ($user) {
+        $response = $this->form->authenticate();
 
+        if ( is_string($response) && str_contains($response, "user is not activated")) {
+            session()->put('email', $this->form->all()['email']);
             $this->redirectRoute('verify.account');
             return;
         }
+        session()->put('user', $response);
+
+        $this->redirectRoute('verification.start');
+
     }
 
 }; 

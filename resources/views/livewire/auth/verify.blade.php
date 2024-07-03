@@ -3,57 +3,48 @@
 use Livewire\Volt\Component;
 use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Layout;
-use Tzsk\Otp\Facades\Otp;
+use Illuminate\Validation\ValidationException;
+
 
 
 new #[layout('layouts.guest')] class extends Component
 {
     public array $code = [];
+    public string $email;
 
     public function mount()
     {
-        // dd(decrypt(session('xUser')));
-    } 
-    
-    public function matchCode()
-    {
-        $this->validate([
-            'code' => 'required|numeric|min:6'
-        ]);
-
-        if (Otp::match($this->code, $this->user->email)) {
-            $this->user->update([
-                'email_verified_at' => now()
-            ]);
-            $this->redirectRoute('user.dashboard');
-        }else{
-            $this->addError('code', 'Invalid Code');
+        if (! session()->has('email')) {
+            $this->redirectRoute('verification.start');
+            return;
         }
+
+
+        $this->email = session('email');
     }
-
-
-    public function resendCode()
-    {
-        $otp = Otp::digits(6)->generate($this->user->email);
-        flash('info', 'Code Resent.');
-        $this->redirect(
-            route('verification.notice'),
-            navigate:true
-        );
-    }
-
 
     public function verifyCode()
     {
         $code = implode($this->code);
-        $response = Http::withHeaders([
-            'accept' => 'application/json',
-            'content-type' => 'application/json',
-        ])->post(env('API_URL') . '/api/v1/users/activate-account', [
-            'email' => 'test_rider@mail.com',
-            'activation_code' => $code
-        ]);
-        $this->redirectRoute('verification.start');
+        $email = session('email');
+
+        try {
+            $response = Http::acceptJson()->post(env('BASE_URL') . '/api/v1/users/activate-account', [
+                'email' => $email,
+                'activation_code' => $code
+            ]);
+            if (str_contains($response, "Invalid activation code")) {
+                throw ValidationException::withMessages([
+                    'form.code' => "Invalid activation code",
+                ]);
+            }
+            $this->redirectRoute('verification.start');
+        } catch (\Throwable $th) {
+            
+            throw ValidationException::withMessages([
+                'form.code' => $th->getMessage()
+            ]);
+        }
     }
 }; 
 ?>
@@ -79,7 +70,7 @@ new #[layout('layouts.guest')] class extends Component
                     <div x-data="{ code: @js($code) }" class="flex flex-col items-center">
                         <div class="flex justify-between w-full">
                             @for($i = 0; $i < 4; $i++)
-                                <input type="text" maxlength="1" wire:model.live="code.{{ $i }}" 
+                                <input type="number" maxlength="1" wire:model.live="code.{{ $i }}" 
                                     @input="if ($event.target.value && {{ $i }} < 3) $refs.input{{ $i + 1 }}.focus()"
                                     @keydown.backspace="if ($event.target.value === '' && {{ $i }} > 0) $refs['input' + ({{ $i }} - 1)].focus()"
                                     class="size-16 rounded-full text-center text-2xl border border-gray-300 outline-primary" 
@@ -89,6 +80,7 @@ new #[layout('layouts.guest')] class extends Component
                             @endfor
                         </div>
                     </div>
+                    <x-input-error :messages="$errors->get('form.code')" class="mt-2" />
                     <div class="flex justify-end items-center mt-2">
                         <p class="text-primary cursor-pointer text-sm font-semibold" wire:click='resendCode'>Resend code now</p>
                     </div>            

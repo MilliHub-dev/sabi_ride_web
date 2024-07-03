@@ -15,7 +15,8 @@ new class extends Component
     {
         $this->validate();        
         $this->form->register();
-        $this->redirectRoute('verification.start');
+        flash('success', 'sign up success, please login');
+        $this->redirectRoute('login');
     }
 }; 
 ?>
@@ -23,17 +24,24 @@ new class extends Component
 <div>
     <form wire:submit='register'>
         
-
-        <div class="mt-5">
-            <h4 class="text-gray-600">First Name</h4>      
-            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.first_name' placeholder="Enter first name" />   
-            <x-input-error :messages="$errors->get('form.first_name')" class="mt-2" />
+        <div class="grid grid-cols-2 gap-2">
+            <div class="mt-5">
+                <h4 class="text-gray-600">First Name</h4>      
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.first_name' placeholder="Enter first name" />   
+                <x-input-error :messages="$errors->get('form.first_name')" class="mt-2" />
+            </div>
+    
+            <div class="mt-5">
+                <h4 class="text-gray-600">Last Name</h4>      
+                <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.last_name' placeholder="Enter last name" />   
+                <x-input-error :messages="$errors->get('form.last_name')" class="mt-2" />
+            </div>
         </div>
 
         <div class="mt-5">
-            <h4 class="text-gray-600">Last Name</h4>      
-            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.last_name' placeholder="Enter last name" />   
-            <x-input-error :messages="$errors->get('form.last_name')" class="mt-2" />
+            <h4 class="text-gray-600">Emaill Address</h4>      
+            <x-text-input class="w-full mt-2 bg-zinc-50" type="text" wire:model='form.email' placeholder="Enter your email" />   
+            <x-input-error :messages="$errors->get('form.email')" class="mt-2" />
         </div>
         
         <div class="mt-5">
