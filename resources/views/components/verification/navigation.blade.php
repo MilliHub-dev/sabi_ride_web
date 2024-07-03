@@ -6,8 +6,8 @@
                     <x-application-logo />
                 </div>
                 <div class="flex gap-5 items-center">
-                    <a href="">Drive or deliver</a>
-                    <a href="">Support</a>
+                    <a href="{{ route('driver') }}">Drive or deliver</a>
+                    <a href="{{ route('services') }}">Services</a>
                     <a href="">SABI business</a>
                     <a href="">About</a>
                 </div>
@@ -61,7 +61,7 @@
                     Log in
                 </x-nav-link>
 
-                <x-nav-link :active="request()->routeIs('home')"  href="/#services">
+                <x-nav-link :active="request()->routeIs('services')"  href="{{ route('services') }}">
                     Services
                 </x-nav-link>
 
