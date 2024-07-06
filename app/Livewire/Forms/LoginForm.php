@@ -2,8 +2,6 @@
 
 namespace App\Livewire\Forms;
 
-use App\Actions\ConnectDB;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Validate;

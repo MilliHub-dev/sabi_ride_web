@@ -19,3 +19,9 @@ Route::post('logout', function () {
     session()->forget('user');
     return to_route('home');
 })->name('logout');
+
+
+Route::get('test', function () {
+    dd(session('user'));
+    // return Storage::disk('ie2')->put('second.txt', "hello world");
+});

@@ -2,7 +2,6 @@
 
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
-use App\Actions\ConnectDB;
 
 new #[layout('layouts.verification')] class extends Component
 {

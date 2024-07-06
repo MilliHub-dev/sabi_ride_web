@@ -9,6 +9,13 @@ new #[layout('layouts.guest')] class extends Component
 {
     public LoginForm $form;
     
+    public function mount()
+    {
+        if(session('user')) {
+            $this->redirectRoute('verification.start');
+            return;
+        }
+    }
 
     public function login()
     {

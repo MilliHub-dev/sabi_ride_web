@@ -10,6 +10,14 @@ new class extends Component
     public SignupForm $form;
     public array $code = [];
     
+    public function mount()
+    {
+        if(session('user')) {
+            $this->redirectRoute('verification.start');
+            return;
+        }
+    }
+    
 
     public function register()
     {

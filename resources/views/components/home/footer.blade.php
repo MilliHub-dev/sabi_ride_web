@@ -55,7 +55,7 @@
                             <h6 class="text-gray-700">Newsletter</h6>
                             <a href="" class="block">News and updates</a>
                             <a href="" class="block">Unsubscribe</a>
-                            <a href="" class="block">Sunscribe</a>
+                            <a href="" class="block">Subscribe</a>
                         </div>
         
                         <div class="bg-black/90 p-1 px-4 rounded md inline-block mt-5">
