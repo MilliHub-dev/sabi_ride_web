@@ -24,7 +24,7 @@ new class extends Component
         $this->validate();        
         $this->form->register();
         flash('success', 'sign up success, please login');
-        $this->redirectRoute('login');
+        $this->redirectRoute('verify.account');
     }
 }; 
 ?>

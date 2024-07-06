@@ -111,11 +111,6 @@ new #[layout('layouts.verification')] class extends Component
     {
         $this->requiredDocumentsArray = $this->requiredDocuments();
         $this->extraDocumentsArray = $this->extraDocuments();
-        $this->photos = [
-            'screenshot_of_dashboard' => '',
-            'screenshot_of_rating' => '',
-            'screenshot_of_notification' => ''
-        ];
     }
 
     public function validateAndProceed()

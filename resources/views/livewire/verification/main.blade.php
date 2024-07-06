@@ -17,6 +17,11 @@ new #[layout('layouts.verification')] class extends Component
             $this->redirectRoute('login');
             return;
         }
+
+        if (session('verification_status')) {
+            $this->redirectRoute('verification.complete');
+            return;
+        }
         $this->user = session('user');
         $this->manufacturers = [
             'toyota', 'ford', 'chevrolet', 'honda', 'nissan', 'bmw', 'mercedes-benz', 'audi', 'volkswagen',
@@ -49,8 +54,12 @@ new #[layout('layouts.verification')] class extends Component
     {
         
         $result = DriverVerfication::save();
+        if (str_contains($result, 'Error:')) {
+            flash('success', $result);
+            $this->redirectRoute('verification.start');
+        }
         flash('success'. 'Registration success');
-        // $this->redirectRoute('verification.complete');
+        $this->redirectRoute('verification.complete');
     }
 }; 
 ?>

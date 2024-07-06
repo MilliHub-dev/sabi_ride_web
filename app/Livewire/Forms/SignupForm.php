@@ -35,12 +35,11 @@ class SignupForm extends Form
             'phone_number' => $this->phone_number,
             'password' => $this->password
         ]);
-        session()->put('user', $response->body());
-        dd($response->body());
-        if ($response->successful()) {
+        if (!$response->successful()) {
             throw ValidationException::withMessages([
-                'form.email' => "Email seems to exist",
+                'form.email' => "Email or phone number seems to exist",
             ]);
         }
+        session()->put('email', $response->json()['email']);
     }
 }

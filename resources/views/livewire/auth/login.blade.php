@@ -28,6 +28,10 @@ new #[layout('layouts.guest')] class extends Component
         }
         session()->put('user', $response);
 
+        if (session('verification_status')) {
+            $this->redirectRoute('verification.complete');
+            return;
+        }
         $this->redirectRoute('verification.start');
 
     }

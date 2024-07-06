@@ -12,6 +12,7 @@ new #[layout('layouts.verification')] class extends Component
             $this->redirectRoute('login');
             return;
         }
+        $this->status = session('verification_status');
     }
 }; 
 ?>

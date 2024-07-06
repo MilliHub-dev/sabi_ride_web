@@ -21,7 +21,9 @@ class DriverVerfication
             $response_documents = Http::withToken($token)
                 ->post(env('BASE_URL') . '/api/v1/users/driver-verification', $documents);
 
-            dd($response_details->body(), $response_documents->body());
+            if (array_key_exists('error', $response_details->json()) || array_key_exists('error', $response_documents->json())) {
+                return "Error: An error occured while uploading documents";
+            }
             session()->forget('vehicle_details');
             session()->forget('licensing_details');
             session()->forget('documents');

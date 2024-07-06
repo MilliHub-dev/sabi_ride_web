@@ -39,6 +39,12 @@ class LoginForm extends Form
                     'form.email' => $response->json()['message'],
                 ]);
             }
+            $token = $response->json()['access_token'];
+            $request = Http::withToken($token)->get(env('BASE_URL') . '/api/v1/users/driver-verification');
+
+            if (array_key_exists('data', $request->json())) {
+                session()->put('verification_status', $request->json()['data']['verification_comment']);
+            }
             return $response->json();
         } catch (\Throwable $th) {
             throw ValidationException::withMessages([

@@ -17,11 +17,19 @@ Volt::route('/driver/verification-done', 'verification.complete')->name('verific
 
 Route::post('logout', function () {
     session()->forget('user');
+    session()->forget('vehicle_details');
+    session()->forget('licensing_details');
+    session()->forget('documents');
+    session()->forget('verification_status');
     return to_route('home');
 })->name('logout');
 
 
 Route::get('test', function () {
-    dd(session('user'));
+    $token = session('user')['access_token'];
+
     // return Storage::disk('ie2')->put('second.txt', "hello world");
+    $response = Http::withToken($token)->get(env('BASE_URL') . '/api/v1/users/driver-verification');
+
+    return $response->json()['data']['verification_comment'];
 });
