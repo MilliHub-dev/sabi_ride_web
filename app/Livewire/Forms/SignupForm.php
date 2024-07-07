@@ -35,7 +35,7 @@ class SignupForm extends Form
             'phone_number' => $this->phone_number,
             'password' => $this->password
         ]);
-        if (!$response->successful()) {
+        if (!$response->successful() || !isset($response->json()['email'])) {
             throw ValidationException::withMessages([
                 'form.email' => "Email or phone number seems to exist",
             ]);
