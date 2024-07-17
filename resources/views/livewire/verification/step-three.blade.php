@@ -124,7 +124,7 @@ new #[layout('layouts.verification')] class extends Component
         $photosPath = [];
         foreach ($this->photos as $name => $photo) {
             if (!is_null($photo) && !is_string($photo)) {
-                $photosPath[$name] = $photo->storePublicly('verification/documents', 'ie2');
+                $photosPath[$name] = $photo->store('verification/documents', 'ie2');
             } else {
                 $photosPath[$name] = '';
             }
