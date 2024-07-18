@@ -51,7 +51,6 @@ new #[layout('layouts.home')] class extends Component
     <div class="bg-white py-10">
         <div class="max-w-6xl px-4 mx-auto">
             <h1 class="text-3xl md:text-4xl text-center text-blue-950 font-semibold pt-3">Services</h1>
-            <p class="text-blue-950/70 mt-1 text-center">Keep track of the happens in the crypto world</p>
             <div class="h-full w-full overflow-hidden rounded-2xl md:bg-blue-50 mt-10 space-y-6 md:space-y-0 md:grid md:grid-cols-2 gap-1 lg:grid-cols-3">
                 
                 @foreach ($services as $key => $service)
