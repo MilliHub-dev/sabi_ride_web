@@ -6,6 +6,16 @@ use Livewire\Volt\Volt;
 Volt::route('/', 'home.index')->name('home');
 Volt::route('driver', 'home.driver')->name('driver');
 Volt::route('services', 'home.services')->name('services');
+Volt::route('about', 'home.about')->name('about');
+
+Volt::route('terms', 'legal.terms.main')->name('terms');
+Volt::route('terms/general', 'legal.terms.general')->name('general.terms');
+Volt::route('terms/drivers', 'legal.terms.drivers')->name('drivers.terms');
+Volt::route('terms/riders', 'legal.terms.riders')->name('riders.terms');
+
+Volt::route('policy', 'legal.policy')->name('policy');
+
+
 
 Volt::route('signup', 'home.signup')->name('signup');
 Volt::route('login', 'auth.login')->name('login');
@@ -23,13 +33,3 @@ Route::post('logout', function () {
     session()->forget('verification_status');
     return to_route('home');
 })->name('logout');
-
-
-Route::get('test', function () {
-    $token = session('user')['access_token'];
-
-    // return Storage::disk('ie2')->put('second.txt', "hello world");
-    $response = Http::withToken($token)->get(env('BASE_URL') . '/api/v1/users/driver-verification');
-
-    return $response->json()['data']['verification_comment'];
-});

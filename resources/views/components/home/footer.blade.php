@@ -71,7 +71,11 @@
                     <p class="text-zinc-700"><x-svg.globe /></p>
                     <p>English</p>
                 </div>
-                <p class="mt-3">Copyright © 2024. All rights reserved.</p>
+                <div class="flex gap-2 items-center mt-3 flex-wrap">
+                    <p>Copyright © 2024. All rights reserved.</p>
+                    <a href="{{ route('terms') }}">Terms & Conditions</a>
+                    <a href="{{ route('policy') }}">Privacy Policy</a>
+                </div>
             </div>
         </div>
     </x-body>

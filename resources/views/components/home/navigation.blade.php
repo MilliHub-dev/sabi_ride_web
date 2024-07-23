@@ -9,7 +9,7 @@
                     <a href="{{ route('driver') }}">Drive or deliver</a>
                     <a href="{{ route('services') }}">Services</a>
                     <a href="">SABI business</a>
-                    <a href="">About</a>
+                    <a href="{{ route('about') }}">About</a>
                 </div>
                 <div class="flex items-center gap-5">
                     <div class="flex items-center gap-1">
