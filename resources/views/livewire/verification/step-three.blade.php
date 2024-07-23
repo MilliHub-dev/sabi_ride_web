@@ -222,7 +222,6 @@ new #[layout('layouts.verification')] class extends Component
                             class="w-5 h-5 rounded-full border-2 border-primary border-r-neutral-300 dark:border-r-neutral-300 animate animate-spin">
                         </div>
                     </div>
-                    {{-- <x-primary-button content="Proceed" target="saveDriver" /> --}}
                     <div class="bg-primary rounded-full px-8 p-3 text-sm text-white cursor-pointer" @click="loading = true; $wire.saveLicensingDetails()">Proceed</div>
                 </div>
             </x-modal>
