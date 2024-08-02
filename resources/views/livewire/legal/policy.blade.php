@@ -136,16 +136,14 @@ new #[Layout('layouts.home')] class extends Component
                         </ul>
                         <h2 class="text-xl font-bold mb-4">- Governing Law and Jurisdiction</h2>
                         <p class="mb-4">
-                            These Terms are governed by and construed in accordance with (for the lawyer/company’s legal to edit)
+                            These Terms are governed by and construed in accordance with the laws of Nigeria
                         </p>
                         <h2 class="text-xl font-bold mb-4">- Changes to Terms</h2>
                         <p class="mb-4">
                             Sabi Ride reserves the right to update or modify these Terms without notice.
                         </p>
                         <h2 class="text-xl font-bold mb-4">- Contact Us</h2>
-                        <p class="mb-4">
-                            For questions, concerns, or feedback, please contact our support team at (insert SabiRide contact information)
-                        </p>
+                        <p class="mb-4">For questions, concerns, or feedback, please contact our support team at <a href="mailto:support@sabi-ride.com.ng" class="text-primary">support@sabi-ride.com.ng</a> or <a href="mailto:info@sabi-ride.com.ng" class="text-primary">info@sabi-ride.com.ng</a>.</p>
                         <p class="mb-4">
                             Please review and modify it according to your specific requirements and legal advice.
                         </p>

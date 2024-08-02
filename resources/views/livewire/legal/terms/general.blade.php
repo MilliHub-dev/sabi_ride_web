@@ -190,7 +190,7 @@ new #[Layout('layouts.home')] class extends Component
                 </section>
                 <section class="mb-8">
                     <h2 class="text-xl font-bold mb-4">- Contact Information</h2>
-                    <p class="mb-4">If you have any questions or concerns regarding these Terms of Use, please contact us at {{ getenv('CONTACT_EMAIL') }}.</p>
+                    <p class="mb-4">For questions, concerns, or feedback, please contact our support team at <a href="mailto:support@sabi-ride.com.ng" class="text-primary">support@sabi-ride.com.ng</a> or <a href="mailto:info@sabi-ride.com.ng" class="text-primary">info@sabi-ride.com.ng</a>.</p>
                     <p class="mb-4"><i>By using this Site, you acknowledge that you have read, understood, and agreed to these Terms of Use.</i></p>
                 </section>
                 <section class="mb-8">

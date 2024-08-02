@@ -120,7 +120,7 @@ new #[Layout('layouts.home')] class extends Component
                 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold mb-4">Contact Us</h2>
-                    <p class="mb-4">For questions, concerns, or feedback, please contact our support team at <a href="mailto:admin@sabi-ride.com.ng" class="text-primary">admin@sabi-ride.com.ng</a>.</p>
+                    <p class="mb-4">For questions, concerns, or feedback, please contact our support team at <a href="mailto:support@sabi-ride.com.ng" class="text-primary">support@sabi-ride.com.ng</a> or <a href="mailto:info@sabi-ride.com.ng" class="text-primary">info@sabi-ride.com.ng</a>.</p>
                 </section>
             </div>
         </div>
